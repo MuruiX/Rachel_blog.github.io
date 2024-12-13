@@ -14,6 +14,9 @@
     - [MongoDB operation](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/main/Computer%20Science/Database/NoSQL/Mongo%20Operation.md)
     - [The_Little_Book_of_Mongo_DB](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/main/Computer%20Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.pdf)
 
+## UX
+- [UX design](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/main/Computer%20Science/Note_of_UX_design.pdf)
+
 
 # Data Science
 
