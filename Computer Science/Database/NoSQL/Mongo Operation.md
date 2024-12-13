@@ -10,8 +10,6 @@ tags: nosql
 
 `
 
-<iframe width=80% height=500px src="https://docs.mongoing.com/mongo-introduction">MongoBD 官方文檔
-</iframe>
 [MongoDB 官方文檔](https://docs.mongoing.com/mongo-introduction)
 
 
@@ -31,7 +29,7 @@ tags: nosql
 syntax:
 `db.createCollection(name,options)`
 
-> [!note]+ - options: 可選參數，指定有關內存大小及索引的選項  
+ options: 可選參數，指定有關內存大小及索引的選項  
 |  參數名                  |  類型   |  描述                                                                                                                                |  實例值                          |
 |:----------------------|:------|:-----------------------------------------------------------------------------------------------------------------------------------|:------------------------------|
 |  `capped`             |  佈爾值  |  是否創建一個固定大小的集合                                                                                                                     |  true                         |
@@ -514,9 +512,8 @@ db.col.update( { "count" : { $gt : 10 } } , { $inc : { "count" : 1} },false,fals
 > ```
 
 
+Update Operators
 
-> [!attention] Update Operators
-> 
 | operator                                                                                                                                                                                                         | 功能                                                                                                                                                                                                                                                                                                                               |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | <span style="color: rgb(255, 153, 153); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15.75px; text-align: left; background-color: rgba(222, 222, 222, 0.1);">$currentDate</span> | <span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">Sets the field value to the current date</span><span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">將欄位值設為目前日期</span> |
@@ -528,16 +525,16 @@ db.col.update( { "count" : { $gt : 10 } } , { $inc : { "count" : 1} },false,fals
 > 
 
 
-> [!danger] Update Array
-> 
-> 
+Update Array
+
+
 |                                                                                                                                                                                      operator                                                                                                                                                                                      |                                                                                                                                                                          功能                                                                                                                                                                           |     |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | --- |
 |                                                                                   <span style="color: rgb(255, 153, 153); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15.75px; text-align: left; background-color: rgba(222, 222, 222, 0.1);">$addToSet</span>                                                                                    |           <span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">&nbsp; Adds distinct elements to an array</span><span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">將不同的元素加入陣列中</span>           |     |
 |                                                                                      <span style="color: rgb(255, 153, 153); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15.75px; text-align: left; background-color: rgba(222, 222, 222, 0.1);">$pop</span>                                                                                      |      <span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">Removes the first or last element of an array</span><span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">刪除陣列的第一個或最後一個元素</span>       |     |
 | <code class="w3-codespan" data-immersive-translate-walked="8e4effa2-0368-4173-bbb0-990b444b6f81" style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15.75px; color: rgb(255, 153, 153); background-color: rgba(222, 222, 222, 0.1); padding-left: 4px; padding-right: 4px; font-weight: 400; text-align: left;">$pull</code> | <span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">Removes all elements from an array that match the query</span><span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">從陣列中刪除與查詢相符的所有元素</span> |     |
 |                                                                                     <span style="color: rgb(255, 153, 153); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15.75px; text-align: left; background-color: rgba(222, 222, 222, 0.1);">$push</span>                                                                                      |                  <span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">Adds an element to an array</span><span style="color: rgb(221, 221, 221); font-family: Verdana, sans-serif; text-align: left; background-color: rgb(29, 42, 53);">為陣列新增一個元素</span>                   |     |
-> 
+
 
 
 
