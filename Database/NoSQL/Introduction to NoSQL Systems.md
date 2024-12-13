@@ -37,7 +37,7 @@ Most NoSQL stores lack true ACID(Atomicity, Consistency, Isolation, Durability) 
 
 ## Why NoSQL
 
-![[PICTURE/Introduction to NoSQL Systems/97e31769f680e40e03d8c3479f7f75fc_MD5.jpeg]]
+![[../../PICTURE/Introduction to NoSQL Systems/97e31769f680e40e03d8c3479f7f75fc_MD5.jpeg]]
 
 
 NoSQL databases are often used in applications where there is a<u> high volume</u> of data that needs to be <font color="#ffc000">processed and analyzed in real-time</font> 需要即時處理和分析大量data的應用程序, such as *social media analytics*, *e-commerce*, and gaming. They can also be used for other applications, such as content management systems, document management, and customer relationship management.
