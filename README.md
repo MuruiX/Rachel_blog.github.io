@@ -17,6 +17,9 @@
 ## UX
 - [UX design](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/main/Computer%20Science/Note_of_UX_design.pdf)
 
+## Unix
+- [unix hand note](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/main/Computer%20Science/Unix/Unix_handnote.pdf)
+
 
 # Data Science
 
