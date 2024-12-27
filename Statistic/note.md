@@ -19,7 +19,6 @@ $$
 1. 離散的純量變數
 2. 多遠隨機變數
 
-
 [維基百科](https://zh.wikipedia.org/zh-tw/%E6%A6%82%E7%8E%87%E8%B4%A8%E9%87%8F%E5%87%BD%E6%95%B0)
 
 ### Cumulative distribution function(CDF)累積分佈函數
@@ -36,16 +35,11 @@ $$
 
 [維基百科](https://zh.wikipedia.org/zh-tw/%E7%B4%AF%E7%A7%AF%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0)
 
-
-
 ## probability density function（PDF）概率密度函數
-
-
 
 [PDF](https://www.geeksforgeeks.org/probability-density-function/)
 
 [概率密度函數（Probability Density Function， PDF）-CSDN博客](https://blog.csdn.net/YHKKun/article/details/137404224)
-
 
 ## Central Limits 中央界限
 
@@ -61,11 +55,9 @@ $$
 
 **tends to become normally distributed.**
 
-
 ### Absence of Central Limits
 
 **Another case is where the moments are not defined / infinite 另一種情況是力矩不確定或無限大**
-
 
 # Randomness 隨機性
 
@@ -82,7 +74,6 @@ Three main ways that random comes into data science:
 
 # standard distribution
 
-
 ## Bernoulli 伯努利分佈
 
 $$
@@ -97,14 +88,11 @@ only have two choices(binary situations). 只有兩個結果 例如成功失敗 
 
 ****Bernoulli Parameter:**** This refers to the probability of success (p) in a Bernoulli Distribution.
 
-
 Mean:
 
 $$
 E[X] = μ = p
 $$
-
-
 
 Variance:
 
@@ -112,7 +100,6 @@ $$
 Var[X] = E[X^{2}] - (E[X])^2
       \\ =σ2 = p(1 - p) \ or\  pq
 $$
-
 
 ###### **Applications of Bernoulli Distribution in Business Statistics**
 
@@ -124,12 +111,9 @@ $$
 
 ****4. Marketing Campaigns:**** Businesses use Bernoulli Distribution to measure the effectiveness of marketing campaigns. ****For instance,**** in email marketing, success might represent a recipient opening an email, while failure indicates not opening it. Analysing these binary responses helps refine marketing strategies and improve campaign success rates.
 
-
-
 ###### Difference between Bernoulli Distribution and Binomial Distribution 伯努利分佈和二項分佈的區分
 
 The Bernoulli Distribution and the Binomial Distribution are both used to model random experiments with *binary outcomes*, but they differ in how they handle multiple trials or repetitions of these experiments. 同樣是對具有二元結果的隨機實驗進行建模，但在處理多次實驗的方式上有所不同
-
 
 | Basis                                 | Bernoulli Distribution                              | Binomial Distribution                                                                                             |
 | ------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -141,7 +125,34 @@ The Bernoulli Distribution and the Binomial Distribution are both used to model 
 | ****Example****           | Coin toss (Heads/Tails), Pass/Fail, Yes/No, etc.    | Counting the number of successful free throws in a series of attempts, number of defective items in a batch, etc. |
 
 
+
+PMFs:
+
+![1735310609676](image/note/1735310609676.png)
+
+
+CDFs:
+
+![1735312750410](image/note/1735312750410.png)
+
 [伯努利分佈特性](https://www.geeksforgeeks.org/bernoulli-distribution-in-business-statistics-mean-and-variance/)
+
+
+## Binomia
+
+PMF:
+
+$$
+P(X=k)=p_{k}=Bin(k|n,q)=\left({\begin{array}{*{20}{c}}n\\k\end{array}}\right)
+$$
+
+![1735314063328](image/note/1735314063328.png)
+
+CDF:
+
+![1735314709953](image/note/1735314709953.png)
+
+
 
 ## Poison 泊鬆分佈
 
@@ -163,6 +174,13 @@ $$
 Var(X)=\lambda
 $$
 
+PMF:
+
+![1735311473403](image/note/1735311473403.png)
+
+CMF:
+
+![1735311555474](image/note/1735311555474.png)
 
 
 ## Beta：
@@ -175,7 +193,7 @@ $$
 f(x) = Beta(x|\alpha ,\beta ) = B_{\alpha ,\beta }^{ - 1}{x^{\alpha  - 1}}{(1 - x)^{\beta  - 1}}dx
 $$
 
-for  $ x \in [0,1] $ and positive  $\alpha ,\beta $  
+for  $ x \in [0,1] $ and positive  $\alpha ,\beta $
 
 The factor $B_{\alpha ,\beta }^{ - 1}$  is a normalizing constant
 
@@ -189,7 +207,6 @@ The mean of the Beta distribution is:
 
 $$
 Mean(X)=\frac{\alpha }{{\alpha  + \beta }}
-
 $$
 
 Variance:
@@ -198,16 +215,26 @@ $$
 Var(X)=\frac{{\alpha \beta }}{{{{(\alpha  + \beta )}^2}(1 + \alpha  + \beta )}}
 $$
 
+![1735314804579](image/note/1735314804579.png)
+
+
+
+CDF
+
+![1735315209527](image/note/1735315209527.png)
+
+
+Application
+
+![1735315241672](image/note/1735315241672.png)
 
 ## Gamma
 
 is ofen used to model times between events
 
-
 $$
 f(x) = Gamma(x|\kappa ,\theta ) = \frac{1}{{\Gamma (\kappa ){\theta ^\kappa }}}{x^{\kappa  - 1}}{e^{ - x/\theta }}
 $$
-
 
 for positive $x$ and positive $\kappa$, $ \theta$
 
@@ -221,7 +248,20 @@ Variance
 
 $$
 Var(X)=\kappa \theta^2
+
+
+
 $$
+
+PDF
+
+![1735315266727](image/note/1735315266727.png)
+
+
+
+CDF
+
+![1735315273039](image/note/1735315273039.png)
 
 
 ## Normal
@@ -238,13 +278,11 @@ $$
 Mean(X)= \mu
 $$
 
-
 Variance
 
 $$
 Var(X)=\sigma^{2}
 $$
-
 
 ### **Arithmetic with normally-distributed variables**
 
@@ -266,7 +304,6 @@ $$
 \sigma^{2}_{W}=\sigma^{2}_{1}+\sigma^{2}_{2}
 $$
 
-
 #### $Y=aX_{1}+b$
 
 will also be normally distributed
@@ -283,6 +320,13 @@ $$
 \sigma^{2}_{Y}=a^{2}\sigma^{2}_{1}
 $$
 
+**PDF**
+
+![1735315324363](image/note/1735315324363.png)
+
+CDF
+
+![1735315329536](image/note/1735315329536.png)
 
 
 ## **Cauchy 柯西分佈**
@@ -299,19 +343,26 @@ $s$ is positive $t$ is parameter can be any parameters
 
 But the parameter $t$ **gives the location of the mode and median, which are well-defined.**
 
-
 The parameter $s$ **determines the ‘width’ of the distribution as measured using e.g. the distances between percentiles, which are also well defined.**
+
+PDF
+
+![1735315340154](image/note/1735315340154.png)
+
+CDF
+
+![1735315356626](image/note/1735315356626.png)
 
 
 # Application
 
-
 ## Linear regression
-
 
 ### **Ordinary Least-Squares (OLS) Regression** 普通最小二乘法回歸
 
-
 $$
 P(y|x) = {\rm N}(x|\mu  = \alpha {\rm{x + }}\beta ,{\sigma ^2})
+
+
+
 $$
