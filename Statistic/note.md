@@ -140,6 +140,14 @@ CDFs:
 
 ## Binomia
 
+represent outcome of a single random 'trial', 它是一種離散分佈
+
+- $n$ is the number of trials 例如民意調查樣本
+- $0 \le K \le n$ is the number of successes 成功次數 例如潛在選民表示會投票給我們的候選人的次數
+- $q$ is the (typically unknown) 支持我方候選人的選民比例
+
+
+
 PMF:
 
 $$
@@ -296,13 +304,13 @@ will also be normally distributed
 mean:
 
 $$
-\mu_{W}=\mu_{1}+\mu_{2}
+{\mu_{W}}={\mu_{1}} + {\mu_{2}}
 $$
 
 variance:
 
 $$
-\sigma^{2}_{W}=\sigma^{2}_{1}+\sigma^{2}_{2}
+{\sigma^{2}_{W}}={\sigma^{2}_{1}}+{\sigma^{2}_{2}}
 $$
 
 #### $Y=aX_{1}+b$
@@ -373,3 +381,6 @@ where $\alpha$ , $\beta $ and $\sigma^{2}$ are parameters to-be-fit
 ![1735320045922](image/note/1735320045922.png)
 
 an OLS model makes probabilitic predictions: the model syas that $y$ is drawn from a normal distribution whose mean depends on $x$ 該模型認為y取自均值取決於x的正態分佈
+
+
+## Best  estimate 最佳估計值
