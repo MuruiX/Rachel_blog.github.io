@@ -143,7 +143,8 @@ CDFs:
 PMF:
 
 $$
-P(X=k)=p_{k}=Bin(k|n,q)=\left({\begin{array}{*{20}{c}}n\\k\end{array}}\right)
+
+
 $$
 
 ![1735314063328](image/note/1735314063328.png)
