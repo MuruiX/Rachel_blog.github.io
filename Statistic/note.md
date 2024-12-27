@@ -367,3 +367,9 @@ P(y|x) = {\rm N}(x|\mu  = \alpha {\rm{x + }}\beta ,{\sigma ^2})
 
 
 $$
+
+where $\alpha$ , $\beta $ and $\sigma^{2}$ are parameters to-be-fit
+
+![1735320045922](image/note/1735320045922.png)
+
+an OLS model makes probabilitic predictions: the model syas that $y$ is drawn from a normal distribution whose mean depends on $x$ 該模型認為y取自均值取決於x的正態分佈
