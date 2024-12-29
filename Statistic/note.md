@@ -516,10 +516,15 @@ motivation:
 The first thing understand is where the data come from and how accurate they are. 數據的來源和準確性
 
 
+### star rating 星級評級
 
+This is based on experience rather than any formal theory：
 
-
-
+- 4： Numbers we can believe. Examples: official statistics(官方統計數據); well controlled laboratory experiments
+- 3： Numbers that are reasonably accurate. Examples: well conducted surveys / samples; field measurements; less well controlled experiments.
+- 2：Numbers that could be out by quite a long way. Examples: poorly conducted surveys / samples; measurements of very noisy systems
+- 1： Numbers that are unreliable. Examples: highly biased / unrepresentative surveys / samples; measurements using biased / low-quality equipment
+- 0： Numbers that have just been made up. Examples: urban legends / memes; fabricated experimental data
 
 
 
@@ -550,3 +555,63 @@ an OLS model makes probabilitic predictions: the model syas that $y$ is drawn fr
 $$
 {p_A}=k/n
 $$
+
+
+
+# Packages：
+
+
+## input data
+
+
+### Python
+
+```python
+f = pd.read_csv('file_path')
+```
+
+### R
+
+```r
+f <- read.table("file_path", header=TRUE,sep=",")
+```
+
+
+## Data wrangling: 
+
+### Python
+
+Pandas
+
+```python
+import pandas as pd
+```
+
+### R
+
+dplyr
+
+```R
+library(dplyr)
+```
+
+
+## Visualisation
+
+
+### Python
+
+Seaborn(based on MatplotLib)
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+
+### R
+
+GGPlot
+
+```
+library(ggplot2)
+```
