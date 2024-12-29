@@ -72,6 +72,13 @@ Three main ways that random comes into data science:
 - Unpredictable 不可預測性
 - Subjective uncertainty 主管不確定性
 
+
+## The logistic map 邏輯地圖
+
+
+
+
+
 # standard distribution
 
 ## Bernoulli 伯努利分佈
@@ -384,3 +391,7 @@ an OLS model makes probabilitic predictions: the model syas that $y$ is drawn fr
 
 
 ## Best  estimate 最佳估計值
+
+$$
+{p_A}=k/n
+$$
