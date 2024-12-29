@@ -527,6 +527,37 @@ This is based on experience rather than any formal theory：
 - 0： Numbers that have just been made up. Examples: urban legends / memes; fabricated experimental data
 
 
+## Univariate Data Vectors
+
+univariate case: one measurement per ‘thing’ 每個變量都單獨探索
+
+Mathematically, we represent a univariate dataset as a length-n vector:
+
+$$
+x = (x_{1},x_{2},...,x_{n})
+$$
+
+
+
+The sample mean of a function f (x) is
+
+$$
+\left\langle {{\rm{f}}(x)} \right\rangle  = \frac{1}{n}\sum\limits_{i = 1}^n {f({x_i}) = \frac{1}{n}[f({x_1}) + f({x_2}) + .... + f({x_n})]}
+$$
+
+
+## Visualisation and Information
+
+
+There is an important distinction in visualisations between
+
+- Lossless(無損) ones from which, if viewed at sufficiently high resolution, one could recover the original dataset
+- Lossy(有損) ones, where a given plot would be consistent with many different raw datasets
+
+Typically for complex data, choosing the lossy visualistaion that loses the ‘right’ information is key to successful visualisation.
+
+
+
 
 
 
@@ -581,11 +612,19 @@ f <- read.table("file_path", header=TRUE,sep=",")
 
 ### Python
 
-Pandas
+Pandas, Numpy
 
 ```python
 import pandas as pd
+import numpy as np
 ```
+
+
+
+```python
+x=f.mag.values
+```
+
 
 ### R
 
@@ -593,6 +632,11 @@ dplyr
 
 ```R
 library(dplyr)
+```
+
+
+```r
+x <- f$mag
 ```
 
 
@@ -608,6 +652,17 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
+
+```python
+sns.histplot(magnitudes, stat='density')
+sns.kdeplot(magnitudes)
+sns.rugplot(magnitudes)
+```
+
+![1735488472345](image/note/1735488472345.png)
+
+
+
 ### R
 
 GGPlot
@@ -615,3 +670,12 @@ GGPlot
 ```
 library(ggplot2)
 ```
+
+
+```R
+ggplot(earthquake.df, aes(x=mag))+
+geom_histogram(aes(y=..density..))+
+geom_density()+ xlab("Magnitude")
+```
+
+![1735488562842](image/note/1735488562842.png)
