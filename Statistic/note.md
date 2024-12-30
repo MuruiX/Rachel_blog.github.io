@@ -558,7 +558,11 @@ Typically for complex data, choosing the lossy visualistaion that loses the ‘r
 
 
 
+# Summary Statistics
 
+## Measures of Central Tendency 集中趨勢測度
+
+Often, we are interested in what a typical value of the data;
 
 
 
