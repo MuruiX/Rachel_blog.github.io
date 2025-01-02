@@ -725,6 +725,50 @@ $$
 
 
 
+# functions
+
+## indicator functions
+
+The indicator function of a logical proposition A
+
+![1735860418049](image/note/1735860418049.png)
+
+
+![1735860436648](image/note/1735860436648.png)
+
+
+
+
+
+## empirical cumulative distribution function （ECDF）
+
+
+![1735860506891](image/note/1735860506891.png)
+
+
+# Quantiles and Order Statistics
+
+
+- The z-th percentile, $P_z$ is the value of x for which z% of the data is ≤ x
+- So the median is median(x) = $P_{50}$
+- This is related to the ECDF as illustrated below
+- A measure of dispersal of the data is the inter-quartile range $IQR(x) = {P_{75}} - {P_{25}}$
+
+![1735860679914](image/note/1735860679914.png)
+
+
+
+# Multimodality 多態
+
+
+- For continuous data, there aren’t typically identical observations (and if there are, they aren’t typical) so we will need to estimate the modes, which we define as local maxima (peaks) of the probability density
+  function.
+- The location and number of modes is typically the most relevant measure of central tendency and variability for multimodal data
+- We will see that different estimation procedures give different modes, and even for simulated data like the below that is ‘obviously’ bimodal, they will give different answers about mode locations.
+
+![1735860845967](image/note/1735860845967.png)
+
+
 
 
 
