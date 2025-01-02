@@ -207,7 +207,7 @@ for i in range(0,m):
         # Generate an (x, y) pair in the unit square
         x = np.random.rand()
         y = np.random.rand()
-      
+    
         # Decide whether the point lies in or on
         # the unit circle and set Z accordingly
         r = x**2 + y**2
@@ -215,10 +215,10 @@ for i in range(0,m):
             Z = 1.0
         else:
             Z = 0
-          
+        
         # Add up the contribution to the current estimate
         A[i] = A[i] + Z
-         
+       
     # Convert the sum we've built to an estimate of pi
     A[i] = 4.0 * A[i] / float( n )
 ```
@@ -502,19 +502,15 @@ CDF
 
 ![1735315356626](image/note/1735315356626.png)
 
-
-
 # EDA: Exploratory data analysis
 
 motivation:
 
     EDA is about getting an intuitive understanding of the data, and as such different people will find different techniques useful.
 
-
 ## Data quality
 
 The first thing understand is where the data come from and how accurate they are. 數據的來源和準確性
-
 
 ### star rating 星級評級
 
@@ -526,7 +522,6 @@ This is based on experience rather than any formal theory：
 - 1： Numbers that are unreliable. Examples: highly biased / unrepresentative surveys / samples; measurements using biased / low-quality equipment
 - 0： Numbers that have just been made up. Examples: urban legends / memes; fabricated experimental data
 
-
 ## Univariate Data Vectors
 
 univariate case: one measurement per ‘thing’ 每個變量都單獨探索
@@ -537,17 +532,13 @@ $$
 x = (x_{1},x_{2},...,x_{n})
 $$
 
-
-
 The sample mean of a function f (x) is
 
 $$
 \left\langle {{\rm{f}}(x)} \right\rangle  = \frac{1}{n}\sum\limits_{i = 1}^n {f({x_i}) = \frac{1}{n}[f({x_1}) + f({x_2}) + .... + f({x_n})]}
 $$
 
-
 ## Visualisation and Information
-
 
 There is an important distinction in visualisations between
 
@@ -556,13 +547,63 @@ There is an important distinction in visualisations between
 
 Typically for complex data, choosing the lossy visualistaion that loses the ‘right’ information is key to successful visualisation.
 
-
-
 # Summary Statistics
 
 ## Measures of Central Tendency 集中趨勢測度
 
 Often, we are interested in what a typical value of the data;
+
+
+- The mean of the data is:
+
+$$
+Mean(x)=\left\langle {\rm{x}} \right\rangle  = \frac{1}{n}\sum\limits_{i = 1}^n {{x_i}}
+$$
+
+- The median of the data is the value that sits in the middle when the data are sorted by value
+- A mode in data is a value of $x$ that is ‘more common’ than those around it, or a ‘local maximum’ in the density.
+  - **For discrete data[离散数据] this can be *uniquely* determined as the most common value**
+  - **For** **continuous data,** modes need to be ***estimated***, one aspect of a major strand in data science, estimating distributions.
+
+
+### Visualising
+
+For the data, we estimate from the kernel density that there is one mode, and its location and calculate the mean and median directly
+
+
+> Example: 
+>
+> The data are **right-skewed(右偏的)**, and as a consequence of this the mode is smallest and the mean is largest – we will consider this further; (note that for a normal distribution all would be equal.)
+
+
+## Variance
+
+
+$$
+\begin{array}{ccccc}
+Var(x) = \left\langle {{{(x - \left\langle x \right\rangle )}^2}} \right\rangle\\
+= \frac{1}{n}\sum\limits_{i = 1}^n {{{({x_i} - \left\langle x \right\rangle )}^2}}\\
+=\frac{1}{n}\sum\limits_{i = 1}^n {({x^2}_i - 2{x_i}\left\langle x \right\rangle  + {{\left\langle x \right\rangle }^2})}\\
+=\left( {\frac{1}{n}\sum\limits_{i = 1}^n {x_i^2} } \right) + 2\left( {\frac{1}{n}\sum\limits_{i = 1}^n {{x_i}} } \right)\left\langle x \right\rangle + \frac{1}{n}\left( {\sum\limits_{i = 1}^n 1 } \right){\left\langle x \right\rangle ^2}\\
+=\frac{1}{n}\left( {\sum\limits_{i = 1}^n {x_i^2} } \right) - {\left( {\frac{1}{n}\sum\limits_{i = 1}^n {{x_i}} } \right)^2}\\
+=\left\langle {{x^2}} \right\rangle  - {\left\langle x \right\rangle ^2}
+\end{array}
+$$
+
+
+### Unbiased Variance and Computation 無偏方差
+
+
+$$
+\widehat {Var}(x)  = \frac{n}{{n - 1}}Var(x) = \frac{1}{{n - 1}}\left( {\sum\limits_{i = 1}^n {x_i^2 - \frac{1}{n}{{\left( {\sum\limits_{i = 1}^n {{x_i}} } \right)}^2}} } \right)
+$$
+
+
+
+
+[無偏差樣本](https://en.wikipedia.org/wiki/Variance#Population_variance_and_sample_variance)
+
+
 
 
 
@@ -591,13 +632,9 @@ $$
 {p_A}=k/n
 $$
 
-
-
 # Packages：
 
-
 ## input data
-
 
 ### Python
 
@@ -611,8 +648,7 @@ f = pd.read_csv('file_path')
 f <- read.table("file_path", header=TRUE,sep=",")
 ```
 
-
-## Data wrangling: 
+## Data wrangling:
 
 ### Python
 
@@ -623,10 +659,16 @@ import pandas as pd
 import numpy as np
 ```
 
-
-
 ```python
 x=f.mag.values
+```
+
+
+
+#### Summary Statistics
+
+```
+np.mean(x)
 ```
 
 
@@ -638,14 +680,21 @@ dplyr
 library(dplyr)
 ```
 
-
 ```r
 x <- f$mag
 ```
 
 
-## Visualisation
 
+#### Summary Statistics
+
+```
+mean(x)
+```
+
+
+
+## Visualisation
 
 ### Python
 
@@ -655,7 +704,6 @@ Seaborn(based on MatplotLib)
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-
 
 ```python
 sns.histplot(magnitudes, stat='density')
@@ -667,6 +715,12 @@ sns.rugplot(magnitudes)
 
 
 
+
+
+
+
+
+
 ### R
 
 GGPlot
@@ -674,7 +728,6 @@ GGPlot
 ```
 library(ggplot2)
 ```
-
 
 ```R
 ggplot(earthquake.df, aes(x=mag))+
