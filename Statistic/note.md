@@ -655,6 +655,67 @@ $$
 {M_k} = \frac{{{\mu _k}}}{{{\sigma ^k}}}=\frac{{{原始矩}}}{{{標準差}}}
 $$
 
+* $M_k$：第 $k$阶标准化矩。
+* $\mu_k$：第 $k$ 阶原始矩。
+* $\sigma$：标准差
+
+标准化矩通过除以标准差的 $k$ 次方，使矩的量纲消失，方便分布的比较
+
+
+#### 第一阶标准化矩
+
+$$
+{M_1} = \frac{{{\mu _1}}}{{{\sigma ^1}}}
+$$
+
+表示分布的中心位置，但通常为 0（如果中心点选均值）
+
+
+#### 第二阶标准化矩
+
+$$
+{M_2} = \frac{{{\mu _2}}}{{{\sigma ^2}}}
+$$
+
+恒等于 1，因为分布已经用标准差标准化。
+
+
+#### 第三阶标准化矩（偏度，Skewness）
+
+$$
+{M_3} = \frac{{{\mu _3}}}{{{\sigma ^3}}}=\widetilde {{\mu _3}} = Skew(x)
+$$
+
+- 用于描述分布的对称性或偏斜程度
+  - ${{\rm{M}}_3} > 0$: 分佈 偏右(右尾較長)
+  - ${{\rm{M}}_3} < 0$: 分佈偏左(左尾較長)
+  - ${{\rm{M}}_3} = 0$: 分佈對稱
+
+
+A larger (more positive) value of this quantity indicates right-skewness, meaning that more of the data’s variability arises from values of x larger than the mean
+
+Conversely, a smaller (more negative) value of this quantity indicates left-skewness, meaning that more of the data’s variability arises from values of x smaller than the mean.
+
+A value close to zero means that the variability of the data is similar either side of the mean (but does not imply an overall symmetric distribution). Statistics and Machine Learning 1 Lecture 2B: Summary Statistics Week 2 11 / 19
+
+#### 第四阶标准化矩（峰度，Kurtosis）
+
+$$
+{M_4} = \frac{{{\mu _4}}}{{{\sigma ^4}}}
+$$
+
+- 用于描述分布的尖峰或平坦程度.
+  - ${{\rm{M}}_4} > 3$: 尖峰分佈
+  - ${{\rm{M}}_4} < 3$: 平坦分佈
+
+**用途**
+
+* **描述分布形状** ：偏度和峰度是最常用的标准化矩，用于研究数据分布的对称性和尾部特性。
+* **模型假设检验** ：例如，判断数据是否符合正态分布。
+* **分布比较** ：通过标准化，消除了尺度和单位的影响，可以直接比较不同数据集的形状特征。
+
+
+
 
 
 
@@ -724,8 +785,7 @@ x=f.mag.values
 np.mean(x)
 ```
 
-
-#### Variance
+##### Variance
 
 ```python
 #Baised
@@ -734,6 +794,15 @@ up.var(x)
 np.var(x,ddof=1)
 ```
 
+
+
+##### Skewness
+
+We define the skewness by
+
+$$
+Skew(x)=\widetilde {{\mu _3}}
+$$
 
 
 
