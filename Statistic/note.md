@@ -599,11 +599,13 @@ $$
 $$
 
 
+默認情況下， python計算有偏差的，R計算無偏差的
 
 
 [無偏差樣本](https://en.wikipedia.org/wiki/Variance#Population_variance_and_sample_variance)
 
 
+## 'Natural' units
 
 
 
@@ -672,6 +674,20 @@ np.mean(x)
 ```
 
 
+#### Variance
+
+```python
+#Baised
+up.var(x)
+#Unbiased
+np.var(x,ddof=1)
+```
+
+
+
+
+
+
 ### R
 
 dplyr
@@ -688,9 +704,22 @@ x <- f$mag
 
 #### Summary Statistics
 
-```
+```R
 mean(x)
 ```
+
+
+#### Variance
+
+```R
+#Unbiased
+var(x)
+#biased
+library(momnets)
+moment(x, order=2,central=TRUE)
+```
+
+
 
 
 
