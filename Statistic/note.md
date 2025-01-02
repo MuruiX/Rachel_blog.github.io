@@ -692,11 +692,11 @@ $$
   - ${{\rm{M}}_3} = 0$: 分佈對稱
 
 
-A larger (more positive) value of this quantity indicates right-skewness, meaning that more of the data’s variability arises from values of x larger than the mean
+- A larger (more **positive**) value of this quantity indicates **right-skewness**, meaning that more of the data’s variability **arises** *from* **values of x larger than the mean**
 
-Conversely, a smaller (more negative) value of this quantity indicates left-skewness, meaning that more of the data’s variability arises from values of x smaller than the mean.
+- Conversely, a smaller (more **negative**) value of this quantity indicates **left-skewness**, meaning that more of the data’s variability arises from values of x smaller than the mean.
 
-A value close to zero means that the variability of the data is similar either side of the mean (but does not imply an overall symmetric distribution). Statistics and Machine Learning 1 Lecture 2B: Summary Statistics Week 2 11 / 19
+- A value close to **zero** means that the variability of the data is similar either side of the mean (*but does not imply an overall symmetric distribution*).
 
 #### 第四阶标准化矩（峰度，Kurtosis）
 
@@ -715,9 +715,13 @@ $$
 * **分布比较** ：通过标准化，消除了尺度和单位的影响，可以直接比较不同数据集的形状特征。
 
 
+- A value of this quantity larger than 3 means that more of the variance of the data arises from the tails than would be expected if it were normally distributed
 
+- A value of this quantity less than 3 means that less of the variance of the data arises from the tails than would be expected if it were normally distributed.
 
+- A value close to 3 is consistent with, though not strong evidence for, a normal distribution.
 
+- The difference between the kurtosis and 3 is called the excess kurtosis.
 
 
 
@@ -798,13 +802,18 @@ np.var(x,ddof=1)
 
 ##### Skewness
 
-We define the skewness by
+```python
+ss = np.sqrt(np.var(x))
+sp.stats.moment(x,3)/(ss**3)
+```
 
-$$
-Skew(x)=\widetilde {{\mu _3}}
-$$
 
 
+##### Kurtosis
+
+```python
+(sp.stats.momnet(x,4)/(ss**4))-3
+```
 
 
 
@@ -829,7 +838,8 @@ mean(x)
 ```
 
 
-#### Variance
+
+##### Variance
 
 ```R
 #Unbiased
@@ -840,7 +850,19 @@ moment(x, order=2,central=TRUE)
 ```
 
 
+##### Skewness
 
+```R
+ss = sqrt(momrnt(x, order=2,central=TRUE))
+moment(x,order=3,central=TRUE)/(ss^3)
+```
+
+
+#### Kurtosis
+
+```python
+(moment(x, order=4,central=TRUE)/(ss^4))-3
+```
 
 
 ## Visualisation
