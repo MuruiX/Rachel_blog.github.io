@@ -579,6 +579,21 @@ For the data, we estimate from the kernel density that there is one mode, and it
 ## Variance
 
 
+|   特性   |           有偏差方差           |        無偏差方差        |
+| :------: | :----------------------------: | :----------------------: |
+|   分母   |               n               |           n-1           |
+| 應用場景 |        描述樣本的離散型        |      估計總體的方差      |
+|   偏差   |  對總體方差的估計存在低估偏差  | 對總體方差的估計是無偏的 |
+| 應用場景 | 數據分析、機器學習中的樣本優化 |   統計學中總體方差估計   |
+
+**何时使用？**
+
+* **有偏差方差** ：在机器学习中，通常计算样本的有偏差方差（分母为 nn**n**），因为重点在于优化模型对样本的适配性，而非推断总体。
+* **无偏差方差** ：在统计学和推断中，需要用无偏差方差（分母为 n−1n-1**n**−**1**），因为它更准确地估计总体参数。
+
+
+
+
 $$
 \begin{array}{ccccc}
 Var(x) = \left\langle {{{(x - \left\langle x \right\rangle )}^2}} \right\rangle\\
@@ -595,7 +610,11 @@ $$
 
 
 $$
-\widehat {Var}(x)  = \frac{n}{{n - 1}}Var(x) = \frac{1}{{n - 1}}\left( {\sum\limits_{i = 1}^n {x_i^2 - \frac{1}{n}{{\left( {\sum\limits_{i = 1}^n {{x_i}} } \right)}^2}} } \right)
+\begin{array}{ccccc}
+\widehat {Var}(x)  = \frac{n}{{n - 1}}Var(x) \\
+= \frac{1}{{n - 1}}\sum\limits_{i = 1}^n {{{({x_i} - \left\langle x \right\rangle )}^2}}\\
+= \frac{1}{{n - 1}}\left( {\sum\limits_{i = 1}^n {x_i^2 - \frac{1}{n}{{\left( {\sum\limits_{i = 1}^n {{x_i}} } \right)}^2}} } \right)
+\end{array}
 $$
 
 
