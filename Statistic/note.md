@@ -626,6 +626,22 @@ $$
 
 ## 'Natural' units
 
+there are two commonly-used quantities that have the same units as the data 與數據有相同單位
+
+- mean $\mu = Mean(x)$
+- standard deviation $\sigma  = \sqrt {Var(x)}$
+
+These two quantities let us define two transformations commonly applied to data 用於數據轉換
+
+- centring ${y_i} = {x_i} - \mu$     |   $Mean(y) = 0$
+- standardisation ${z_i} = \frac{{{y_i}}}{\sigma }$  | $Var(z)=1$
+
+
+## Higher moments
+
+
+
+
 
 
 
