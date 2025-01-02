@@ -639,6 +639,22 @@ These two quantities let us define two transformations commonly applied to data 
 
 ## Higher moments
 
+- In general, the $r$-th moment of the data is 第$r$時刻的數據是 ${m_r} = \left\langle {{x^r}} \right\rangle$
+- The $r$-th central moment中心距 of the data is   ${\mu _r} = \left\langle {{{(x - \mu )}^r}} \right\rangle  = \left\langle {{y^r}} \right\rangle$
+
+    where the y’s are the centred versions of the data.
+
+- The $r$-th standardised moment of the data is ${\mu _r} = \left\langle {{{(\frac{{x - \mu }}{\sigma })}^r}} \right\rangle  = \left\langle {{z^r}} \right\rangle  = \frac{{\left\langle {{{\left( {x - \mu } \right)}^2}} \right\rangle }}{{{\sigma ^r}}} = \frac{{{\mu _r}}}{{{\sigma ^r}}}$
+
+In theory, all higher moments are informative about the data, but in practice those with r = 3 and r = 4 are most commonly reported
+
+
+### standardised moment
+
+$$
+{M_k} = \frac{{{\mu _k}}}{{{\sigma ^k}}}=\frac{{{原始矩}}}{{{標準差}}}
+$$
+
 
 
 
