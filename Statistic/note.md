@@ -215,10 +215,10 @@ for i in range(0,m):
             Z = 1.0
         else:
             Z = 0
-      
+    
         # Add up the contribution to the current estimate
         A[i] = A[i] + Z
-     
+   
     # Convert the sum we've built to an estimate of pi
     A[i] = 4.0 * A[i] / float( n )
 ```
@@ -546,6 +546,26 @@ There is an important distinction in visualisations between
 - Lossy(有損) ones, where a given plot would be consistent with many different raw datasets
 
 Typically for complex data, choosing the lossy visualistaion that loses the ‘right’ information is key to successful visualisation.
+
+
+## Multivariate Exploratory Data Analysis
+
+
+- In real applications, we almost almost always have multiple features of different things measured, and are so in a multivariate rather than univariate situation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Summary Statistics
 
@@ -976,8 +996,6 @@ sns.rugplot(magnitudes)
 
 ![1735488472345](image/note/1735488472345.png)
 
-
-
 #### Measures of central tendency
 
 Plot the KDE curve, then add vertical lines for the mean, median and mode
@@ -1012,8 +1030,6 @@ plt.show()
 ```
 
 ![1735900908099](image/note/1735900908099.png)
-
-
 
 #### Empirical Cumulative Density Function (ECDF)
 
@@ -1094,7 +1110,6 @@ plt.show()
 
 ![1735901018520](image/note/1735901018520.png)
 
-
 ```python
 # Set the dimensions of the plot
 plt.figure( figsize=(widthInInches, heightInInches) )
@@ -1168,8 +1183,6 @@ plt.show()
 
 ![1735901065377](image/note/1735901065377.png)
 
-
-
 #### KDE
 
 ```python
@@ -1222,7 +1235,6 @@ if( makePDF ):
 
 ![1735901265107](image/note/1735901265107.png)
 
-
 ```python
 # Set up the plot
 kdeIdeaFig, kdeAxes = plt.subplots(1, 2, figsize=[10, 5])
@@ -1268,7 +1280,6 @@ if( makePDF ):
 ```
 
 ![1735901280674](image/note/1735901280674.png)
-
 
 ```python
 # Set up the plot
@@ -1323,31 +1334,6 @@ if( makePDF ):
 
 ![1735901294341](image/note/1735901294341.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### R
 
 GGPlot
@@ -1364,13 +1350,7 @@ geom_density()+ xlab("Magnitude")
 
 ![1735488562842](image/note/1735488562842.png)
 
-
-
 ## EDA
-
-
-
-
 
 ### Density estimates
 
@@ -1401,7 +1381,6 @@ plt.show()
 ```
 
 ![1735901540688](image/note/1735901540688.png)
-
 
 ### Log-transformed data
 
@@ -1439,7 +1418,6 @@ plt.show()
 ### Changing the kernel function
 
 Here we compute density estimates using three standard kernels: the uniform, triangular and Gaussian kernels.
-
 
 ```python
 # The uniform kernel
@@ -1484,7 +1462,6 @@ plt.show()
 ```
 
 ![1735901731435](image/note/1735901731435.png)
-
 
 #### Comparing KDEs based on the Gaussian and triangular kernels
 
