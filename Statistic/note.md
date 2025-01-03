@@ -948,6 +948,32 @@ sp.stats.moment(x,3)/(ss**3)
 (sp.stats.momnet(x,4)/(ss**4))-3
 ```
 
+
+
+#### EDA
+
+```python
+import numpy as np
+import scipy.stats as st
+import matplotlib.pyplot as plt
+import pandas as pd
+
+f = open('./auto.txt','r')
+mpg, cyl, dis, hp, wgt, acc, yr, org = np.loadtxt(
+f, unpack=True, usecols = (0,1,2,3,4,5,6,7))
+colNames = [
+”MPG”,”Cylinders”,”Displacement”,”Horsepower” ,
+”Weight”,”Acceleration”,”ModelYear”,”Origin”,”CarName”
+]
+auto_df = pd.read_table(’./auto.txt’,sep=’\t’,names=colNames)
+auto_df.describe()
+```
+
+
+
+
+
+
 ### R
 
 dplyr
@@ -988,6 +1014,38 @@ moment(x,order=3,central=TRUE)/(ss^3)
 ```python
 (moment(x, order=4,central=TRUE)/(ss^4))-3
 ```
+
+
+
+#### EDA
+
+```r
+auto.data <- read.table("auto.txt", header=FALSE, sep="\t")
+auto.data
+```
+
+
+```r
+library(plyr)
+auto . data <− rename ( auto . data , c (
+” V1 ” = ”MPG” ,
+” V2 ” = ” C y l i n d e r s ” ,
+” V3 ” = ” D i s p l a c e m e n t ” ,
+” V4 ” = ” Horsepower ” ,
+” V5 ” = ” Weight ” ,
+” V6 ” = ” A c c e l e r a t i o n ” ,
+” V7 ” = ” ModelYear ” ,
+” V8 ” = ” O r i g i n ” ,
+” V9 ” = ” CarName ”
+) )
+summary(auto.data)
+```
+
+
+
+
+
+
 
 ## Visualisation
 
