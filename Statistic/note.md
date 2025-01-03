@@ -825,6 +825,10 @@ $$
   * 三角核（Triangular Kernel）：$K(u)=1−∣u∣K(u) = 1 - |u|$（如果 $∣u∣≤1|u| \leq 1$，否则为 0）
 
 
+![1735898585468](image/note/1735898585468.png)
+
+
+
  **带宽** $h$：
 
 * 带宽控制了核的扩展范围。
@@ -855,6 +859,32 @@ KDE与直方图的比较
 
 
 
+#### KDR's stacking pillows
+
+
+![1735885738016](image/note/1735885738016.png)
+
+
+
+#### Convergence 收斂
+
+The bandwidth w is a free parameter and there are various approaches to choosing its value. For parabolic and
+Gaussian kernels it is usually chosen so that  $w \propto \frac{1}{{{N^{\frac{1}{5}}}}}$
+
+![1735898559909](image/note/1735898559909.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -871,6 +901,18 @@ KDE与直方图的比较
 - We will see that different estimation procedures give different modes, and even for simulated data like the below that is ‘obviously’ bimodal, they will give different answers about mode locations.
 
 ![1735860845967](image/note/1735860845967.png)
+
+
+![1735897539968](image/note/1735897539968.png)
+
+
+But different kernels produce different estimates—in general, there is no ‘right’ answer for this kind of unsupervised learning problem
+
+![1735899540126](image/note/1735899540126.png)
+
+
+Often we should weight the datapoints for various reasons—i.e. assign a wi to each datapoint such that
+
 
 
 
