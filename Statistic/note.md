@@ -569,7 +569,73 @@ Typically for complex data, choosing the lossy visualistaion that loses the ‘r
 Measurements can be in an interval scale (e.g. temperature in degrees Celsius), ratio scale (say, weights in kg), or circular scale (time of day on the 24 hr clock), depending on the 0 value and on which operations yield meaningful results
 
 
+#### Sample Mean
 
+
+$$
+\left\langle x \right\rangle : = \frac{1}{n}\sum\limits_{i = 1}^n {{x_i}}
+$$
+
+
+Note: We are thinking of the n samples as coming from a population of size $N  >> n$, so that each xi is a copy of a random vector of length-p, X, which has its own mean $E[X]$. In particular, $E[X] = E[〈x〉]$, but generally $E[X] \ne <x>$
+
+
+|   特性   |                  Sample Mean 樣本均值                  |               Mean 總體均值               |
+| :------: | :-----------------------------------------------------: | :---------------------------------------: |
+| 數據來源 |                 從總體中抽取的樣本數據                 |        總體數據(所有可能得數據點)        |
+|   大小   | 样本大小 nn**n** 通常远小于总体大小 NN**N** | 总体大小 NN**N** 通常很大，甚至无限 |
+| 可计算性 |                      可以直接计算                      |         通常需要通过样本均值估计         |
+|  稳定性  |                   会因样本不同而波动                   |             理论值，固定不变             |
+|   用途   |               用于估计总体均值或统计推断               |          描述总体的真实中心趋势          |
+
+
+
+
+
+
+
+#### Sample Covariance Matrix 樣本協方差矩陣
+
+
+
+$$
+S=[S_{ab}],  where \ \ \ \  S_{ab}= \frac{1}{n}\sum\limits_{i = 1}^n {({x_{ia}} - \left\langle {{x_a}} \right\rangle )({x_{ib}} - \left\langle {{x_b}} \right\rangle )}
+$$
+
+Where $a = 1,...,p$ and $b=1,...,p$
+
+
+用于描述多维数据集中每个变量之间的 **协方差** （即变量间的线性关系）以及每个变量的方差（自相关性）。它是多元统计分析中的一个重要工具。
+
+
+**用途**
+
+1. **数据分析** ：
+
+* 探索变量之间的线性关系（正相关、负相关或无关）。
+* 确定变量的离散程度（方差）。
+
+2. **主成分分析（PCA）** ：
+
+* 样本协方差矩阵用于计算主成分的方向和大小。
+
+3. **机器学习** ：
+
+* 在降维、特征选择和数据标准化等任务中起到重要作用。
+
+4. **概率建模** ：
+
+* 在多元正态分布中，协方差矩阵用于描述变量间的相关性。
+
+
+
+#### Correlation Matrix
+
+The sample correlation matrix has elements that correspond to the slopes of the (linear) regression lines between variables
+
+$$
+R=[R_{ab}], where \ \ \ R_{ab} = \frac{{{S_{ab}}}}{{\sqrt {{S_{aa}}{S_{bb}}} }}
+$$
 
 
 
@@ -971,6 +1037,26 @@ auto_df.describe()
 
 
 
+```python
+xbar = np.mean(X,1)
+print(xbar)
+```
+
+
+##### Covariance Matrix
+
+```python
+S = np.cov(x)
+print(S)
+```
+
+
+##### Correlation Matrix
+
+```
+R = np.corrcoef(X)
+print(R)
+```
 
 
 
@@ -1042,9 +1128,23 @@ summary(auto.data)
 ```
 
 
+```r
+colMeans(auto.data[,1:6], na.rm = TRUE)
+```
 
 
+##### Covariance Matrix
 
+```r
+cov(auto,data[,c(1,3,5,6)], use = "na.or.complete")
+```
+
+
+##### Correlation Matrix
+
+```r
+cor(auto.data[,c(1,3,5,6)], use="na.or.complete")
+```
 
 
 ## Visualisation
