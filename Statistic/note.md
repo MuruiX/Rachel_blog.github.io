@@ -554,7 +554,19 @@ Typically for complex data, choosing the lossy visualistaion that loses the ‘r
 - In real applications, we almost almost always have multiple features of different things measured, and are so in a multivariate rather than univariate situation
 
 
+### Professional Skill  
 
+
+#### Data types
+
+
+- Nominal or categorical (e.g. colours, car names): not ordered; cannot be added or compared; can be relabelled.
+- Ordinal (e.g. small/medium/large): sometimes represented by numbers; can be ordered, but differences or ratios are not meaningful.
+- Measurement: meaningful numbers, on which (some) operations make sense. They can be:
+  - Discrete (e.g. publication year, number of cylinders): typically integer.
+  - Continuous (e.g. height): precision limited only by measurement accuracy.
+
+Measurements can be in an interval scale (e.g. temperature in degrees Celsius), ratio scale (say, weights in kg), or circular scale (time of day on the 24 hr clock), depending on the 0 value and on which operations yield meaningful results
 
 
 
