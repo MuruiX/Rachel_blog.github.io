@@ -207,7 +207,7 @@ for i in range(0,m):
         # Generate an (x, y) pair in the unit square
         x = np.random.rand()
         y = np.random.rand()
-    
+  
         # Decide whether the point lies in or on
         # the unit circle and set Z accordingly
         r = x**2 + y**2
@@ -215,10 +215,10 @@ for i in range(0,m):
             Z = 1.0
         else:
             Z = 0
-        
+      
         # Add up the contribution to the current estimate
         A[i] = A[i] + Z
-       
+     
     # Convert the sum we've built to an estimate of pi
     A[i] = 4.0 * A[i] / float( n )
 ```
@@ -553,7 +553,6 @@ Typically for complex data, choosing the lossy visualistaion that loses the ‘r
 
 Often, we are interested in what a typical value of the data;
 
-
 - The mean of the data is:
 
 $$
@@ -565,19 +564,15 @@ $$
   - **For discrete data[离散数据] this can be *uniquely* determined as the most common value**
   - **For** **continuous data,** modes need to be ***estimated***, one aspect of a major strand in data science, estimating distributions.
 
-
 ### Visualising
 
 For the data, we estimate from the kernel density that there is one mode, and its location and calculate the mean and median directly
 
-
-> Example: 
+> Example:
 >
 > The data are **right-skewed(右偏的)**, and as a consequence of this the mode is smallest and the mean is largest – we will consider this further; (note that for a normal distribution all would be equal.)
 
-
 ## Variance
-
 
 |   特性   |           有偏差方差           |        無偏差方差        |
 | :------: | :----------------------------: | :----------------------: |
@@ -591,9 +586,6 @@ For the data, we estimate from the kernel density that there is one mode, and it
 * **有偏差方差** ：在机器学习中，通常计算样本的有偏差方差（分母为 nn**n**），因为重点在于优化模型对样本的适配性，而非推断总体。
 * **无偏差方差** ：在统计学和推断中，需要用无偏差方差（分母为 n−1n-1**n**−**1**），因为它更准确地估计总体参数。
 
-
-
-
 $$
 \begin{array}{ccccc}
 Var(x) = \left\langle {{{(x - \left\langle x \right\rangle )}^2}} \right\rangle\\
@@ -605,9 +597,7 @@ Var(x) = \left\langle {{{(x - \left\langle x \right\rangle )}^2}} \right\rangle\
 \end{array}
 $$
 
-
 ### Unbiased Variance and Computation 無偏方差
-
 
 $$
 \begin{array}{ccccc}
@@ -617,12 +607,9 @@ $$
 \end{array}
 $$
 
-
 默認情況下， python計算有偏差的，R計算無偏差的
 
-
 [無偏差樣本](https://en.wikipedia.org/wiki/Variance#Population_variance_and_sample_variance)
-
 
 ## 'Natural' units
 
@@ -636,18 +623,15 @@ These two quantities let us define two transformations commonly applied to data 
 - centring ${y_i} = {x_i} - \mu$     |   $Mean(y) = 0$
 - standardisation ${z_i} = \frac{{{y_i}}}{\sigma }$  | $Var(z)=1$
 
-
 ## Higher moments
 
 - In general, the $r$-th moment of the data is 第$r$時刻的數據是 ${m_r} = \left\langle {{x^r}} \right\rangle$
 - The $r$-th central moment中心距 of the data is   ${\mu _r} = \left\langle {{{(x - \mu )}^r}} \right\rangle  = \left\langle {{y^r}} \right\rangle$
 
-    where the y’s are the centred versions of the data.
-
+  where the y’s are the centred versions of the data.
 - The $r$-th standardised moment of the data is ${\mu _r} = \left\langle {{{(\frac{{x - \mu }}{\sigma })}^r}} \right\rangle  = \left\langle {{z^r}} \right\rangle  = \frac{{\left\langle {{{\left( {x - \mu } \right)}^2}} \right\rangle }}{{{\sigma ^r}}} = \frac{{{\mu _r}}}{{{\sigma ^r}}}$
 
 In theory, all higher moments are informative about the data, but in practice those with r = 3 and r = 4 are most commonly reported
-
 
 ### standardised moment
 
@@ -661,7 +645,6 @@ $$
 
 标准化矩通过除以标准差的 $k$ 次方，使矩的量纲消失，方便分布的比较
 
-
 #### 第一阶标准化矩
 
 $$
@@ -669,7 +652,6 @@ $$
 $$
 
 表示分布的中心位置，但通常为 0（如果中心点选均值）
-
 
 #### 第二阶标准化矩
 
@@ -679,7 +661,6 @@ $$
 
 恒等于 1，因为分布已经用标准差标准化。
 
-
 #### 第三阶标准化矩（偏度，Skewness）
 
 $$
@@ -687,15 +668,12 @@ $$
 $$
 
 - 用于描述分布的对称性或偏斜程度
+
   - ${{\rm{M}}_3} > 0$: 分佈 偏右(右尾較長)
   - ${{\rm{M}}_3} < 0$: 分佈偏左(左尾較長)
   - ${{\rm{M}}_3} = 0$: 分佈對稱
-
-
 - A larger (more **positive**) value of this quantity indicates **right-skewness**, meaning that more of the data’s variability **arises** *from* **values of x larger than the mean**
-
 - Conversely, a smaller (more **negative**) value of this quantity indicates **left-skewness**, meaning that more of the data’s variability arises from values of x smaller than the mean.
-
 - A value close to **zero** means that the variability of the data is similar either side of the mean (*but does not imply an overall symmetric distribution*).
 
 #### 第四阶标准化矩（峰度，Kurtosis）
@@ -714,16 +692,10 @@ $$
 * **模型假设检验** ：例如，判断数据是否符合正态分布。
 * **分布比较** ：通过标准化，消除了尺度和单位的影响，可以直接比较不同数据集的形状特征。
 
-
 - A value of this quantity larger than 3 means that more of the variance of the data arises from the tails than would be expected if it were normally distributed
-
 - A value of this quantity less than 3 means that less of the variance of the data arises from the tails than would be expected if it were normally distributed.
-
 - A value close to 3 is consistent with, though not strong evidence for, a normal distribution.
-
 - The difference between the kurtosis and 3 is called the excess kurtosis.
-
-
 
 # functions
 
@@ -733,21 +705,13 @@ The indicator function of a logical proposition A
 
 ![1735860418049](image/note/1735860418049.png)
 
-
 ![1735860436648](image/note/1735860436648.png)
-
-
-
-
 
 ## empirical cumulative distribution function （ECDF）
 
-
 ![1735860506891](image/note/1735860506891.png)
 
-
 # Quantiles and Order Statistics
-
 
 - The z-th percentile, $P_z$ is the value of x for which z% of the data is ≤ x
 - So the median is median(x) = $P_{50}$
@@ -756,15 +720,11 @@ The indicator function of a logical proposition A
 
 ![1735860679914](image/note/1735860679914.png)
 
-
-
 # Density Estimation
-
-
 
 ## Histograms
 
-histogram can be used to make an estimate of the probability density underlying a data set. Given data{ ${ {x_1}, . . . , {x_n} }$} and a collection of q + 1 bin-boundaries,$b = (b_0, b_1, . . . , b_q )$ 
+histogram can be used to make an estimate of the probability density underlying a data set. Given data{ ${ {x_1}, . . . , {x_n} }$} and a collection of q + 1 bin-boundaries,$b = (b_0, b_1, . . . , b_q )$
 
 chosen so that ${b_0} < min(x) \  and \ max(x) < {b_q}$ , we can think of the histogram-based density estimate as a piecewise-constant (that is, constant on intervals) function arranged so that the value of the estimator in the interval $b_{a−1} ≤ x < b_{a}$ is
 
@@ -774,11 +734,10 @@ $$
 
 where the second factor is the proportion of the ${x_j}$ that fall into the interval and $b_a − b_{a−1}$ is the width of the interval. These choices mean that the bar (of the histogram) above the interval has an area equal to the proportion of the data points $x_j$ that fall in that interval
 
-
 ## Estimating a Density with Kernels
 
 $$
-widehat f(x|w) = \frac{1}{n}\sum\limits_{j = 1}^n {\frac{1}{w}K\left( {\frac{{x - {x_j}}}{w}} \right)}
+\widehat f(x|w) = \frac{1}{n}\sum\limits_{j = 1}^n {\frac{1}{w}K\left( {\frac{{x - {x_j}}}{w}} \right)}
 $$
 
 The main players in this formula are
@@ -791,18 +750,14 @@ $$
 
 $w$ : the bandwidth, which sets the width of the bumps
 
-
 ### Kernel Density Estimation （KDE）
 
 是一种 **非参数方法** ，用于估计随机变量的概率密度函数（PDF，Probability Density Function）。它提供了一种平滑方式来描述数据的分布，不依赖特定的分布假设（如正态分布）
-
 
  **目标** ：
 
 * KDE 的目标是从有限的样本数据中估计其背后的概率密度函数。
 * 与直方图类似，KDE 描述了数据的分布，但比直方图更平滑且不受特定区间（bin）的影响。
-
-
 
  **核心公式** ：
 给定 $n$ 个数据点$\{x_1, x_2, \dots, x_n\}$，KDE 在位置 $x$ 处的估计值为：
@@ -815,7 +770,6 @@ $$
 * $h$： **带宽参数** （Bandwidth），控制平滑的程度。
 * $x_i$：数据点。
 
-
  **核函数 $K(\cdot)$** ：
 
 * 核函数是一个对称的非负函数，其积分为 1，通常用来为每个点分配权重。
@@ -824,22 +778,17 @@ $$
   * 均匀核（Uniform Kernel）：$K(u)=12K(u) = \frac{1}{2}$（如果 $∣u∣≤1|u| \leq 1$，否则为 0）
   * 三角核（Triangular Kernel）：$K(u)=1−∣u∣K(u) = 1 - |u|$（如果 $∣u∣≤1|u| \leq 1$，否则为 0）
 
-
 ![1735898585468](image/note/1735898585468.png)
-
-
 
  **带宽** $h$：
 
 * 带宽控制了核的扩展范围。
 * $h$ 的选择非常重要：
+
   * $h$ 太小：估计函数会过于波动（过拟合）。
   * $h$ 太大：估计函数会过于平滑（欠拟合）。
-
-
 * KDE 的核心思想是用核函数 $K(\cdot)$平滑地“覆盖”每个数据点。
 * 通过将核函数中心放在每个数据点上，并根据带宽 $h$ 调整宽度，最终生成一个连续的概率密度曲线
-
 
 KDE与直方图的比较
 
@@ -850,21 +799,15 @@ KDE与直方图的比较
 |  參數  |       区间宽度（bin width）       | 核函数和带宽（kernel + bandwidth） |
 | 靈活性 |          对区间位置敏感          |     更灵活，适用于复杂数据分布     |
 
-
 **应用场景**
 
 1. **数据分布可视化** ：如观察数据的集中趋势和分布形态。
 2. **异常检测** ：识别不符合密度分布的数据点。
 3. **概率密度估计** ：用于机器学习和统计建模中的特征分布建模。
 
-
-
 #### KDR's stacking pillows
 
-
 ![1735885738016](image/note/1735885738016.png)
-
-
 
 #### Convergence 收斂
 
@@ -873,27 +816,9 @@ Gaussian kernels it is usually chosen so that  $w \propto \frac{1}{{{N^{\frac{1}
 
 ![1735898559909](image/note/1735898559909.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .
 
 ## Multimodality 多態
-
 
 - For continuous data, there aren’t typically identical observations (and if there are, they aren’t typical) so we will need to estimate the modes, which we define as local maxima (peaks) of the probability density
   function.
@@ -902,21 +827,13 @@ Gaussian kernels it is usually chosen so that  $w \propto \frac{1}{{{N^{\frac{1}
 
 ![1735860845967](image/note/1735860845967.png)
 
-
 ![1735897539968](image/note/1735897539968.png)
-
 
 But different kernels produce different estimates—in general, there is no ‘right’ answer for this kind of unsupervised learning problem
 
 ![1735899540126](image/note/1735899540126.png)
 
-
 Often we should weight the datapoints for various reasons—i.e. assign a wi to each datapoint such that
-
-
-
-
-
 
 # Application
 
@@ -971,8 +888,6 @@ import numpy as np
 x=f.mag.values
 ```
 
-
-
 #### Summary Statistics
 
 ```
@@ -988,8 +903,6 @@ up.var(x)
 np.var(x,ddof=1)
 ```
 
-
-
 ##### Skewness
 
 ```python
@@ -997,15 +910,11 @@ ss = np.sqrt(np.var(x))
 sp.stats.moment(x,3)/(ss**3)
 ```
 
-
-
 ##### Kurtosis
 
 ```python
 (sp.stats.momnet(x,4)/(ss**4))-3
 ```
-
-
 
 ### R
 
@@ -1019,15 +928,11 @@ library(dplyr)
 x <- f$mag
 ```
 
-
-
 #### Summary Statistics
 
 ```R
 mean(x)
 ```
-
-
 
 ##### Variance
 
@@ -1039,7 +944,6 @@ library(momnets)
 moment(x, order=2,central=TRUE)
 ```
 
-
 ##### Skewness
 
 ```R
@@ -1047,13 +951,11 @@ ss = sqrt(momrnt(x, order=2,central=TRUE))
 moment(x,order=3,central=TRUE)/(ss^3)
 ```
 
-
 #### Kurtosis
 
 ```python
 (moment(x, order=4,central=TRUE)/(ss^4))-3
 ```
-
 
 ## Visualisation
 
@@ -1073,6 +975,370 @@ sns.rugplot(magnitudes)
 ```
 
 ![1735488472345](image/note/1735488472345.png)
+
+
+
+#### Measures of central tendency
+
+Plot the KDE curve, then add vertical lines for the mean, median and mode
+
+```python
+# Set the dimensions of the plot
+plt.figure( figsize=(widthInInches, heightInInches) )
+
+# Plot the kernel density estimate curve
+plt.plot(kdeX, kdeY, '-k')
+
+# Add variously dashed vertical lines for the three
+# measures fo central tendency
+plt.axvline( meanMagnitude, linestyle='--', color='b', label='Mean')
+plt.axvline( medianMagnitude, linestyle='-.', color='r', label='Median')
+plt.axvline( magnitudeMode,  linestyle=':', color='m', label='KDE-estimated Mode')
+
+# Add labels and set the positions of the tick marks
+plt.xlabel('Earthquake Magnitude')
+plt.ylabel('Estimated Density')
+plt.ylim(kdeYLimits)
+plt.xlim([0,5])
+plt.xticks((0,1,2,3,4,5))
+
+# Add a legend
+plt.legend()
+plt.tight_layout()
+
+# Save a copy as a PDF, then show the figure
+plt.savefig('Figures/earth_central.pdf')
+plt.show()
+```
+
+![1735900908099](image/note/1735900908099.png)
+
+
+
+#### Empirical Cumulative Density Function (ECDF)
+
+The `statsmodels` package includes routines to compute this easily. The result has two parts, a list of $x$ values and a corresponding list of $y$ values.
+
+```python
+# Set the dimensions of the plot
+plt.figure( figsize=(widthInInches, heightInInches) )
+
+# Draw the curve
+plt.step(ecdf.x, ecdf.y, c='k')
+
+# Add captions, tick marks and the like
+plt.xlabel('Earthquake Magnitude')
+plt.ylabel('ECDF')
+plt.ylim([0,1.02])
+plt.xlim([0,5])
+plt.xticks((0,1,2,3,4,5))
+plt.tight_layout()
+
+# Blap the image out, both to a file and to the screen
+plt.savefig('Figures/earth_ecdf.pdf')
+plt.show()
+```
+
+![1735900971775](image/note/1735900971775.png)
+
+```python
+# Set the dimensions of the plot
+plt.figure( figsize=(widthInInches, heightInInches) )
+
+# Draw the ECDF as a solid curve
+plt.step(ecdf.x, 100*ecdf.y, color='blueviolet' )
+
+# Add dashed lines for the quantiles computed above.
+plt.plot([0,p25,p25],[25, 25, 0],'--k')
+plt.plot([0,p50,p50],[50, 50, 0],'--k')
+plt.plot([0,p75,p75],[75, 75, 0],'--k')
+plt.plot([0,p95,p95],[95, 95, 0],'--k')
+plt.plot([0,p99,p99],[99, 99, 0],'--k')
+
+# Add axis lables, tick marks and the like
+plt.xlabel('Earthquake Magnitude')
+plt.ylabel('ECDF x 100%')
+plt.ylim([0,102])
+plt.xlim([0,5])
+plt.xticks((0,p25,p50,p75,p95,p99,5),('0','$P_{25}$','$P_{50}$','$P_{75}$','$P_{95}$','$P_{99}$','5'))
+plt.tight_layout()
+
+# Blap the image out, both to a file and to the screen
+plt.savefig('Figures/earth_q_ecdf.pdf')
+plt.show()
+```
+
+![1735900993006](image/note/1735900993006.png)
+
+```python
+# Set the dimensions of the plot
+plt.figure( figsize=(widthInInches, heightInInches) )
+
+# Add the survival function, which is just 1 - ECDF
+plt.step(ecdf.x,1-ecdf.y,c='k')
+
+# Add axis lables, tick marks and the like
+plt.xlabel('Earthquake Magnitude')
+plt.ylabel('1 - ECDF')
+#plt.xscale('log')
+plt.yscale('log') # Put y on a log scale
+plt.xlim([0,5])
+plt.xticks((0,1,2,3,4,5))
+plt.ylim((1e-4,1.1))
+plt.tight_layout()
+
+# Blap the image out, both to a file and to the screen
+plt.savefig('Figures/earth_ll_ecdf.pdf')
+plt.show()
+```
+
+![1735901018520](image/note/1735901018520.png)
+
+
+```python
+# Set the dimensions of the plot
+plt.figure( figsize=(widthInInches, heightInInches) )
+
+# Draw the density estimates
+# The middle line draws a thick white line to clear space for the 10-bin histogram's curve
+plt.step(xh100,np.concatenate((np.zeros(1),yh100)), color='maroon',label='100-bin Histogram')
+plt.step(xh10,np.concatenate((np.zeros(1),yh10)),'w',linewidth=3)
+plt.step(xh10,np.concatenate((np.zeros(1),yh10)), color='darkslateblue', linestyle='dashed',label='10-bin Histogram')
+
+# Add axis lables, tick marks and the like
+plt.xlabel('Earthquake Magnitude')
+plt.ylabel('Estimated Density')
+plt.xlim([0,5])
+plt.xticks((0,1,2,3,4,5))
+plt.legend()
+plt.tight_layout()
+
+# Blap the image out, both to a file and to the screen
+plt.savefig('Figures/earth_hists.pdf')
+plt.show()
+```
+
+![1735901040238](image/note/1735901040238.png)
+
+```python
+# Set the dimensions of the plot
+plt.figure( figsize=(widthInInches, heightInInches) )
+
+# Plot the two estimates
+plt.plot(xgau,ygau,label='Gaussian Kernel',color='maroon',linestyle='--')
+plt.plot(xuni,yuni,label='Uniform Kernel',color='darkslateblue',linestyle='-')
+
+# Add axis lables, tick marks and the like
+plt.xlabel('Earthquake Magnitude')
+plt.ylabel('Estimated Density')
+plt.ylim(kdeYLimits)
+plt.xlim([0,5])
+plt.xticks((0,1,2,3,4,5))
+plt.legend()
+plt.tight_layout()
+
+# Blap the plot out, both to a file and to the screen
+plt.savefig('Figures/earth_uni.pdf')
+plt.show()
+```
+
+![1735901054682](image/note/1735901054682.png)
+
+```python
+# Set the dimensions of the plot
+plt.figure( figsize=(widthInInches, heightInInches) )
+
+# Plot the two estimates
+plt.plot(xgau,ygau,label='Gaussian Kernel',color='maroon',linestyle='--')
+plt.plot(xtri,ytri,label='Triangular Kernel',color='darkseagreen',linestyle='-')
+
+# Add axis lables, tick marks and the like
+plt.xlabel('Earthquake Magnitude')
+plt.ylabel('Estimated Density')
+plt.ylim(kdeYLimits)
+plt.xlim([0,5])
+plt.xticks((0,1,2,3,4,5))
+plt.legend()
+plt.tight_layout()
+
+# Blap the plot out, both to a file and to the screen
+plt.savefig('Figures/earth_tri.pdf')
+plt.show()
+```
+
+![1735901065377](image/note/1735901065377.png)
+
+
+
+#### KDE
+
+```python
+import math # for floor()
+from scipy.stats import norm # to compute the true density
+from statsmodels.nonparametric.kde import KDEUnivariate
+
+# Choose a range of sample sizes to use when building the KDE
+sampleSize = [8, 32, 128, 4096]
+
+# Prepare to draw the true distribution
+nTicks = 100
+zVals = np.linspace( -2.5, 2.5, nTicks+1 )
+truePdfVals = np.zeros( len(zVals) )
+for j in range(0, len(zVals)):
+    truePdfVals[j] = norm.pdf( zVals[j] )
+
+# Set up the plot
+kdeFig, kdeAxes = plt.subplots(2, 2, figsize=[10,10])
+
+# Construct the estimates in turn
+nSizes = len(sampleSize)
+pdfVals = np.zeros( [nTicks, nSizes] )
+for j in range(0, nSizes):
+    # Generate the sample
+    crntSize = sampleSize[j]
+    crntSample = np.random.normal( 0, 1, crntSize )
+    
+    # Fit the KDE
+    crnt_kde = KDEUnivariate( crntSample )
+    crnt_kde.fit()
+    
+    # Plot that puppy, along with the data and the true distribution
+    row = math.floor( j / 2 )
+    col = j % 2 
+    kdeAxes[row, col].hist( crntSample, bins="fd", density=True, alpha=0.5 )
+    kdeAxes[row, col].plot(crntSample, np.zeros(crntSize), 'b+', ms=20) # rug
+    kdeAxes[row, col].plot( zVals, truePdfVals, ':'  )
+    kdeAxes[row, col].plot( crnt_kde.support, crnt_kde.density )
+    kdeAxes[row, col].set_xlabel('z')
+    kdeAxes[row, col].set_ylabel('Density' )
+    kdeAxes[row, col].set_title( 'Sample size: ' + str(crntSize) )
+
+plt.tight_layout() # Avoid overlapping labels
+
+# If desired, make a pdf version too
+if( makePDF ):
+    plt.savefig('Figures/KDE_convergenceExample.pdf')
+```
+
+![1735901265107](image/note/1735901265107.png)
+
+
+```python
+# Set up the plot
+kdeIdeaFig, kdeAxes = plt.subplots(1, 2, figsize=[10, 5])
+
+# Construct the estimates in turn
+sampleSize = 4
+crntSample = np.random.normal( 0, 1, sampleSize )
+    
+# Fit the KDE and make a note of the bandwidth
+crnt_kde = KDEUnivariate( crntSample )
+crnt_kde.fit()
+crntBw = crnt_kde.bw
+    
+# Plot that puppy, along with the data and the true distribution
+kdeAxes[0].hist( crntSample, bins="fd", density=True, alpha=0.5 )
+kdeAxes[0].plot( crntSample, np.zeros(sampleSize), 'b+', ms=20) # rug
+kdeAxes[0].plot( zVals, truePdfVals, ':'  )
+kdeAxes[0].plot( crnt_kde.support, crnt_kde.density )
+kdeAxes[0].set_xlabel('z')
+kdeAxes[0].set_ylabel('Density' )
+kdeAxes[0].set_title( str(sampleSize) + ' samples, KDE and true density'  )
+
+# Also plot the individual bumps
+kdeAxes[1].plot( crntSample, np.zeros(sampleSize), 'b+', ms=20) # rug
+kdeAxes[1].plot( crnt_kde.support, crnt_kde.density, 'C2' )
+kdeAxes[1].set_xlabel('z')
+kdeAxes[1].set_ylabel('Density' )
+kdeAxes[1].set_title( 'Contributions from individual points'  )
+for j in range(0, sampleSize ):
+    # Evaluate the contribution due to the kernel on the j-th sample
+    bumpVals = np.zeros( len(zVals) ) 
+    for k in range(0, len(zVals)):
+        bumpVals[k] = norm.pdf( zVals[k], crntSample[j], crntBw ) / sampleSize
+    
+    # Add it to the plot
+    kdeAxes[1].plot( zVals, bumpVals, 'C4' )
+
+plt.tight_layout() # Avoid overlapping labels
+
+# If desired, make a pdf version too
+if( makePDF ):
+    plt.savefig('Figures/KDE_ideaExample.pdf')
+```
+
+![1735901280674](image/note/1735901280674.png)
+
+
+```python
+# Set up the plot
+kdeIdeaFig, kdeAxes = plt.subplots(1, 2, figsize=[16, 6])
+
+# Arrange the data in an order that may help highlght
+# the way the contributions add up. This is a somewhat 
+# arbitrary choice.
+sampleSize = 6 # should be even
+halfSampleSize = int(sampleSize/2)
+sortedSample = sorted( np.random.normal( 0, 1, sampleSize ) )
+crntSample = np.zeros(sampleSize)
+for j in range(halfSampleSize):
+    crntSample[2*j] = sortedSample[j]
+    crntSample[2*j+1] = sortedSample[j+halfSampleSize]
+    
+# Fit the KDE and make a note of the bandwidth
+crnt_kde = KDEUnivariate( crntSample )
+crnt_kde.fit()
+crntBw = crnt_kde.bw
+
+# Get ready to build an array whose columns give bump shapes
+nTicks = 200
+zVals = np.linspace( -4, 4, nTicks+1 )
+bumpShapes = np.zeros( (sampleSize, len(zVals)) )
+
+# Plot the full desnity estimate, along with the bumps for the
+# individual data points.
+kdeAxes[0].plot( crnt_kde.support, crnt_kde.density, 'black' )
+kdeAxes[0].set_xlabel('z')
+kdeAxes[0].set_ylabel('Density' )
+kdeAxes[0].set_title( 'Contributions from individual points'  )
+for j in range(0, sampleSize ):
+    # Evaluate the contribution due to the kernel sitting on the j-th sample
+    for k in range(0, len(zVals)):
+        bumpShapes[j,k] = norm.pdf( zVals[k], crntSample[j], crntBw ) / sampleSize
+    
+    # Add it to the plot
+    colorStr = 'C' + str(j)
+    kdeAxes[0].plot( zVals, bumpShapes[j,:], colorStr )
+    
+# Plot the stacked pillows
+kdeAxes[1].set_xlabel('z')
+kdeAxes[1].set_ylabel('Density' )
+kdeAxes[1].set_title( 'Pillow Plot'  )
+kdeAxes[1].stackplot( zVals, bumpShapes )
+
+# If desired, make a pdf version too
+if( makePDF ):
+    plt.savefig('Figures/KDE_PillowPlot.pdf')
+```
+
+![1735901294341](image/note/1735901294341.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1097,3 +1363,9 @@ geom_density()+ xlab("Magnitude")
 ```
 
 ![1735488562842](image/note/1735488562842.png)
+
+
+
+## Density Estimates
+
+Here we use `kdeplot` and `histplot` to draw a histogram and a KDE (based on a Gaussian kernel) on the same axes.
