@@ -758,7 +758,58 @@ The indicator function of a logical proposition A
 
 
 
-# Multimodality 多態
+# Density Estimation
+
+
+
+## Histograms
+
+histogram can be used to make an estimate of the probability density underlying a data set. Given data{ ${ {x_1}, . . . , {x_n} }$} and a collection of q + 1 bin-boundaries,$b = (b_0, b_1, . . . , b_q )$ 
+
+chosen so that ${b_0} < min(x) \  and \ max(x) < {b_q}$ , we can think of the histogram-based density estimate as a piecewise-constant (that is, constant on intervals) function arranged so that the value of the estimator in the interval $b_{a−1} ≤ x < b_{a}$ is
+
+$$
+f(x|b) = \frac{1}{{{b_a} - {b_{a - 1}}}}\left( {\frac{{\left| {\{ {x_j}|{b_{a - 1}} \le {x_j} < {b_a}\} } \right|}}{n}} \right)
+$$
+
+where the second factor is the proportion of the ${x_j}$ that fall into the interval and $b_a − b_{a−1}$ is the width of the interval. These choices mean that the bar (of the histogram) above the interval has an area equal to the proportion of the data points $x_j$ that fall in that interval
+
+
+## Estimating a Density with Kernels
+
+$$
+widehat f(x|w) = \frac{1}{n}\sum\limits_{j = 1}^n {\frac{1}{w}K\left( {\frac{{x - {x_j}}}{w}} \right)}
+$$
+
+The main players in this formula are
+
+$K(x)$: the kernel, typically some bump-shaped function such as a Gaussian or a parabolic bump. It should be normalised in the sense that
+
+$$
+\int_{ - \infty }^\infty  {K(x)\ dx = 1}
+$$
+
+$w$ : the bandwidth, which sets the width of the bumps
+
+
+### Kernel Density Estimation （KDE）
+
+是一种 **非参数方法** ，用于估计随机变量的概率密度函数（PDF，Probability Density Function）。它提供了一种平滑方式来描述数据的分布，不依赖特定的分布假设（如正态分布）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Multimodality 多態
 
 
 - For continuous data, there aren’t typically identical observations (and if there are, they aren’t typical) so we will need to estimate the modes, which we define as local maxima (peaks) of the probability density
