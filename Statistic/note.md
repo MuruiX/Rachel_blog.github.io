@@ -1197,11 +1197,11 @@ for j in range(0, nSizes):
     # Generate the sample
     crntSize = sampleSize[j]
     crntSample = np.random.normal( 0, 1, crntSize )
-    
+  
     # Fit the KDE
     crnt_kde = KDEUnivariate( crntSample )
     crnt_kde.fit()
-    
+  
     # Plot that puppy, along with the data and the true distribution
     row = math.floor( j / 2 )
     col = j % 2 
@@ -1230,12 +1230,12 @@ kdeIdeaFig, kdeAxes = plt.subplots(1, 2, figsize=[10, 5])
 # Construct the estimates in turn
 sampleSize = 4
 crntSample = np.random.normal( 0, 1, sampleSize )
-    
+  
 # Fit the KDE and make a note of the bandwidth
 crnt_kde = KDEUnivariate( crntSample )
 crnt_kde.fit()
 crntBw = crnt_kde.bw
-    
+  
 # Plot that puppy, along with the data and the true distribution
 kdeAxes[0].hist( crntSample, bins="fd", density=True, alpha=0.5 )
 kdeAxes[0].plot( crntSample, np.zeros(sampleSize), 'b+', ms=20) # rug
@@ -1256,7 +1256,7 @@ for j in range(0, sampleSize ):
     bumpVals = np.zeros( len(zVals) ) 
     for k in range(0, len(zVals)):
         bumpVals[k] = norm.pdf( zVals[k], crntSample[j], crntBw ) / sampleSize
-    
+  
     # Add it to the plot
     kdeAxes[1].plot( zVals, bumpVals, 'C4' )
 
@@ -1284,7 +1284,7 @@ crntSample = np.zeros(sampleSize)
 for j in range(halfSampleSize):
     crntSample[2*j] = sortedSample[j]
     crntSample[2*j+1] = sortedSample[j+halfSampleSize]
-    
+  
 # Fit the KDE and make a note of the bandwidth
 crnt_kde = KDEUnivariate( crntSample )
 crnt_kde.fit()
@@ -1305,11 +1305,11 @@ for j in range(0, sampleSize ):
     # Evaluate the contribution due to the kernel sitting on the j-th sample
     for k in range(0, len(zVals)):
         bumpShapes[j,k] = norm.pdf( zVals[k], crntSample[j], crntBw ) / sampleSize
-    
+  
     # Add it to the plot
     colorStr = 'C' + str(j)
     kdeAxes[0].plot( zVals, bumpShapes[j,:], colorStr )
-    
+  
 # Plot the stacked pillows
 kdeAxes[1].set_xlabel('z')
 kdeAxes[1].set_ylabel('Density' )
@@ -1366,6 +1366,148 @@ geom_density()+ xlab("Magnitude")
 
 
 
-## Density Estimates
+## EDA
+
+
+
+
+
+### Density estimates
 
 Here we use `kdeplot` and `histplot` to draw a histogram and a KDE (based on a Gaussian kernel) on the same axes.
+
+```python
+# Set the figure's size
+plt.figure(figsize=(10,4))
+
+# Draw a histogram and a KDE with Seaborn 
+ax = sns.kdeplot( x, color="red", label="Kernel Density")
+sns.histplot( x, stat="density", color = "darksalmon", label="Histogram"  )
+
+# Finally, add a rug plot
+sns.rugplot( np.array([1]), label="Rug Plot" )
+
+# Add axis labels 
+plt.xlabel('Grade of Spondylolisthesis')
+plt.ylabel('Estimated Density')
+
+# Set the limits on the axes
+plt.xlim([-50,450])
+plt.tight_layout()
+
+# Save to a file and display
+plt.savefig('Figures/spine_distplot.pdf')
+plt.show()
+```
+
+![1735901540688](image/note/1735901540688.png)
+
+
+### Log-transformed data
+
+Transforming the data by taking its log expands the scale for smaller values, which can sometmes be illuminating.
+
+```python
+# Set the figure's size
+plt.figure(figsize=(10,4))
+
+# Plot the histogram and KDE
+y = np.log(x-np.min(x)+1.0) # Log-transform the data to expand the scale for lower values
+
+# Draw a histogram and a KDE
+ax = sns.kdeplot( y, color="darkgreen", label="Kernel Density")
+sns.histplot( y, stat="density", color = "darkseagreen", label="Histogram"  )
+
+# Add a rug plot
+sns.rugplot( y, label="Rug Plot")
+
+# Add axis labels 
+plt.xlabel('Log-transformed Grade of Spondylolisthesis')
+plt.ylabel('Estimated Density')
+
+# Set the limits on the axes
+plt.xlim([-1,7])
+plt.tight_layout()
+
+# Save to a file and display
+plt.savefig('Figures/spine_log.pdf')
+plt.show()
+```
+
+![1735901670524](image/note/1735901670524.png)
+
+### Changing the kernel function
+
+Here we compute density estimates using three standard kernels: the uniform, triangular and Gaussian kernels.
+
+
+```python
+# The uniform kernel
+mykde = sm.nonparametric.KDEUnivariate(x)
+mykde.fit(kernel="uni", fft=False)
+xuni = mykde.support
+yuni = mykde.density
+
+# The triangular kernel
+mykde2 = sm.nonparametric.KDEUnivariate(x)
+mykde2.fit(kernel="tri", fft=False)
+xtri = mykde2.support
+ytri = mykde2.density
+
+# The Gaussian kernel
+mykde3 = sm.nonparametric.KDEUnivariate(x)
+mykde3.fit(kernel="gau")
+xgau = mykde3.support
+ygau = mykde3.density
+```
+
+#### Comparing KDEs based on the Gaussian and uniform kernels
+
+```python
+# Set the figure's size
+plt.figure(figsize=(10,4))
+
+# Plot the two KDEs
+plt.plot(xgau,ygau,label='Gaussian Kernel',color=[0.5,0.5,0.5],linestyle='--')
+plt.plot(xuni,yuni,label='Uniform Kernel',color=[0,0,0.7],linestyle='-')
+
+# Add labels and a legend
+plt.xlabel('Grade of Spondylolisthesis')
+plt.ylabel('Estimated Density')
+plt.xlim([-50,450])
+plt.legend()
+plt.tight_layout()
+
+# Save to a file and display
+plt.savefig('Figures/spine_uni.pdf')
+plt.show()
+```
+
+![1735901731435](image/note/1735901731435.png)
+
+
+#### Comparing KDEs based on the Gaussian and triangular kernels
+
+```python
+# Set the figure's size
+plt.figure(figsize=(10,4))
+
+# Plot the two KDEs
+plt.plot(xgau,ygau,label='Gaussian Kernel',color=[0.5,0.5,0.5],linestyle='--')
+plt.plot(xtri,ytri,label='Triangular Kernel',color=[0.7, 0, 0],linestyle='-')
+
+# Add labels and a legend
+plt.xlabel('Earthquake Severity')
+plt.ylabel('Estimated Density')
+plt.xlabel('Grade of Spondylolisthesis')
+plt.ylabel('Estimated Density')
+plt.xlim([-50,450])
+plt.legend()
+plt.tight_layout()
+
+# Save to a file and display
+plt.savefig('Figures/spine_tri.pdf')
+plt.show()
+```
+
+![1735901778129](image/note/1735901778129.png)
