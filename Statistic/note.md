@@ -1319,12 +1319,31 @@ $$
 \text{Bias}(\hat{\theta}) = E[\hat{\theta}] - \theta
 $$
 
+Where:
+
+- $E[\hat{\theta}]$ : The expected value of the estimator.
+- $\theta$ : The true value of the parameter being estimated. 被估计参数的真实值
+- If $\text{Bias}(\hat{\theta}) = 0$ The estimator is  **unbiased** .
+- if $\text{Bias}(\hat{\theta}) \neq 0$: The estimator is biased.
 
 
 
+### **Why Does Bias Matter?为什么偏见很重要？**
 
+1. **Implications of Bias** :
 
+* A biased estimator does not consistently provide accurate estimates of the true parameter, even with large sample sizes.即使样本量很大，有偏估计量也不能始终如一地提供真实参数的准确估计。
+* This can lead to systematic errors in decision-making or modeling.这可能会导致决策或建模中出现系统性错误。
 
+1. **Trade-Off with Variance** :与方差的权衡：
+
+* In some cases, a slightly biased estimator may be preferred if it reduces variance (e.g., ridge regression).在某些情况下，如果可以减少方差（例如岭回归），则可能会首选稍微有偏差的估计量。
+
+1. **Correcting Bias** :
+
+* Bias can sometimes be removed or corrected through adjustments (e.g., Bessel’s correction for sample variance).有时可以通过调整（例如，样本方差的贝塞尔校正）来消除或纠正偏差。
+
+A biased estimator systematically misrepresents the parameter it is estimating, making it less reliable. The goal in most statistical analyses is to use unbiased estimators or account for bias when interpreting results.有偏差的估计器会系统性地歪曲其估计的参数，从而使其可靠性降低。大多数统计分析的目标是使用无偏估计量或在解释结果时考虑偏差
 
 
 # Application
