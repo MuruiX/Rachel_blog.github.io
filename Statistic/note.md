@@ -1011,7 +1011,7 @@ The indicator function of a logical proposition A
 
 ![1735860506891](image/note/1735860506891.png)
 
-# Quantiles and Order Statistics
+## Quantiles and Order Statistics
 
 - The z-th percentile, $P_z$ is the value of x for which z% of the data is ≤ x
 - So the median is median(x) = $P_{50}$
@@ -1173,6 +1173,28 @@ But different kernels produce different estimates—in general, there is no ‘r
 ![1735899540126](image/note/1735899540126.png)
 
 Often we should weight the datapoints for various reasons—i.e. assign a wi to each datapoint such that
+
+
+# Estimator
+
+An **estimator** is a mathematical rule, function, or formula used to approximate an unknown population parameter (such as the mean, variance, or proportion) based on sample data. In statistical analysis, estimators are essential because they provide insights about a population when it is impractical or impossible to measure the entire population directly.
+
+
+
+## Key Concepts of Estimators
+
+
+1. Population vs. Sample：
+
+- **Population Parameter** ($\theta$): A fixed but unknown characteristic of a population, like the true mean ($\mu$) or variance ($\sigma^2$). 總體的固定但未知的特征
+- Esimator($\hat{\theta}$): A statistic (function of sample data) used to estimate the population parameter.
+
+
+
+
+
+
+
 
 # Application
 
