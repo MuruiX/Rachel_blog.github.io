@@ -1200,14 +1200,18 @@ An **estimator** is a mathematical rule, function, or formula used to approximat
 ## Type of Estimators
 
 
-1. Point Estimator:
+1. Point Estimator: 點估計器
 
-- Provides a single value estimate of a population parameter.
-- Example: The sample mean ($\bar{x}$) is a point estimator of the population mean ($\mu$).
+- Provides a single value estimate of a population parameter. 提供总体参数的**单值**估计。
+- Example: The sample mean ($\bar{x}$) is a point estimator of the **population mean** ($\mu$).
+
+2. **Interval Estimator** : 區間估計器
+
+- Provides a **range of values** within which the population parameter is likely to lie. 提供总体参数可能位于**的值范围**
+- Example: Confidence intervals for the mean. 平均值的置信区间
 
 
-
-
+## Properties of a Good Estimator
 
 
 
