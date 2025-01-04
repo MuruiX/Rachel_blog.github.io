@@ -725,6 +725,15 @@ Contingency tables
 ![1735963429705](image/note/1735963429705.png)
 
 
+## Multivariate Distributions
+
+
+
+
+
+
+
+
 
 
 
