@@ -1263,7 +1263,7 @@ $$
 \hat{p} = \frac{x}{n}
 $$
 
-Where $x$ is the number of successes and nn**n** is the sample size.
+Where $x$ is the number of successes and $n$ is the sample size.
 
 
 ## Evaluation of Estimators
@@ -1271,13 +1271,40 @@ Where $x$ is the number of successes and nn**n** is the sample size.
 
 1. **Mean Squared Error (MSE)** :均方误差
 
-- Combines both bias and variance to evaluate an estimator:
+- Combines both bias and variance to evaluate an estimator: 结合偏差和方差来评估估计量
+
+$$
+\text{MSE}(\hat{\theta}) = \text{Var}(\hat{\theta}) + \left[\text{Bias}(\hat{\theta})\right]^2
+$$
+
+- Lower MSE indicates a better estimator  较低的 MSE 表示更好的估计量
 
 
+2. Bias-Variance Tradeoff 偏差方差權衡
+
+- A tradeoff between minimizing bias and variance. In some cases, a slightly biased estimator with lower variance might be preferred (e.g., Ridge Regression).
 
 
+## Estimators in Statistical Inference 统计推断中的估计器
+
+Estimators are widely used in:估计器广泛用于
+
+1. Parameter Estimation
+
+- Estimating population parameters (e.g., mean, variance, correlation).估计总体参数（例如平均值、方差、相关性）
+
+2. **Hypothesis Testing** :假设檢驗
+
+- Using estimators to calculate test statistics.
+
+3. **Machine Learning** :机器学习：
+
+- Estimating model parameters to minimize loss functions.估计模型参数以最小化损失函数。
 
 
+## summary
+
+An estimator is a tool for inferring population parameters from sample data. Its quality is determined by properties such as unbiasedness, consistency, and efficiency. Choosing or constructing a good estimator is central to statistical inference, enabling accurate and reliable conclusions about the population.
 
 
 
