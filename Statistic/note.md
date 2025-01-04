@@ -1177,7 +1177,7 @@ Often we should weight the datapoints for various reasons—i.e. assign a wi to 
 
 # Estimator
 
-An **estimator** is a mathematical rule, function, or formula used to approximate an unknown population parameter (such as the mean, variance, or proportion) based on sample data. In statistical analysis, estimators are essential because they provide insights about a population when it is impractical or impossible to measure the entire population directly.
+An **estimator** is a **mathematical rule**, function, or formula used to approximate an *unknown population parameter* (such as the mean, variance, or proportion) based on sample data. In statistical analysis, estimators are essential because they provide insights about a population when it is impractical or impossible to measure the entire population directly.
 
 
 
@@ -1305,6 +1305,22 @@ Estimators are widely used in:估计器广泛用于
 ## summary
 
 An estimator is a tool for inferring population parameters from sample data. Its quality is determined by properties such as unbiasedness, consistency, and efficiency. Choosing or constructing a good estimator is central to statistical inference, enabling accurate and reliable conclusions about the population.
+
+
+## biased estimator 
+
+
+For an estimator to be **biased** means that, on average, it systematically **underestimates or overestimates** the true value of the parameter it is trying to estimate. In other words, the **expected value** of the estimator ($E[\hat{\theta}]$) is not equal to the true parameter value ($\theta$). 
+
+
+The bias of an estimator $\hat{\theta}$ is defined mathematically as
+
+$$
+\text{Bias}(\hat{\theta}) = E[\hat{\theta}] - \theta
+$$
+
+
+
 
 
 
