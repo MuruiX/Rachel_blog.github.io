@@ -655,7 +655,31 @@ https://en.wikibooks.org/wiki/Statistics/Different_Types_of_Data
 
 ### Visualisation
 
+
+#### Bivariate visualisation techniques: 
+
+
+
+##### Scatter Plots
+
 A scatter plot is a lossless visualisation that involves placing a marker at $(x_{ia}, x_{ib})$ for each $i$ and some $a, b$
+
+```python
+plt.scatter(dis, wgt)
+```
+
+```R
+ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_point()
+```
+
+
+
+##### 2d Histograms
+
+A 2d histogram generalised the univariate in the natural way as the count of data points falling inside a given two-dimensional area.
+
+
+
 
 
 
@@ -928,7 +952,30 @@ Gaussian kernels it is usually chosen so that  $w \propto \frac{1}{{{N^{\frac{1}
 
 ![1735898559909](image/note/1735898559909.png)
 
-.
+
+
+### Multivariate KDE
+
+The kernel density estimate (KDE) approximates the population distribution function (as before) and is defined by
+
+
+$$
+\hat f(x|\theta ) = \frac{1}{n}\sum\limits_{j = 1}^n {K\left( {x|{x_i},\theta } \right)}
+$$
+
+Typically the kernel function K will be chosen to be the multivariate normal probability density function
+
+$$
+K\left( {x|{x_i},\theta } \right) = {\rm N}(x|{x_i},\sigma )
+$$
+
+
+
+
+
+
+
+
 
 ## Multimodality 多態
 
@@ -1503,6 +1550,19 @@ if( makePDF ):
 
 ![1735901294341](image/note/1735901294341.png)
 
+
+```python
+sns.kdeplot(dis,wgt, cmap="Blues")
+```
+
+![1735950197677](image/note/1735950197677.png)
+
+
+
+
+
+
+
 ### R
 
 GGPlot
@@ -1518,6 +1578,20 @@ geom_density()+ xlab("Magnitude")
 ```
 
 ![1735488562842](image/note/1735488562842.png)
+
+
+
+#### KDE
+
+```r
+pplot(auto.data, aes(x=Displacement, y=Weight)) + geom_density_2d()
+```
+
+![1735950156479](image/note/1735950156479.png)
+
+
+
+
 
 ## EDA
 
