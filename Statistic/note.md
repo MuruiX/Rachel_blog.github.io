@@ -1219,6 +1219,67 @@ An **estimator** is a mathematical rule, function, or formula used to approximat
 - An estimator is **unbiased** if its expected value equals the true parameter: $E[\hat{θ}]=θ$  如果估计器的期望值等于真实参数，则该估计器是**无偏的**
   - Example: The sample mean ($\bar{x}$) is an unbiased estimator of the population mean ($\mu$)
 
+2. Consistency:
+
+- An estimator is **consistent** if it converges to the true parameter value as the sample size increases  $\hat{\theta} \xrightarrow{n \to \infty} \theta$  如果随着样本量的增加，估计量收敛到真实参数值，则该估计量是**一致的**
+
+3. Efficiency:
+
+- An estimator is **efficient** if it has the smallest possible variance among all unbiased estimators.  如果一个估计量在所有无偏估计量中具有最小的可能方差，则该估计量是**有效的**
+
+4. Sufficiency 充足性
+
+- An estimator is **sufficient** if it captures all the information in the sample relevant to the parameter being estimated. 如果估计器捕获了样本中与所估计的参数相关的所有信息，则该估计器就**足够了**
+
+
+## Examples of Estimators
+
+
+1. Sample Mean:
+
+- Estimator for the population mean ($\mu$) : 总体平均值的估计量
+  $$
+  \hat{\mu} = \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+  $$
+
+2. Sample Variance
+
+- Biased estimator
+
+  $$
+  s^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2
+  $$
+- Unbiased estimator:
+
+$$
+\hat{\sigma}^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+$$
+
+3. Sample Proportion:
+
+- Estimator for the population proportion ($p$): 人口比例的估计量
+
+$$
+\hat{p} = \frac{x}{n}
+$$
+
+Where $x$ is the number of successes and nn**n** is the sample size.
+
+
+## Evaluation of Estimators
+
+
+1. **Mean Squared Error (MSE)** :均方误差
+
+- Combines both bias and variance to evaluate an estimator:
+
+
+
+
+
+
+
+
 
 
 
