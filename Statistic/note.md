@@ -728,7 +728,14 @@ Contingency tables
 ## Multivariate Distributions
 
 
+### Random vectors
 
+- For two length-p vectors $u$ and $v$, we write $u ≤ v$ only if $u_{i} ≤ v_{i}$ for each $i$ from 1 to p.
+- A random variable can be defined through its cumulative distribution function; we can do the same for a random vector $X$       $F(x) = P(X ≤ x)$
+- We then define the probability density function for continuous variables through  $F(b)-F(a)= \int\limits_{{x_1} = {a_1}}^{{{\rm{b}}_1}}  \cdots  \int\limits_{{x_p} = {a_p}}^{{b_p}} {f(x)dx{}_1 \cdots d{x_p}}$
+
+
+### Expectations and the Multivariate Normal
 
 
 
