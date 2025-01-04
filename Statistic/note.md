@@ -690,6 +690,43 @@ ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_bin2d()
 ![1735962760725](image/note/1735962760725.png)
 
 
+#### Higher dimensions
+
+
+
+##### 3d Scatter
+
+![1735963209105](image/note/1735963209105.png)
+
+
+##### Scaled Scatter
+
+![1735963250792](image/note/1735963250792.png)
+
+##### Plot Matrices
+
+![1735963281644](image/note/1735963281644.png)
+
+
+### Pairs of categorical variables
+
+Contingency tables
+
+![1735963333231](image/note/1735963333231.png)
+
+- Can be used for categorical, ordinal and discrete variables, with more than two levels
+- Can write values as proportions of each row or each column
+- Can write them as proportions of the total
+- Can compare them with what the values would be if the two variables were independent (values would be the products of respective marginals)
+
+
+### Categorical and continuous variables
+
+![1735963429705](image/note/1735963429705.png)
+
+
+
+
 
 # Summary Statistics
 
@@ -976,6 +1013,22 @@ Typically the kernel function K will be chosen to be the multivariate normal pro
 $$
 K\left( {x|{x_i},\theta } \right) = {\rm N}(x|{x_i},\sigma )
 $$
+
+A 2d kernel density plot shows estimated curves of constant f (x).
+
+
+#### Bivariate visualisation techniques: 2d KDE
+
+```python
+sns.kdeplot(dis,wgt,cmap="Blues")
+```
+
+```r
+ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_density_2d()
+```
+
+![1735963141779](image/note/1735963141779.png)
+
 
 
 
