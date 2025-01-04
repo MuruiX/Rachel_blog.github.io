@@ -1208,14 +1208,16 @@ An **estimator** is a mathematical rule, function, or formula used to approximat
 2. **Interval Estimator** : 區間估計器
 
 - Provides a **range of values** within which the population parameter is likely to lie. 提供总体参数可能位于**的值范围**
-- Example: Confidence intervals for the mean. 平均值的置信区间
+  - Example: Confidence intervals for the mean. 平均值的置信区间
 
 
 ## Properties of a Good Estimator
 
 
+1. Unbiasedness：
 
-
+- An estimator is **unbiased** if its expected value equals the true parameter: $E[\hat{θ}]=θ$  如果估计器的期望值等于真实参数，则该估计器是**无偏的**
+  - Example: The sample mean ($\bar{x}$) is an unbiased estimator of the population mean ($\mu$)
 
 
 
