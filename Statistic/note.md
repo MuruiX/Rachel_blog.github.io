@@ -672,14 +672,22 @@ plt.scatter(dis, wgt)
 ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_point()
 ```
 
+![1735962631926](image/note/1735962631926.png)
 
 
 ##### 2d Histograms
 
 A 2d histogram generalised the univariate in the natural way as the count of data points falling inside a given two-dimensional area.
 
+```python
+plt.hist2d(dis,wgt,cmap="Blues")
+```
 
+```r
+ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_bin2d()
+```
 
+![1735962760725](image/note/1735962760725.png)
 
 
 
