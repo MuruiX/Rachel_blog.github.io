@@ -1187,7 +1187,28 @@ An **estimator** is a mathematical rule, function, or formula used to approximat
 1. Population vs. Sample：
 
 - **Population Parameter** ($\theta$): A fixed but unknown characteristic of a population, like the true mean ($\mu$) or variance ($\sigma^2$). 總體的固定但未知的特征
-- Esimator($\hat{\theta}$): A statistic (function of sample data) used to estimate the population parameter.
+- Esimator估計器($\hat{\theta}$): A statistic (function of sample data) used to estimate the **population parameter**. 用於估計總體參數的統計量
+
+2. **Notation** :符号：
+
+- The true population parameter is denoted by $\theta$.  真實總體參數
+- The estimator (based on the sample) is denoted by $\hat{\theta}$. 基於樣本的估計量
+  - Population mean: $\mu$.
+  - Sample mean(estimator): $\bar{x}$.  
+
+
+## Type of Estimators
+
+
+1. Point Estimator:
+
+- Provides a single value estimate of a population parameter.
+- Example: The sample mean ($\bar{x}$) is a point estimator of the population mean ($\mu$).
+
+
+
+
+
 
 
 
