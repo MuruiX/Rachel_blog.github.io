@@ -738,6 +738,109 @@ Contingency tables
 ### Expectations and the Multivariate Normal
 
 
+#### Expectations
+
+$$
+{\rm E}\left[ {g(X)} \right] = \int\limits_{{x_1} = {a_1}}^{{{\rm{b}}_1}}  \cdots  \int\limits_{{x_p} = {a_p}}^{{b_p}} {g(x)f(x)dx{}_1 \cdots d{x_p}}
+$$
+
+- multivariate normal: $f(x) = \frac{1}{(2\pi)^{p/2}(\text{det}(\Sigma))^{1/2}} \exp\left(-\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu)\right) \equiv \mathcal{N}(x|\mu,\Sigma).$
+- Note that the generalisation of variance is a covariance(方差的泛化是協方差), with $cov(X)$ being a matrix with $(a, b)$-th element $E[X_{a}X_{b}] − E[X_{a}]E[X_{b}]$. For the multivariate normal多元正態分佈, the covariance matrix is $Σ$.
+
+#### Multivariate normal contours 多元正態輪廓
+
+- The multivariate normal distribution defines a surface that has ellipsoidal contours centred on the mean
+- Consider a multivariate normal with $\mu = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \quad \Sigma = \begin{pmatrix} 1 & 0.75 \\ 0.75 & 2 \end{pmatrix}$
+
+
+#### Multivariate normal as a surface
+
+![1735965459238](image/note/1735965459238.png)
+
+The probability of a region in the plane is given by the volume of the region beneath a surface, rather than the area beneath a curve.
+
+
+#### Multivariate normal contours
+
+![1735965495752](image/note/1735965495752.png)
+
+plus samples:
+
+![1735965512125](image/note/1735965512125.png)
+
+
+#### Centering
+
+- When we centre data we subtract the sample mean from each row
+- One natural transform on data is to subtract the mean from each row
+- This can be achieved through use of a centering matrix $H = \left( I - \frac{1}{n} \mathbf{1} \mathbf{1}^T \right)$
+- Then a transformed data matrix: $Y=HX$  will have mean $<y>=0$
+
+##### Centred auto data
+
+![1735965857460](image/note/1735965857460.png)
+
+
+
+#### Standardisation
+
+$$
+D_{ab} = \begin{cases} 
+S_{aa}^{-1/2} & \text{if } a = b, \\
+0 & \text{otherwise.}
+\end{cases}
+$$
+
+- transformed data matrix $Z=HXD=YD$   
+
+will have mean $〈z〉 = 0 $ and variance-covariance matrix equal to X’s correlation matrix
+
+![1735965990946](image/note/1735965990946.png)
+
+
+#### The Mahalanobis Transform for Data
+
+- The matrix version of the square root is called the Cholesky decomposition $S = C^T C.$
+- We can use this to remove the correlations in data through the **Mahalanobis transform**: $U=Y(C^{-1})$
+- This yields a dataset with no correlations between variables, making comparison with a multivariate normal easier.
+
+axes now show combinations of variables, rather than the original variables.
+
+![1735966284598](image/note/1735966284598.png)
+
+
+![1735966302670](image/note/1735966302670.png)
+
+
+#### Spotting Deviations from Normality
+
+
+- We saw that we can observe deviations from univariate normality with summary statistics such as skewness, kurtosis or through the detection pf multiple modes
+- These measures also generalise to the multivariate case.
+- Here we show three cases where the multivariate distribution is far from multivariate normal, even if the marginal (i.e. univariate) datasets are very close to (or even indistinguishable from) univariate normal
+- We will show these using a visualisation technique known as a joint plot, where a bivariate visualisation is shown in the main panel and univariate visualisations are shown along the axes. These also show the correlation and associated p-value
+
+
+
+### Multivariate multimodality
+
+The data may not be centred around a unique mode. This is possible in complex ways in the multivariate case that can be far from obvious from lower dimensional analysis
+
+![1735966536208](image/note/1735966536208.png)
+
+
+### Outliers
+
+Some datapoints may be very far from the mode. As well as strongly affecting estimates of means and variances, this can affect estimates of correlations between variables in the multivariate case
+
+![1735966651192](image/note/1735966651192.png)
+
+
+### Restricted Support
+
+The data may only take positive values, or only values in some restricted region of space. For the multivariate case, such restrictions can be more complex than the univariate case
+
+![1735966715880](image/note/1735966715880.png)
 
 
 
