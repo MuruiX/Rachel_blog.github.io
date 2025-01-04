@@ -215,7 +215,7 @@ for i in range(0,m):
             Z = 1.0
         else:
             Z = 0
-    
+  
         # Add up the contribution to the current estimate
         A[i] = A[i] + Z
    
@@ -547,18 +547,13 @@ There is an important distinction in visualisations between
 
 Typically for complex data, choosing the lossy visualistaion that loses the ‘right’ information is key to successful visualisation.
 
-
 ## Multivariate Exploratory Data Analysis
-
 
 - In real applications, we almost almost always have multiple features of different things measured, and are so in a multivariate rather than univariate situation
 
-
-### Professional Skill  
-
+### Professional Skill
 
 #### Data types
-
 
 - Nominal or categorical (e.g. colours, car names): not ordered; cannot be added or compared; can be relabelled.
 - Ordinal (e.g. small/medium/large): sometimes represented by numbers; can be ordered, but differences or ratios are not meaningful.
@@ -568,17 +563,13 @@ Typically for complex data, choosing the lossy visualistaion that loses the ‘r
 
 Measurements can be in an interval scale (e.g. temperature in degrees Celsius), ratio scale (say, weights in kg), or circular scale (time of day on the 24 hr clock), depending on the 0 value and on which operations yield meaningful results
 
-
 #### Sample Mean
-
 
 $$
 \left\langle x \right\rangle : = \frac{1}{n}\sum\limits_{i = 1}^n {{x_i}}
 $$
 
-
 Note: We are thinking of the n samples as coming from a population of size $N  >> n$, so that each xi is a copy of a random vector of length-p, X, which has its own mean $E[X]$. In particular, $E[X] = E[〈x〉]$, but generally $E[X] \ne <x>$
-
 
 |   特性   |                  Sample Mean 樣本均值                  |               Mean 總體均值               |
 | :------: | :-----------------------------------------------------: | :---------------------------------------: |
@@ -588,15 +579,7 @@ Note: We are thinking of the n samples as coming from a population of size $N  
 |  稳定性  |                   会因样本不同而波动                   |             理论值，固定不变             |
 |   用途   |               用于估计总体均值或统计推断               |          描述总体的真实中心趋势          |
 
-
-
-
-
-
-
 #### Sample Covariance Matrix 樣本協方差矩陣
-
-
 
 $$
 S=[S_{ab}],  where \ \ \ \  S_{ab}= \frac{1}{n}\sum\limits_{i = 1}^n {({x_{ia}} - \left\langle {{x_a}} \right\rangle )({x_{ib}} - \left\langle {{x_b}} \right\rangle )}
@@ -604,9 +587,7 @@ $$
 
 Where $a = 1,...,p$ and $b=1,...,p$
 
-
 用于描述多维数据集中每个变量之间的 **协方差** （即变量间的线性关系）以及每个变量的方差（自相关性）。它是多元统计分析中的一个重要工具。
-
 
 **用途**
 
@@ -627,8 +608,6 @@ Where $a = 1,...,p$ and $b=1,...,p$
 
 * 在多元正态分布中，协方差矩阵用于描述变量间的相关性。
 
-
-
 #### Correlation Matrix
 
 The sample correlation matrix has elements that correspond to the slopes of the (linear) regression lines between variables
@@ -639,15 +618,44 @@ $$
 
 **关矩阵**是一个矩阵，用来表示多个变量之间的 **相关性系数** （通常是皮尔逊相关系数）。它是样本协方差矩阵的标准化形式，用于比较变量之间的线性关系。
 
-
 | 特征               | Covariance Maztrix                     | Correlation Matrix             |
 | ------------------ | -------------------------------------- | ------------------------------ |
 | 單位               | 保留变量的原始单位（如米、秒等)        | 无单位（标准化形式）           |
 | 範圍               | 值的范围依赖于变量的单位和大小         | 取值范围为 [−1,1]             |
 | 对比不同变量的关系 | 变量之间的关系可能因尺度不同而不易比较 | 标准化后易于比较变量之间的关系 |
 
+**计算相关矩阵的步骤**
+
+1. **去中心化** ：从每个变量中减去其均值。
+2. **标准化** ：将每个变量除以其标准差。
+3. **计算相关性** ：对于每一对变量，计算相关系数 $r_{jk}$
+
+**用途**
+
+1. **探索变量关系** ：
+
+* 判断哪些变量正相关、负相关或不相关。
+* 用于数据清理，移除高度相关的变量以避免多重共线性。
+
+1. **机器学习** ：
+
+* 特征选择：通过查看相关矩阵，去除冗余变量。
+* 降维：在主成分分析（PCA）中，相关矩阵可以用于构造主成分。
+
+1. **金融分析** ：
+
+* 分析资产之间的相关性，用于优化投资组合。
+
+1. **科学研究** ：
+
+* 在实验数据中分析变量的关系。
+
+https://en.wikibooks.org/wiki/Statistics/Different_Types_of_Data
 
 
+### Visualisation
+
+A scatter plot is a lossless visualisation that involves placing a marker at $(x_{ia}, x_{ib})$ for each $i$ and some $a, b$
 
 
 
@@ -1020,8 +1028,6 @@ sp.stats.moment(x,3)/(ss**3)
 (sp.stats.momnet(x,4)/(ss**4))-3
 ```
 
-
-
 #### EDA
 
 ```python
@@ -1041,13 +1047,10 @@ auto_df = pd.read_table(’./auto.txt’,sep=’\t’,names=colNames)
 auto_df.describe()
 ```
 
-
-
 ```python
 xbar = np.mean(X,1)
 print(xbar)
 ```
-
 
 ##### Covariance Matrix
 
@@ -1056,15 +1059,12 @@ S = np.cov(x)
 print(S)
 ```
 
-
 ##### Correlation Matrix
 
 ```
 R = np.corrcoef(X)
 print(R)
 ```
-
-
 
 ### R
 
@@ -1107,15 +1107,12 @@ moment(x,order=3,central=TRUE)/(ss^3)
 (moment(x, order=4,central=TRUE)/(ss^4))-3
 ```
 
-
-
 #### EDA
 
 ```r
 auto.data <- read.table("auto.txt", header=FALSE, sep="\t")
 auto.data
 ```
-
 
 ```r
 library(plyr)
@@ -1133,11 +1130,9 @@ auto . data <− rename ( auto . data , c (
 summary(auto.data)
 ```
 
-
 ```r
 colMeans(auto.data[,1:6], na.rm = TRUE)
 ```
-
 
 ##### Covariance Matrix
 
@@ -1145,13 +1140,11 @@ colMeans(auto.data[,1:6], na.rm = TRUE)
 cov(auto,data[,c(1,3,5,6)], use = "na.or.complete")
 ```
 
-
 ##### Correlation Matrix
 
 ```r
 cor(auto.data[,c(1,3,5,6)], use="na.or.complete")
 ```
-
 
 ## Visualisation
 
@@ -1664,3 +1657,37 @@ plt.show()
 ```
 
 ![1735901778129](image/note/1735901778129.png)
+
+
+### Scatter Plots 
+
+A scatter plot is a lossless visualisation that involves placing a marker at $(x_{ia}, x_{ib})$ for each $i$ and some $a, b$
+
+
+
+```R
+ggplot(auto.data, aes(x=Displacement,y=Weight)) + geom_point()
+```
+
+![1735948863892](image/note/1735948863892.png)
+
+```python
+plt.scatter(dis,wgt)
+```
+
+![1735948927349](image/note/1735948927349.png)
+
+
+#### 2d Histograms
+
+```r
+ggplot(auto.data, aes(x=Displacement,y=Weight)) + geom_bin2d()
+```
+
+![1735949029386](image/note/1735949029386.png)
+
+```python
+plt.hist2d(dis,wgt, cmap='Blues')
+```
+
+![1735949090235](image/note/1735949090235.png)
