@@ -1,0 +1,317 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ab3e79d506c8f0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18848a26c22a07a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Database/NoSQL/MongoDB Advanced Query Methods.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MongoDB Advanced Query Methods"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "583dbf585878a330",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc4905fba1924f04",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89d062b0c7757f4a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "File explorer"
+            }
+          },
+          {
+            "id": "35dc52b40412eb73",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "4e056729fb3b7a8d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "18f524f9d2bb3dca",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          },
+          {
+            "id": "2798657297fcb0c1",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Spaces"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "18c3d707d84ff1b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa90a005b457779e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5365b3c458282124",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a5885c6f4b30b0b2",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          },
+          {
+            "id": "80bef4eeaa486a5b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Computer Science/Database/NoSQL/MongoDB.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from MongoDB"
+            }
+          },
+          {
+            "id": "e65fd348b3b625bf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Introduction to NoSQL Systems 的反向链接列表"
+            }
+          },
+          {
+            "id": "3024158df826a1e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Computer Science/Database/NoSQL/MongoDB Advanced Query Methods.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of MongoDB Advanced Query Methods"
+            }
+          },
+          {
+            "id": "1c5ffc8f0adfe7cb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "cc56852e0b6843ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md"
+              },
+              "icon": "lucide-info",
+              "title": "Introduction to NoSQL Systems的笔记属性"
+            }
+          },
+          {
+            "id": "f0b14e632e4cde89",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "869873426301127d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2fc91572f81c8c3",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "webpage-html-export:Export Vault to HTML": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "vscode-editor:Create Code File": false,
+      "obsidian-kanban:Create new board": false,
+      "dbfolder:Create a new database table": false,
+      "callout-manager:Insert Callout": false,
+      "hide-folders:Hide hidden folders again": false,
+      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
+      "media-extended:Open media": false,
+      "obsidian-importer:Open Importer": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "templater-obsidian:Templater": false,
+      "obsidian42-text-transporter:Text Transporter": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "18848a26c22a07a4",
+  "lastOpenFiles": [
+    "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md",
+    "Computer Science/Database/NoSQL/Mongo Operation.md",
+    "Computer Science/Database/NoSQL/MongoDB Advanced Query Methods.md",
+    "Computer Science/Database/NoSQL/MongoDB relationship.md",
+    "Computer Science/Database/NoSQL/MongoDB.md",
+    "PICTURE/Mongo Operation/d9be58ed1474c25e2fc970a20d135b7b_MD5.jpeg",
+    "Computer Science/Database/NoSQL/Pasted image 20241212032905.png",
+    "PICTURE/Mongo Operation/1e35b696ebecd87e5f1fe39fdb446ec0_MD5.jpeg",
+    "Computer Science/Database/NoSQL/Pasted image 20241212023755.png",
+    "Computer Science/Database/NoSQL/Mongo Operation 1.md",
+    "].md",
+    "![[Computer.md",
+    "createCollection.md",
+    "PICTURE/Mongo Operation",
+    "Computer Science/Database/NoSQL/NoSQL.md",
+    "Computer Science/Database/NoSQL/Mongo.md",
+    "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md",
+    "PICTURE/Introduction to NoSQL Systems/1c323e8753b39fb6aa4688ac9b4564be_MD5.jpeg",
+    "Computer Science/Database/NoSQL/Pasted image 20241208035920.png",
+    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md",
+    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.pdf",
+    "PICTURE/NoSQL/321037876300e3f8c6a6886f6f9af7b8_MD5.pdf",
+    "PICTURE/NoSQL",
+    "PICTURE/MongoDB/0f717daf75b7e593c906c122b94f2bba_MD5.jpeg",
+    "Computer Science/Database/Database.md",
+    "Computer Science/Database/MySQL/MySQL.md",
+    "PICTURE/MongoDB/a2d1bf51d9973d09e43af3c7cee5bb70_MD5.jpeg",
+    "Computer Science/Database/NoSQL/Pasted image 20241204180632.png",
+    "PICTURE/MongoDB/c80e3457f1895887527fb120039de9d7_MD5.jpeg",
+    "Untitled Kanban.md",
+    "PICTURE/MongoDB",
+    "PICTURE/ACID Principal  CAP Theorem  BASE Property",
+    "Tags",
+    "PICTURE/Introduction to NoSQL Systems",
+    "PICTURE",
+    "[Database].md",
+    "[Computer Science/Database/NoSQL/NoSQL.md",
+    "[Computer Science/Database/NoSQL",
+    "Computer Science/Database/Drawing 2024-12-02 22.38.37.excalidraw.md",
+    "Data Science/Data Science.md",
+    "NoSQL.md",
+    "Computer Science/Database/未命名.md",
+    "Computer Science/Database.md",
+    "Computer Science/[[]].md",
+    "Computer Science/Database.md",
+    "Computer Science/Database/NoSQL/Select Note.md",
+    "Computer Science/Database/Untitled.canvas",
+    "未命名.canvas"
+  ]
+}
