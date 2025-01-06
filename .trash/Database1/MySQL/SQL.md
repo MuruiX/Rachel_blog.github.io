@@ -1,6 +1,0 @@
----
-TYPE:
-  - MySQL
-tags:
-  - database
----

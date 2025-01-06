@@ -1,5 +1,0 @@
----
-TYPE: NoSQL
-tags:
-  - database
----
