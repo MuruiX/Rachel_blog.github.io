@@ -117,7 +117,7 @@ $$
 X^{*}=\mu x^{*}(1-x^{*})
 $$
 
-不同参数 μ \muμ下的极限行为
+不同参数  $\mu$下的极限行为
 不论μ取任意值，最多有一个稳定的周期。 如果存在一个稳定的周期，那么它是全局稳定的，吸引了几乎所有的点。一些具有周期稳定循环的μ在某些时候会有无穷多个不同周期的不稳定循环。
 
 为了概括上述各种数值模拟试验的结果，我们用下面的相图来表示不同μ值对应的极限行为
@@ -652,13 +652,9 @@ $$
 
 https://en.wikibooks.org/wiki/Statistics/Different_Types_of_Data
 
-
 ### Visualisation
 
-
-#### Bivariate visualisation techniques: 
-
-
+#### Bivariate visualisation techniques:
 
 ##### Scatter Plots
 
@@ -674,7 +670,6 @@ ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_point()
 
 ![1735962631926](image/note/1735962631926.png)
 
-
 ##### 2d Histograms
 
 A 2d histogram generalised the univariate in the natural way as the count of data points falling inside a given two-dimensional area.
@@ -689,15 +684,11 @@ ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_bin2d()
 
 ![1735962760725](image/note/1735962760725.png)
 
-
 #### Higher dimensions
-
-
 
 ##### 3d Scatter
 
 ![1735963209105](image/note/1735963209105.png)
-
 
 ##### Scaled Scatter
 
@@ -706,7 +697,6 @@ ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_bin2d()
 ##### Plot Matrices
 
 ![1735963281644](image/note/1735963281644.png)
-
 
 ### Pairs of categorical variables
 
@@ -719,14 +709,11 @@ Contingency tables
 - Can write them as proportions of the total
 - Can compare them with what the values would be if the two variables were independent (values would be the products of respective marginals)
 
-
 ### Categorical and continuous variables
 
 ![1735963429705](image/note/1735963429705.png)
 
-
 ## Multivariate Distributions
-
 
 ### Random vectors
 
@@ -734,9 +721,7 @@ Contingency tables
 - A random variable can be defined through its cumulative distribution function; we can do the same for a random vector $X$       $F(x) = P(X ≤ x)$
 - We then define the probability density function for continuous variables through  $F(b)-F(a)= \int\limits_{{x_1} = {a_1}}^{{{\rm{b}}_1}}  \cdots  \int\limits_{{x_p} = {a_p}}^{{b_p}} {f(x)dx{}_1 \cdots d{x_p}}$
 
-
 ### Expectations and the Multivariate Normal
-
 
 #### Expectations
 
@@ -752,13 +737,11 @@ $$
 - The multivariate normal distribution defines a surface that has ellipsoidal contours centred on the mean
 - Consider a multivariate normal with $\mu = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \quad \Sigma = \begin{pmatrix} 1 & 0.75 \\ 0.75 & 2 \end{pmatrix}$
 
-
 #### Multivariate normal as a surface
 
 ![1735965459238](image/note/1735965459238.png)
 
 The probability of a region in the plane is given by the volume of the region beneath a surface, rather than the area beneath a curve.
-
 
 #### Multivariate normal contours
 
@@ -767,7 +750,6 @@ The probability of a region in the plane is given by the volume of the region be
 plus samples:
 
 ![1735965512125](image/note/1735965512125.png)
-
 
 #### Centering
 
@@ -780,8 +762,6 @@ plus samples:
 
 ![1735965857460](image/note/1735965857460.png)
 
-
-
 #### Standardisation
 
 $$
@@ -791,12 +771,11 @@ S_{aa}^{-1/2} & \text{if } a = b, \\
 \end{cases}
 $$
 
-- transformed data matrix $Z=HXD=YD$   
+- transformed data matrix $Z=HXD=YD$
 
 will have mean $〈z〉 = 0 $ and variance-covariance matrix equal to X’s correlation matrix
 
 ![1735965990946](image/note/1735965990946.png)
-
 
 #### The Mahalanobis Transform for Data
 
@@ -808,19 +787,14 @@ axes now show combinations of variables, rather than the original variables.
 
 ![1735966284598](image/note/1735966284598.png)
 
-
 ![1735966302670](image/note/1735966302670.png)
 
-
 #### Spotting Deviations from Normality
-
 
 - We saw that we can observe deviations from univariate normality with summary statistics such as skewness, kurtosis or through the detection pf multiple modes
 - These measures also generalise to the multivariate case.
 - Here we show three cases where the multivariate distribution is far from multivariate normal, even if the marginal (i.e. univariate) datasets are very close to (or even indistinguishable from) univariate normal
 - We will show these using a visualisation technique known as a joint plot, where a bivariate visualisation is shown in the main panel and univariate visualisations are shown along the axes. These also show the correlation and associated p-value
-
-
 
 ### Multivariate multimodality
 
@@ -828,24 +802,17 @@ The data may not be centred around a unique mode. This is possible in complex wa
 
 ![1735966536208](image/note/1735966536208.png)
 
-
 ### Outliers
 
 Some datapoints may be very far from the mode. As well as strongly affecting estimates of means and variances, this can affect estimates of correlations between variables in the multivariate case
 
 ![1735966651192](image/note/1735966651192.png)
 
-
 ### Restricted Support
 
 The data may only take positive values, or only values in some restricted region of space. For the multivariate case, such restrictions can be more complex than the univariate case
 
 ![1735966715880](image/note/1735966715880.png)
-
-
-
-
-
 
 # Summary Statistics
 
@@ -1116,12 +1083,9 @@ Gaussian kernels it is usually chosen so that  $w \propto \frac{1}{{{N^{\frac{1}
 
 ![1735898559909](image/note/1735898559909.png)
 
-
-
 ### Multivariate KDE
 
 The kernel density estimate (KDE) approximates the population distribution function (as before) and is defined by
-
 
 $$
 \hat f(x|\theta ) = \frac{1}{n}\sum\limits_{j = 1}^n {K\left( {x|{x_i},\theta } \right)}
@@ -1135,7 +1099,6 @@ $$
 
 A 2d kernel density plot shows estimated curves of constant f (x).
 
-
 #### Bivariate visualisation techniques: 2d KDE
 
 ```python
@@ -1147,15 +1110,6 @@ ggplot(auto.data, aes(x=Displacement.y=Weight))+geom_density_2d()
 ```
 
 ![1735963141779](image/note/1735963141779.png)
-
-
-
-
-
-
-
-
-
 
 ## Multimodality 多態
 
@@ -1174,15 +1128,11 @@ But different kernels produce different estimates—in general, there is no ‘r
 
 Often we should weight the datapoints for various reasons—i.e. assign a wi to each datapoint such that
 
-
 # Estimator
 
 An **estimator** is a **mathematical rule**, function, or formula used to approximate an *unknown population parameter* (such as the mean, variance, or proportion) based on sample data. In statistical analysis, estimators are essential because they provide insights about a population when it is impractical or impossible to measure the entire population directly.
 
-
-
 ## Key Concepts of Estimators
-
 
 1. Population vs. Sample：
 
@@ -1194,11 +1144,9 @@ An **estimator** is a **mathematical rule**, function, or formula used to approx
 - The true population parameter is denoted by $\theta$.  真實總體參數
 - The estimator (based on the sample) is denoted by $\hat{\theta}$. 基於樣本的估計量
   - Population mean: $\mu$.
-  - Sample mean(estimator): $\bar{x}$.  
-
+  - Sample mean(estimator): $\bar{x}$.
 
 ## Type of Estimators
-
 
 1. Point Estimator: 點估計器
 
@@ -1210,9 +1158,7 @@ An **estimator** is a **mathematical rule**, function, or formula used to approx
 - Provides a **range of values** within which the population parameter is likely to lie. 提供总体参数可能位于**的值范围**
   - Example: Confidence intervals for the mean. 平均值的置信区间
 
-
 ## Properties of a Good Estimator
-
 
 1. Unbiasedness：
 
@@ -1231,9 +1177,7 @@ An **estimator** is a **mathematical rule**, function, or formula used to approx
 
 - An estimator is **sufficient** if it captures all the information in the sample relevant to the parameter being estimated. 如果估计器捕获了样本中与所估计的参数相关的所有信息，则该估计器就**足够了**
 
-
 ## Examples of Estimators
-
 
 1. Sample Mean:
 
@@ -1265,9 +1209,7 @@ $$
 
 Where $x$ is the number of successes and $n$ is the sample size.
 
-
 ## Evaluation of Estimators
-
 
 1. **Mean Squared Error (MSE)** :均方误差
 
@@ -1279,11 +1221,9 @@ $$
 
 - Lower MSE indicates a better estimator  较低的 MSE 表示更好的估计量
 
-
 2. Bias-Variance Tradeoff 偏差方差權衡
 
 - A tradeoff between minimizing bias and variance. In some cases, a slightly biased estimator with lower variance might be preferred (e.g., Ridge Regression).
-
 
 ## Estimators in Statistical Inference 统计推断中的估计器
 
@@ -1301,17 +1241,13 @@ Estimators are widely used in:估计器广泛用于
 
 - Estimating model parameters to minimize loss functions.估计模型参数以最小化损失函数。
 
-
 ## summary
 
 An estimator is a tool for inferring population parameters from sample data. Its quality is determined by properties such as unbiasedness, consistency, and efficiency. Choosing or constructing a good estimator is central to statistical inference, enabling accurate and reliable conclusions about the population.
 
+## biased estimator
 
-## biased estimator 
-
-
-For an estimator to be **biased** means that, on average, it systematically **underestimates or overestimates** the true value of the parameter it is trying to estimate. In other words, the **expected value** of the estimator ($E[\hat{\theta}]$) is not equal to the true parameter value ($\theta$). 
-
+For an estimator to be **biased** means that, on average, it systematically **underestimates or overestimates** the true value of the parameter it is trying to estimate. In other words, the **expected value** of the estimator ($E[\hat{\theta}]$) is not equal to the true parameter value ($\theta$).
 
 The bias of an estimator $\hat{\theta}$ is defined mathematically as
 
@@ -1325,8 +1261,6 @@ Where:
 - $\theta$ : The true value of the parameter being estimated. 被估计参数的真实值
 - If $\text{Bias}(\hat{\theta}) = 0$ The estimator is  **unbiased** .
 - if $\text{Bias}(\hat{\theta}) \neq 0$: The estimator is biased.
-
-
 
 ### **Why Does Bias Matter?为什么偏见很重要？**
 
@@ -1344,7 +1278,6 @@ Where:
 * Bias can sometimes be removed or corrected through adjustments (e.g., Bessel’s correction for sample variance).有时可以通过调整（例如，样本方差的贝塞尔校正）来消除或纠正偏差。
 
 A biased estimator systematically misrepresents the parameter it is estimating, making it less reliable. The goal in most statistical analyses is to use unbiased estimators or account for bias when interpreting results.有偏差的估计器会系统性地歪曲其估计的参数，从而使其可靠性降低。大多数统计分析的目标是使用无偏估计量或在解释结果时考虑偏差
-
 
 # Application
 
@@ -1902,18 +1835,11 @@ if( makePDF ):
 
 ![1735901294341](image/note/1735901294341.png)
 
-
 ```python
 sns.kdeplot(dis,wgt, cmap="Blues")
 ```
 
 ![1735950197677](image/note/1735950197677.png)
-
-
-
-
-
-
 
 ### R
 
@@ -1931,8 +1857,6 @@ geom_density()+ xlab("Magnitude")
 
 ![1735488562842](image/note/1735488562842.png)
 
-
-
 #### KDE
 
 ```r
@@ -1940,10 +1864,6 @@ pplot(auto.data, aes(x=Displacement, y=Weight)) + geom_density_2d()
 ```
 
 ![1735950156479](image/note/1735950156479.png)
-
-
-
-
 
 ## EDA
 
@@ -2084,12 +2004,9 @@ plt.show()
 
 ![1735901778129](image/note/1735901778129.png)
 
-
-### Scatter Plots 
+### Scatter Plots
 
 A scatter plot is a lossless visualisation that involves placing a marker at $(x_{ia}, x_{ib})$ for each $i$ and some $a, b$
-
-
 
 ```R
 ggplot(auto.data, aes(x=Displacement,y=Weight)) + geom_point()
@@ -2102,7 +2019,6 @@ plt.scatter(dis,wgt)
 ```
 
 ![1735948927349](image/note/1735948927349.png)
-
 
 #### 2d Histograms
 
