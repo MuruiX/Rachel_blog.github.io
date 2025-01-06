@@ -1841,6 +1841,219 @@ sns.kdeplot(dis,wgt, cmap="Blues")
 
 ![1735950197677](image/note/1735950197677.png)
 
+
+#### Visualizing Cross-Classification
+
+
+##### **Heatmap**
+
+Heatmaps are effective for visualizing the counts or percentages in cross-classification tables.热图对于可视化交叉分类表中的计数或百分比非常有效。
+
+```
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.heatmap(cross_tab, annot=True, cmap="coolwarm", fmt='d')
+plt.title("Cross-Classification Heatmap")
+plt.xlabel("Category B")
+plt.ylabel("Category A")
+plt.show()
+
+```
+
+
+* **Annot** : Displays the counts in each cell.注释：显示每个单元格中的计数。
+* **Cmap** : Adjusts the color scheme to highlight differences.Cmap ：调整配色方案以突出显示差异。
+
+
+##### **Stacked Bar Plot**
+
+A stacked bar plot visualizes the distribution of one category across the levels of another.堆积条形图可视化一个类别在另一类别级别上的分布
+
+```
+cross_tab.plot(kind='bar', stacked=True, figsize=(8, 6))
+plt.title("Stacked Bar Plot of Cross-Classification")
+plt.xlabel("Category A")
+plt.ylabel("Count")
+plt.legend(title="Category B")
+plt.show()
+
+```
+
+
+##### **Grouped Bar Plot**
+
+A grouped bar plot shows side-by-side bars for each combination, providing an alternative view.分组条形图显示每个组合的并排条形图，提供替代视图
+
+```
+cross_tab.plot(kind='bar', stacked=False, figsize=(8, 6))
+plt.title("Grouped Bar Plot of Cross-Classification")
+plt.xlabel("Category A")
+plt.ylabel("Count")
+plt.legend(title="Category B")
+plt.show()
+
+```
+
+
+##### **Mosaic Plot**
+
+Mosaic plots display proportions for cross-classified categories.马赛克图显示交叉分类类别的比例
+
+```
+from statsmodels.graphics.mosaicplot import mosaic
+
+# Convert data to dictionary format
+mosaic_data = pd.crosstab(df['Category A'], df['Category B']).stack()
+mosaic(mosaic_data, title="Mosaic Plot for Cross-Classification")
+plt.show()
+
+```
+
+
+##### **Percentage Heatmap**
+
+Convert counts to percentages for comparison when category sizes differ.当类别大小不同时，将计数转换为百分比以便进行比较
+
+
+```
+percentage_tab = cross_tab.div(cross_tab.sum(axis=1), axis=0) * 100
+sns.heatmap(percentage_tab, annot=True, cmap="viridis", fmt=".1f")
+plt.title("Percentage Heatmap of Cross-Classification")
+plt.xlabel("Category B")
+plt.ylabel("Category A")
+plt.show()
+
+```
+
+
+##### **3. Adding Statistical Insights3. 添加统计洞察**
+
+Use measures like the **Chi-Square Test** to quantify the strength of the association.使用卡方检验等措施来量化关联的强度。
+
+```
+from scipy.stats import chi2_contingency
+
+chi2, p, dof, expected = chi2_contingency(cross_tab)
+print(f"Chi-Square Statistic: {chi2}, P-value: {p}")
+
+```
+
+
+summary
+
+* **Heatmaps** are ideal for a quick overview of the relationships.热图非常适合快速概览关系。
+* **Bar plots** (stacked or grouped) highlight category-wise contributions.条形图（堆叠或分组）突出显示按类别的贡献。
+* **Mosaic plots** are excellent for visualizing proportions.马赛克图非常适合可视化比例。
+* **Percentage-based visualizations** are helpful when the total sizes of categories differ.当类别的总大小不同时，基于百分比的可视化很有帮助
+
+These methods help identify patterns, dependencies, or interactions between categorical variables in cross-classification.这些方法有助于识别交叉分类中分类变量之间的模式、依赖性或相互作用
+
+
+#### UpSet plots
+
+
+
+##### **Prepare Your Data**
+
+The data should represent multiple sets and their intersections.数据应代表多个集合及其交集。
+
+* Rows: Represent samples.
+* Columns: Indicate membership in different sets (binary values: `1` for inclusion, `0` for exclusion).列：表示不同集合中的成员资格（二进制值： 1表示包含， 0表示排除）。
+
+
+```
+import pandas as pd
+
+# Sample data
+data = pd.DataFrame({
+    'Fatigue': [1, 0, 1, 1, 0, 1, 0, 1],
+    'Anosmia': [1, 1, 1, 0, 0, 0, 1, 1],
+    'Cough': [0, 1, 1, 0, 1, 1, 1, 1],
+    'Fever': [0, 0, 1, 1, 1, 1, 1, 0],
+    'Diarrhea': [0, 0, 0, 1, 0, 0, 1, 0],
+    'Breath': [1, 1, 0, 1, 0, 0, 0, 1],
+})
+
+```
+
+
+
+
+##### **Create the UpSet Plot**
+
+Use the `upsetplot` library for plotting.使用upsetplot库进行绘图
+
+```
+from upsetplot import UpSet
+import matplotlib.pyplot as plt
+
+# Convert data to 'MultiIndex' format for upsetplot
+data['count'] = 1
+multi_index_data = data.set_index(['Fatigue', 'Anosmia', 'Cough', 'Fever', 'Diarrhea', 'Breath'])
+aggregated_data = multi_index_data.groupby(level=[0, 1, 2, 3, 4, 5]).size()
+
+# Create the UpSet plot
+upset = UpSet(aggregated_data, subset_size='count', show_counts=True, sort_by='cardinality')
+upset.plot()
+plt.show()
+
+```
+
+
+
+##### **Explanation of the Plot Components绘图组件的解释**
+
+1. **Top Bar Chart** :
+
+* Displays the intersection size for each group (how many members are in the intersection).显示每个组的交集大小（交集中有多少成员）。
+
+1. **Bottom Matrix** :
+
+* Black dots connected by lines show the sets involved in each intersection.由线连接的黑点表示每个交叉点涉及的集合。
+* Gray circles indicate sets not involved in the specific intersection.灰色圆圈表示不参与特定交集的集合。
+
+1. **Left Bar Chart** :
+
+* Shows the total size of each individual set.显示每组的总大小。
+
+
+can further customize the appearance, e.g., adding labels or adjusting colors.您可以进一步自定义外观，例如添加标签或调整颜色
+
+```
+upset = UpSet(aggregated_data, subset_size='count', show_counts=True, facecolor="steelblue")
+upset.plot()
+plt.title("UpSet Plot for Symptom Intersections")
+plt.show()
+
+```
+
+
+
+##### **Use Cases for UpSet Plots翻转图的用例**
+
+* Biological data (e.g., gene expression intersections).生物学数据（例如，基因表达交叉点）。
+* Symptoms analysis in medical research.医学研究中的症状分析。
+* User behavior patterns in marketing or product design.
+* Overlapping sets in any domain with complex relationships.任何具有复杂关系的域中的重叠集。
+
+This approach allows for efficient visualization and analysis of set intersections in large datasets.这种方法可以对大型数据集中的集合交集进行有效的可视化和分析
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### R
 
 GGPlot
