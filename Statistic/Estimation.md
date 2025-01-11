@@ -43,10 +43,16 @@ https://www.cnblogs.com/LCharles/p/11906737.html
 
 https://www.cnblogs.com/bigmonkey/p/11353662.html
 
+https://www.statlect.com/fundamentals-of-statistics/normal-distribution-maximum-likelihood
 
 
 
 
+
+## Exponential Distribution
+
+
+https://www.statlect.com/fundamentals-of-statistics/exponential-distribution-maximum-likelihood
 
 
 
