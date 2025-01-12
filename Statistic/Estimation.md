@@ -51,6 +51,22 @@ https://www.cnblogs.com/bigmonkey/p/11379144.html
 
 
 
+## Exponential Distribution
+
+
+
+
+https://www.huaxiaozhuan.com/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/chapters/2_probability.html
+
+
+
+
+
+
+
+
+
+
 
 
 
