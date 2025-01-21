@@ -1,22 +1,51 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": true,
+  "showOrphans": false,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"Computer Science/Database\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 15856896
+      }
+    },
+    {
+      "query": "path:\"Data Science\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 15536642
+      }
+    },
+    {
+      "query": "path:\"Computer Science\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:Statistic  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": 0.5,
+  "nodeSizeMultiplier": 0.994123711340206,
+  "lineSizeMultiplier": 0.751649484536082,
   "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "centerStrength": 0.636082474226804,
+  "repelStrength": 11.4845360824742,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1,
+  "linkDistance": 248,
+  "scale": 0.5694149046098155,
   "close": true
 }

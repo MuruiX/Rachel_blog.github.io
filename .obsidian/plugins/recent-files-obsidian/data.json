@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Computer Science",
+      "path": "Computer Science/Computer Science.md"
+    },
+    {
+      "basename": "Statistic",
+      "path": "Statistic/Statistic.pdf"
+    },
+    {
+      "basename": "Unix",
+      "path": "Computer Science/Unix/Unix.md"
+    },
+    {
+      "basename": "Statistic",
+      "path": "Statistic/Statistic.md"
+    },
+    {
+      "basename": "分析方法",
+      "path": "Statistic/分析方法.md"
+    },
+    {
       "basename": "MySQL",
       "path": "Computer Science/Database/MySQL/MySQL.md"
     },
@@ -9,28 +29,12 @@
       "path": "Computer Science/Database/Query.md"
     },
     {
-      "basename": "分析方法",
-      "path": "Statistic/分析方法.md"
-    },
-    {
-      "basename": "Statistic",
-      "path": "Statistic/Statistic.md"
-    },
-    {
-      "basename": "Statistic",
-      "path": "Statistic/Statistic.pdf"
-    },
-    {
       "basename": "note",
       "path": "Statistic/note.md"
     },
     {
       "basename": "Unix_handnote",
       "path": "Computer Science/Unix/Unix_handnote.pdf"
-    },
-    {
-      "basename": "Unix",
-      "path": "Computer Science/Unix/Unix.md"
     },
     {
       "basename": "Introduction",
