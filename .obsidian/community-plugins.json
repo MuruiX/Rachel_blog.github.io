@@ -25,5 +25,9 @@
   "media-extended",
   "multi-column-markdown",
   "url-into-selection",
-  "recent-files-obsidian"
+  "recent-files-obsidian",
+  "sets",
+  "obsidian-style-settings",
+  "templater-obsidian",
+  "obsidian42-text-transporter"
 ]
