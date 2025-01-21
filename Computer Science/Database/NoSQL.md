@@ -1,3 +1,6 @@
+---
+LINK: "[[Computer Science/Database]]"
+---
 # NoSQL 非關係型數據庫
 
 # NoSQL

@@ -11,12 +11,14 @@
             "id": "db1f3e0bd2e709ba",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "Computer Science/Unix"
+                "file": "Computer Science/Database/Relational Database.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Unix"
+              "title": "Relational Database"
             }
           }
         ]
@@ -210,6 +212,13 @@
   },
   "active": "db1f3e0bd2e709ba",
   "lastOpenFiles": [
+    "Computer Science/Database/Query.md",
+    "Computer Science/Database/Relational Database.md",
+    "Computer Science/Database/NoSQL.md",
+    "Computer Science/Database/Select Note.md",
+    "Computer Science/Database/Database.md",
+    "Computer Science/Note_of_UX_design.pdf",
+    "Computer Science/Unix/Unix_handnote.pdf",
     "SECURITY.md",
     "README.md",
     "Statistic/note.md",
@@ -233,17 +242,12 @@
     "RESOURCE/Database",
     "RESOURCE/Data Science/Book/System Design Interview An Insider’s Guide by Alex Xu (z-lib.org).pdf",
     "RESOURCE/Data Science/Book/数据分析师需要掌握的35个模型.pdf",
-    "RESOURCE/Data Science/Book/Storytelling with Data_ A Data Visualization Guide for Business Professionals-Wiley (2015).pdf",
-    "RESOURCE/Data Science/Book/Python3 OpenCV4 计算机视觉学习手册.epub",
     "Computer Science/Unix/Unix.md",
     "Computer Science/未命名.md",
     "Computer Science/Database/Introduction.md",
     "Computer Science/Database/DBMS - Database Management System.md",
     "Computer Science/Database/Data module.md",
     "Computer Science/Database/Structured Query Language(SQL).md",
-    "Computer Science/Database/Relational Database.md",
-    "Computer Science/Database/Query.md",
-    "Computer Science/Database/NoSQL.md",
     "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md",
     "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
     "Computer Science/Database/NoSQL/MongoDB.md",
@@ -252,7 +256,6 @@
     "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md",
     "Computer Science/Database/NoSQL/NoSQL.md",
     "Computer Science/Database/NoSQL/未命名.md",
-    "Computer Science/Database/Database.md",
     "Computer Science/Database/MySQL/MySQL.md",
     "Computer Science/Database/ClickHouse/introduction.md"
   ]

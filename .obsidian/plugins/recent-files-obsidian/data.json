@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Relational Database",
+      "path": "Computer Science/Database/Relational Database.md"
+    },
+    {
+      "basename": "Query",
+      "path": "Computer Science/Database/Query.md"
+    },
+    {
+      "basename": "NoSQL",
+      "path": "Computer Science/Database/NoSQL.md"
+    },
+    {
+      "basename": "Select Note",
+      "path": "Computer Science/Database/Select Note.md"
+    },
+    {
+      "basename": "Database",
+      "path": "Computer Science/Database/Database.md"
+    },
+    {
+      "basename": "Note_of_UX_design",
+      "path": "Computer Science/Note_of_UX_design.pdf"
+    },
+    {
+      "basename": "Unix_handnote",
+      "path": "Computer Science/Unix/Unix_handnote.pdf"
+    },
+    {
       "basename": "Unix",
       "path": "Computer Science/Unix/Unix.md"
     },
@@ -35,10 +63,6 @@
     {
       "basename": "NoSQL",
       "path": "Computer Science/Database/NoSQL/NoSQL.md"
-    },
-    {
-      "basename": "Database",
-      "path": "Computer Science/Database/Database.md"
     },
     {
       "basename": "MySQL",
