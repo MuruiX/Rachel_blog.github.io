@@ -1,7 +1,7 @@
 ---
 LINK:
-  - "[[Computer Science/Database/NoSQL/NoSQL]]"
   - "[[Database]]"
+  - "[[NoSQL]]"
 ---
 
 ##  What is NoSQL

@@ -1,3 +1,8 @@
+---
+LINK:
+  - "[[Database]]"
+  - "[[Computer Science/Database/DBMS - Database Management System.md]]"
+---
 # Relational Database
 
 # RDBMS

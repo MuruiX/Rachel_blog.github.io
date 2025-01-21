@@ -1,5 +1,6 @@
 ---
-LINK: "[[Computer Science/Database]]"
+LINK:
+  - Database
 ---
 # NoSQL 非關係型數據庫
 

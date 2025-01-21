@@ -1,3 +1,7 @@
+---
+LINK:
+  - "[[Database]]"
+---
 # Introduction介绍
 
 # Introduction

@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "090a4adde16236ac",
+        "id": "273f1a8f887e8bd9",
         "type": "tabs",
         "children": [
           {
-            "id": "db1f3e0bd2e709ba",
+            "id": "4854f2e23224de25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Database/Relational Database.md",
+                "file": "Statistic/分析方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Relational Database"
+              "title": "分析方法"
+            }
+          },
+          {
+            "id": "2c2b25becda786fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Statistic/note.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "note"
             }
           }
         ]
@@ -74,16 +88,6 @@
             }
           },
           {
-            "id": "0dec5216e5e8bf0f",
-            "type": "leaf",
-            "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
-            }
-          },
-          {
             "id": "505248ef760ee550",
             "type": "leaf",
             "state": {
@@ -92,9 +96,19 @@
               "icon": "clock",
               "title": "Recent Files"
             }
+          },
+          {
+            "id": "4b51cc46101cb4dc",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -210,53 +224,54 @@
       "obsidian42-text-transporter:Text Transporter": false
     }
   },
-  "active": "db1f3e0bd2e709ba",
+  "active": "4854f2e23224de25",
   "lastOpenFiles": [
-    "Computer Science/Database/Query.md",
-    "Computer Science/Database/Relational Database.md",
-    "Computer Science/Database/NoSQL.md",
-    "Computer Science/Database/Select Note.md",
-    "Computer Science/Database/Database.md",
-    "Computer Science/Note_of_UX_design.pdf",
-    "Computer Science/Unix/Unix_handnote.pdf",
-    "SECURITY.md",
-    "README.md",
-    "Statistic/note.md",
-    "Statistic/Estimation.md",
-    "Statistic/image/note/1735966715880.png",
-    "Statistic/image/note/1735966651192.png",
-    "Statistic/image/note/1735966536208.png",
-    "Statistic/image/note/1735966302670.png",
-    "Statistic/image/note/1735966284598.png",
-    "Statistic/image/note/1735965990946.png",
-    "Statistic/image/note/1735965857460.png",
-    "Statistic/image/note/1735965512125.png",
-    "Statistic/image/note/1735965495752.png",
-    "Statistic/image/note/1735965459238.png",
-    "Statistic/image/note",
-    "Statistic/image/Estimation",
-    "Statistic/image",
-    "Statistic/分析方法.md",
-    "Statistic/Statistic.pdf",
-    "RESOURCE/Database/db_06.pdf",
-    "RESOURCE/Database",
-    "RESOURCE/Data Science/Book/System Design Interview An Insider’s Guide by Alex Xu (z-lib.org).pdf",
-    "RESOURCE/Data Science/Book/数据分析师需要掌握的35个模型.pdf",
-    "Computer Science/Unix/Unix.md",
-    "Computer Science/未命名.md",
     "Computer Science/Database/Introduction.md",
+    "Computer Science/Database/Relational Database.md",
     "Computer Science/Database/DBMS - Database Management System.md",
-    "Computer Science/Database/Data module.md",
-    "Computer Science/Database/Structured Query Language(SQL).md",
-    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md",
-    "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
-    "Computer Science/Database/NoSQL/MongoDB.md",
-    "Computer Science/Database/NoSQL/Mongo Operation.md",
-    "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md",
-    "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md",
-    "Computer Science/Database/NoSQL/NoSQL.md",
-    "Computer Science/Database/NoSQL/未命名.md",
     "Computer Science/Database/MySQL/MySQL.md",
-    "Computer Science/Database/ClickHouse/introduction.md"
+    "Computer Science/Database/NoSQL.md",
+    "Computer Science/Database/ClickHouse/README.md",
+    "Computer Science/Database/Database.md",
+    "Computer Science/Database/ClickHouse/ClickHouse.md",
+    "Computer Science/Database/ClickHouse/introduction.md",
+    "Statistic/note.md",
+    "Statistic/Statistic.md",
+    "Computer Science/Note_of_UX_design.pdf",
+    "Computer Science/Database/Query.md",
+    "Computer Science/Database/Data module.md",
+    "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
+    "Computer Science/Unix/Unix.md",
+    "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md",
+    "PICTURE/NoSQL.md",
+    "Computer Science/Database/NoSQL/NoSQL.md",
+    "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md",
+    "Computer Science/Database/DBMS - Database Management System 1.md",
+    "Computer Science/Database/Structured Query Language(SQL).md",
+    "未命名.canvas",
+    "Computer Science/Database/Select Note.md",
+    "Computer Science/Database/NoSQL/Mongo Operation.md",
+    "Computer Science/Database/NoSQL/MongoDB.md",
+    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md",
+    "Computer Science/Database/image/StructuredQueryLanguage(SQL)/1724086072031.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 5.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 4.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 3.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 2.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 1.png",
+    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.pdf",
+    "Computer Science/Database/NoSQL 非關係型數據庫 d48f5e846c2a4695acad13660449a918/image.png",
+    "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a/Untitled.png",
+    "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a/image 3.png",
+    "Computer Science/Database/image/StructuredQueryLanguage(SQL)",
+    "Computer Science/Unix/Unix_handnote.pdf",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808",
+    "Computer Science/Database/NoSQL",
+    "Computer Science/Database/NoSQL 非關係型數據庫 d48f5e846c2a4695acad13660449a918",
+    "Computer Science/Database/MySQL",
+    "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a",
+    "Computer Science/Database/image",
+    "Computer Science1/Database/MySQL/MySQL.md"
   ]
 }

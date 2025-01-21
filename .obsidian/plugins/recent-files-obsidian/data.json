@@ -1,56 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "分析方法",
+      "path": "Statistic/分析方法.md"
+    },
+    {
+      "basename": "Introduction",
+      "path": "Computer Science/Database/Introduction.md"
+    },
+    {
       "basename": "Relational Database",
       "path": "Computer Science/Database/Relational Database.md"
     },
     {
-      "basename": "Query",
-      "path": "Computer Science/Database/Query.md"
+      "basename": "DBMS - Database Management System",
+      "path": "Computer Science/Database/DBMS - Database Management System.md"
+    },
+    {
+      "basename": "MySQL",
+      "path": "Computer Science/Database/MySQL/MySQL.md"
     },
     {
       "basename": "NoSQL",
       "path": "Computer Science/Database/NoSQL.md"
     },
     {
-      "basename": "Select Note",
-      "path": "Computer Science/Database/Select Note.md"
-    },
-    {
       "basename": "Database",
       "path": "Computer Science/Database/Database.md"
+    },
+    {
+      "basename": "ClickHouse",
+      "path": "Computer Science/Database/ClickHouse/ClickHouse.md"
+    },
+    {
+      "basename": "introduction",
+      "path": "Computer Science/Database/ClickHouse/introduction.md"
+    },
+    {
+      "basename": "note",
+      "path": "Statistic/note.md"
+    },
+    {
+      "basename": "Statistic",
+      "path": "Statistic/Statistic.md"
     },
     {
       "basename": "Note_of_UX_design",
       "path": "Computer Science/Note_of_UX_design.pdf"
     },
     {
-      "basename": "Unix_handnote",
-      "path": "Computer Science/Unix/Unix_handnote.pdf"
+      "basename": "Query",
+      "path": "Computer Science/Database/Query.md"
     },
     {
-      "basename": "Unix",
-      "path": "Computer Science/Unix/Unix.md"
-    },
-    {
-      "basename": "The_Little_Book_of_Mongo_DB",
-      "path": "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.pdf"
-    },
-    {
-      "basename": "The_Little_Book_of_Mongo_DB",
-      "path": "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md"
+      "basename": "Data module",
+      "path": "Computer Science/Database/Data module.md"
     },
     {
       "basename": "Node.js connect MongoDB",
       "path": "Computer Science/Database/NoSQL/Node.js connect MongoDB.md"
     },
     {
-      "basename": "MongoDB",
-      "path": "Computer Science/Database/NoSQL/MongoDB.md"
-    },
-    {
-      "basename": "Mongo Operation",
-      "path": "Computer Science/Database/NoSQL/Mongo Operation.md"
+      "basename": "Unix",
+      "path": "Computer Science/Unix/Unix.md"
     },
     {
       "basename": "Introduction to NoSQL Systems",
@@ -61,16 +73,20 @@
       "path": "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md"
     },
     {
-      "basename": "NoSQL",
-      "path": "Computer Science/Database/NoSQL/NoSQL.md"
+      "basename": "Structured Query Language(SQL)",
+      "path": "Computer Science/Database/Structured Query Language(SQL).md"
     },
     {
-      "basename": "MySQL",
-      "path": "Computer Science/Database/MySQL/MySQL.md"
+      "basename": "Mongo Operation",
+      "path": "Computer Science/Database/NoSQL/Mongo Operation.md"
     },
     {
-      "basename": "introduction",
-      "path": "Computer Science/Database/ClickHouse/introduction.md"
+      "basename": "MongoDB",
+      "path": "Computer Science/Database/NoSQL/MongoDB.md"
+    },
+    {
+      "basename": "The_Little_Book_of_Mongo_DB",
+      "path": "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md"
     }
   ],
   "omittedPaths": [],

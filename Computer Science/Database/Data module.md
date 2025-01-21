@@ -1,3 +1,7 @@
+---
+LINK:
+  - "[[Database]]"
+---
 # Data module
 
 # **Data Models**

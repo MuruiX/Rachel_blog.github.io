@@ -1,3 +1,7 @@
+---
+LINK:
+  - ClickHouse
+---
 ## [簡介](https://clickhouse.com/docs/en/home)：
 
 分析型數據庫 不擅長更新刪除等

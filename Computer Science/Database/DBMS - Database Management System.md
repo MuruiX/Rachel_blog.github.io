@@ -1,3 +1,7 @@
+---
+LINK:
+  - "[[Database]]"
+---
 # DBMS - Database Management System
 
 # DBMS
