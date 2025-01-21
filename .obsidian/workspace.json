@@ -11,14 +11,10 @@
             "id": "4854f2e23224de25",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Statistic/分析方法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "分析方法"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           },
           {
@@ -27,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistic/note.md",
+                "file": "Statistic/分析方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "分析方法"
             }
           }
         ]
@@ -226,22 +222,25 @@
   },
   "active": "4854f2e23224de25",
   "lastOpenFiles": [
+    "Computer Science/Database/MySQL/MySQL.md",
+    "Computer Science/Database/Query.md",
+    "Statistic/分析方法.md",
+    "Statistic/Statistic.md",
+    "Statistic/Statistic.pdf",
+    "Statistic/note.md",
+    "Computer Science/Unix/Unix_handnote.pdf",
+    "Computer Science/Unix/Unix.md",
     "Computer Science/Database/Introduction.md",
     "Computer Science/Database/Relational Database.md",
     "Computer Science/Database/DBMS - Database Management System.md",
-    "Computer Science/Database/MySQL/MySQL.md",
     "Computer Science/Database/NoSQL.md",
     "Computer Science/Database/ClickHouse/README.md",
     "Computer Science/Database/Database.md",
     "Computer Science/Database/ClickHouse/ClickHouse.md",
     "Computer Science/Database/ClickHouse/introduction.md",
-    "Statistic/note.md",
-    "Statistic/Statistic.md",
     "Computer Science/Note_of_UX_design.pdf",
-    "Computer Science/Database/Query.md",
     "Computer Science/Database/Data module.md",
     "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
-    "Computer Science/Unix/Unix.md",
     "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md",
     "PICTURE/NoSQL.md",
     "Computer Science/Database/NoSQL/NoSQL.md",
@@ -252,7 +251,6 @@
     "Computer Science/Database/Select Note.md",
     "Computer Science/Database/NoSQL/Mongo Operation.md",
     "Computer Science/Database/NoSQL/MongoDB.md",
-    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md",
     "Computer Science/Database/image/StructuredQueryLanguage(SQL)/1724086072031.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 5.png",
@@ -265,13 +263,10 @@
     "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a/Untitled.png",
     "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a/image 3.png",
     "Computer Science/Database/image/StructuredQueryLanguage(SQL)",
-    "Computer Science/Unix/Unix_handnote.pdf",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808",
     "Computer Science/Database/NoSQL",
     "Computer Science/Database/NoSQL 非關係型數據庫 d48f5e846c2a4695acad13660449a918",
     "Computer Science/Database/MySQL",
-    "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a",
-    "Computer Science/Database/image",
-    "Computer Science1/Database/MySQL/MySQL.md"
+    "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a"
   ]
 }

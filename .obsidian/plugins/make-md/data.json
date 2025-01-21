@@ -39,7 +39,9 @@
     "//Computer Science/Computer Science/Database/Computer Science/Database/MySQL",
     "//Data Science",
     "//Computer Science",
-    "//Computer Science/Computer Science/Database/Computer Science/Database/ClickHouse"
+    "//Computer Science/Computer Science/Database/Computer Science/Database/ClickHouse",
+    "//Computer Science/Computer Science/Unix",
+    "//Statistic"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

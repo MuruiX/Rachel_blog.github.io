@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "MySQL",
+      "path": "Computer Science/Database/MySQL/MySQL.md"
+    },
+    {
+      "basename": "Query",
+      "path": "Computer Science/Database/Query.md"
+    },
+    {
       "basename": "分析方法",
       "path": "Statistic/分析方法.md"
+    },
+    {
+      "basename": "Statistic",
+      "path": "Statistic/Statistic.md"
+    },
+    {
+      "basename": "Statistic",
+      "path": "Statistic/Statistic.pdf"
+    },
+    {
+      "basename": "note",
+      "path": "Statistic/note.md"
+    },
+    {
+      "basename": "Unix_handnote",
+      "path": "Computer Science/Unix/Unix_handnote.pdf"
+    },
+    {
+      "basename": "Unix",
+      "path": "Computer Science/Unix/Unix.md"
     },
     {
       "basename": "Introduction",
@@ -15,10 +43,6 @@
     {
       "basename": "DBMS - Database Management System",
       "path": "Computer Science/Database/DBMS - Database Management System.md"
-    },
-    {
-      "basename": "MySQL",
-      "path": "Computer Science/Database/MySQL/MySQL.md"
     },
     {
       "basename": "NoSQL",
@@ -37,20 +61,8 @@
       "path": "Computer Science/Database/ClickHouse/introduction.md"
     },
     {
-      "basename": "note",
-      "path": "Statistic/note.md"
-    },
-    {
-      "basename": "Statistic",
-      "path": "Statistic/Statistic.md"
-    },
-    {
       "basename": "Note_of_UX_design",
       "path": "Computer Science/Note_of_UX_design.pdf"
-    },
-    {
-      "basename": "Query",
-      "path": "Computer Science/Database/Query.md"
     },
     {
       "basename": "Data module",
@@ -59,10 +71,6 @@
     {
       "basename": "Node.js connect MongoDB",
       "path": "Computer Science/Database/NoSQL/Node.js connect MongoDB.md"
-    },
-    {
-      "basename": "Unix",
-      "path": "Computer Science/Unix/Unix.md"
     },
     {
       "basename": "Introduction to NoSQL Systems",

@@ -2,6 +2,5 @@
 LINK:
   - "[[Structured Query Language(SQL)]]"
   - "[[Database]]"
-  - "[[DBMS - Database Management System]]"
-  - "[[Relational Database]]"
+  - "[[Computer Science/Database/Query.md]]"
 ---
