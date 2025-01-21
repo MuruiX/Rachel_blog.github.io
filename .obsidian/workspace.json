@@ -208,6 +208,9 @@
   },
   "active": "c05692ec8b29240b",
   "lastOpenFiles": [
+    "note.md",
+    "Statistic/note.md",
+    "Computer Science/note.md",
     "index.html",
     "index.php",
     "New Text Document.txt",
@@ -218,7 +221,6 @@
     "Statistic/分析方法.md",
     "Computer Science/Database/MySQL/MySQL.md",
     "Computer Science/Database/Query.md",
-    "Statistic/note.md",
     "Computer Science/Unix/Unix_handnote.pdf",
     "Computer Science/Database/Introduction.md",
     "Computer Science/Database/Relational Database.md",
@@ -239,7 +241,6 @@
     "Computer Science/Database/Structured Query Language(SQL).md",
     "未命名.canvas",
     "Computer Science/Database/Select Note.md",
-    "Computer Science/Database/NoSQL/Mongo Operation.md",
     "Computer Science/Database/image/StructuredQueryLanguage(SQL)/1724086072031.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 5.png",
@@ -253,7 +254,6 @@
     "Computer Science/Database/Introduction介绍 dfd7310944464611945858473937828a/image 3.png",
     "Computer Science/Database/image/StructuredQueryLanguage(SQL)",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808",
-    "Computer Science/Database/NoSQL",
-    "Computer Science/Database/NoSQL 非關係型數據庫 d48f5e846c2a4695acad13660449a918"
+    "Computer Science/Database/NoSQL"
   ]
 }
