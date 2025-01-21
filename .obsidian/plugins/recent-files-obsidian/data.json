@@ -1,0 +1,52 @@
+{
+  "recentFiles": [
+    {
+      "basename": "The_Little_Book_of_Mongo_DB",
+      "path": "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.pdf"
+    },
+    {
+      "basename": "The_Little_Book_of_Mongo_DB",
+      "path": "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md"
+    },
+    {
+      "basename": "Node.js connect MongoDB",
+      "path": "Computer Science/Database/NoSQL/Node.js connect MongoDB.md"
+    },
+    {
+      "basename": "MongoDB",
+      "path": "Computer Science/Database/NoSQL/MongoDB.md"
+    },
+    {
+      "basename": "Mongo Operation",
+      "path": "Computer Science/Database/NoSQL/Mongo Operation.md"
+    },
+    {
+      "basename": "Introduction to NoSQL Systems",
+      "path": "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md"
+    },
+    {
+      "basename": "ACID Principal  CAP Theorem  BASE Property",
+      "path": "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md"
+    },
+    {
+      "basename": "NoSQL",
+      "path": "Computer Science/Database/NoSQL/NoSQL.md"
+    },
+    {
+      "basename": "Database",
+      "path": "Computer Science/Database/Database.md"
+    },
+    {
+      "basename": "MySQL",
+      "path": "Computer Science/Database/MySQL/MySQL.md"
+    },
+    {
+      "basename": "introduction",
+      "path": "Computer Science/Database/ClickHouse/introduction.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

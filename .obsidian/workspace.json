@@ -11,42 +11,15 @@
             "id": "db1f3e0bd2e709ba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Computer Science/Database/ClickHouse/introduction.md",
-                "mode": "source",
-                "source": false
+                "file": "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.pdf"
               },
-              "icon": "lucide-file",
-              "title": "introduction"
-            }
-          },
-          {
-            "id": "b9f6a73f5ed76003",
-            "type": "leaf",
-            "state": {
-              "type": "mk-uri-view",
-              "state": {
-                "path": "https://www.make.md/static/latest.md"
-              },
-              "icon": "lucide-file",
-              "title": "https://www.make.md/static/latest.md"
-            }
-          },
-          {
-            "id": "49b6244458e2a90c",
-            "type": "leaf",
-            "state": {
-              "type": "mk-uri-view",
-              "state": {
-                "path": "https://www.make.md/static/GetStarted.md"
-              },
-              "icon": "lucide-file",
-              "title": "https://www.make.md/static/GetStarted.md"
+              "icon": "lucide-file-text",
+              "title": "The_Little_Book_of_Mongo_DB"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -230,23 +203,50 @@
       "hide-folders:Show hidden folders": false,
       "obsidian-kanban:创建新看板": false,
       "obsidian-local-images-plus:Local Images Plus  0.16.1\r\nLocalize attachments (plugin folder)": false,
-      "media-extended:Open media": false
+      "media-extended:Open media": false,
+      "templater-obsidian:Templater": false,
+      "obsidian42-text-transporter:Text Transporter": false
     }
   },
-  "active": "49b6244458e2a90c",
+  "active": "db1f3e0bd2e709ba",
   "lastOpenFiles": [
-    "Tags",
+    "Computer Science/Database/Introduction.md",
+    "Computer Science/Database/DBMS - Database Management System.md",
+    "Computer Science/Database/Data module.md",
+    "Computer Science/Database/Windows Function.png",
+    "Computer Science/Database/Structured Query Language(SQL).md",
+    "Computer Science/Database/Relational Database.md",
+    "Computer Science/Database/Query.md",
+    "Computer Science/Database/NoSQL.md",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 4.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 5.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 3.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 2.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 1.png",
+    "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808",
+    "Computer Science/Database/NoSQL 非關係型數據庫 d48f5e846c2a4695acad13660449a918/image.png",
+    "Computer Science/Database/NoSQL 非關係型數據庫 d48f5e846c2a4695acad13660449a918",
+    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.md",
+    "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
+    "Computer Science/Database/NoSQL/MongoDB.md",
+    "Computer Science/Database/NoSQL/Mongo Operation.md",
+    "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md",
+    "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md",
+    "Computer Science/Database/NoSQL/The_Little_Book_of_Mongo_DB.pdf",
+    "Computer Science/Database/NoSQL/NoSQL.md",
+    "Computer Science/Database/NoSQL/未命名.md",
+    "Computer Science/Database/Database.md",
+    "PICTURE/Introduction to NoSQL Systems/97e31769f680e40e03d8c3479f7f75fc_MD5.jpeg",
+    "PICTURE/Introduction to NoSQL Systems/bbeba838249c000814fcf2775187106a_MD5.jpeg",
+    "PICTURE/Introduction to NoSQL Systems",
+    "PICTURE/ACID Principal  CAP Theorem  BASE Property",
+    "PICTURE/NoSQL/321037876300e3f8c6a6886f6f9af7b8_MD5.pdf",
+    "PICTURE/NoSQL",
+    "PICTURE/MongoDB",
+    "PICTURE/Mongo Operation",
+    "Computer Science/Database/MySQL/MySQL.md",
     "Computer Science/Database/ClickHouse/introduction.md",
-    "Computer Science/Database/MySQL",
-    "Computer Science/Database/DBMS - Database Management System de3803e91f1d496a9eb106e8850d1cd0/image.png",
-    "Computer Science/Database/Data module 1539347d19904737a670f6edfde50d42/image.png",
-    "Computer Science/Database/NoSQL",
-    "Computer Science/Database/ClickHouse",
-    "Computer Science/Database",
-    "Data Science",
-    "Statistic",
-    "RESOURCE",
-    "PICTURE",
-    "Computer Science"
+    "Tags"
   ]
 }

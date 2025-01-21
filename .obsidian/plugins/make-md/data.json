@@ -35,7 +35,11 @@
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/"
+    "/",
+    "//Computer Science",
+    "//Computer Science/Computer Science/Database",
+    "//Computer Science/Computer Science/Database/Computer Science/Database/NoSQL",
+    "//Computer Science/Computer Science/Database/Computer Science/Database/MySQL"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
