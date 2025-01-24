@@ -3,5 +3,6 @@
   "newLinkFormat": "absolute",
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "./",
-  "uriCallbacks": true
+  "uriCallbacks": true,
+  "useMarkdownLinks": true
 }
