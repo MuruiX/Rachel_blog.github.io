@@ -9,7 +9,7 @@ LINK:
 
 Example:
 
-```
+```python
 const { MongoClient } = require('mongodb');
 
 async function main() {
@@ -46,7 +46,7 @@ parameter:
 ## Create Database
 
 
-```
+```python
 const { MongoClient } = require('mongodb');
  
 async function main() {

@@ -1,6 +1,8 @@
 ---
 LINK:
   - "[[Database]]"
+dg-home: true
+dg-publish: true
 ---
 # Data module
 

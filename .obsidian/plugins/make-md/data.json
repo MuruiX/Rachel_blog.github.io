@@ -37,9 +37,9 @@
   "expandedSpaces": [
     "/",
     "//Computer Science/Computer Science/Database/Computer Science/Database/MySQL",
-    "//Computer Science/Computer Science/Database/Computer Science/Database/ClickHouse",
-    "//Computer Science/Computer Science/Unix",
-    "//Computer Science"
+    "//Computer Science",
+    "//Computer Science/Computer Science/Database",
+    "//Computer Science/Computer Science/Database/Computer Science/Database/NoSQL"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
