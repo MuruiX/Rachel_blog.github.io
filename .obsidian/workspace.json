@@ -75,12 +75,12 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           },
           {
-            "id": "67c0ef35cbf64ef2",
+            "id": "6a3f0314909268da",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -164,12 +164,22 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           },
           {
             "id": "084af8c85a0f582b",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "39c56a29742174d9",
             "type": "leaf",
             "state": {
               "type": "todo",
@@ -179,7 +189,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -203,11 +213,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.1\r\nLocalize attachments (plugin folder)": false,
       "media-extended:Open media": false,
       "templater-obsidian:Templater": false,
-      "obsidian42-text-transporter:Text Transporter": false,
-      "digitalgarden:Digital Garden Publication Center": false
+      "obsidian42-text-transporter:Text Transporter": false
     }
   },
-  "active": "c05692ec8b29240b",
+  "active": "39c56a29742174d9",
   "lastOpenFiles": [
     "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
     "Computer Science/Database/NoSQL/MongoDB.md",
