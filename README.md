@@ -24,7 +24,12 @@
 - [unix hand note](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/main/Computer%20Science/Unix/Unix_handnote.pdf)
 
 
-# Data Science
+# [Data Science](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/Note/Data%20Science/Data%20Science.md)
+- [Text Mining](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/Note/Data%20Science/Text%20Mining/Text%20Mining.md)
+- [Natural Language Processing](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/Note/Data%20Science/Natural%20Language%20Processing%20NLP/Natural%20Language%20Processing%20NLP.md)
+  - [introduction to NLP ](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/Note/Data%20Science/Natural%20Language%20Processing%20NLP/introduction%20to%20NLP.md)
+  - [OpenNLP](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/Note/Data%20Science/Natural%20Language%20Processing%20NLP/OpenNLP.md)
+  - [spaCy](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/Note/Data%20Science/Natural%20Language%20Processing%20NLP/spaCy.md)
 
 # Statistic
 - [note](https://github.com/Rachel-XMR/Rachel_blog.github.io/blob/main/Statistic/note.md)
