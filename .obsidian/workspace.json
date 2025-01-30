@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b756e10ad0ccdf8d",
+        "id": "a4f6460ff8b46d82",
         "type": "tabs",
         "children": [
           {
-            "id": "c05692ec8b29240b",
+            "id": "32e04ffa0782bfdd",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "829512c7b983742f",
@@ -213,11 +214,13 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.1\r\nLocalize attachments (plugin folder)": false,
       "media-extended:Open media": false,
       "templater-obsidian:Templater": false,
-      "obsidian42-text-transporter:Text Transporter": false
+      "obsidian42-text-transporter:Text Transporter": false,
+      "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "39c56a29742174d9",
+  "active": "32e04ffa0782bfdd",
   "lastOpenFiles": [
+    "未命名.canvas",
     "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
     "Computer Science/Database/NoSQL/MongoDB.md",
     "Computer Science/Database/NoSQL/ACID Principal  CAP Theorem  BASE Property.md",
@@ -249,8 +252,6 @@
     "PICTURE/NoSQL.md",
     "Computer Science/Database/NoSQL/NoSQL.md",
     "Computer Science/Database/DBMS - Database Management System 1.md",
-    "Computer Science/Database/Structured Query Language(SQL).md",
-    "未命名.canvas",
     "Computer Science/Database/image/StructuredQueryLanguage(SQL)/1724086072031.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 5.png",
