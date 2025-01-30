@@ -61,19 +61,17 @@ A ‘complete’ NLP system is usually a pipeline of components
 
 ![](PICTURE/introduction%20to%20NLP/f588106faba6d912b5e155643af0dd79_MD5.jpeg)
 
-
-## NLP and Text Mining
-
-Natural language processing
-- considers language structure, linguistics 考慮語言結構
-- requires knowledge of grammar
-Text mining
-- not necessarily looking at grammar 不一定要看語法
-- possibly relying only on frequencies to find correlations 可能依靠評率查找相關性
-NLP-based Text Mining
-- TM that is driven by NLP 由NLP驅動的TM
+- [Sentence Segmentation 句子細分](Data%20Science/Natural%20Language%20Processing%20NLP/Sentence%20Segmentation%20句子細分.md)
+- [Tokenisation 象征化](Data%20Science/Natural%20Language%20Processing%20NLP/Tokenisation%20象征化.md)
+- Parsing
+- Information
 
 
+---
+
+- Sentence segmentation (split)
+- Tokenisation (split)
+- Named entity recognition (combine)
 
 
 

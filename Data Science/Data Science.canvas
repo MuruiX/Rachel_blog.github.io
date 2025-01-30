@@ -1,15 +1,209 @@
 {
   "edges": [
+    {
+      "fromNode": "f6bc5fd718fd654a",
+      "fromSide": "left",
+      "id": "277358d064e502a4",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "674611a409a66df3",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "b8d5113c1ed2aac9",
+      "fromSide": "left",
+      "id": "f8e4b3470e6a9a75",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "674611a409a66df3",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "674611a409a66df3",
+      "fromSide": "left",
+      "id": "7c852210832be59b",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "95aeeaa15a00c396",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "b7d4e9139ea674bc",
+      "fromSide": "left",
+      "id": "3744b9835e1c70bc",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "fa9646bfb6d2ad61",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "95aeeaa15a00c396",
+      "fromSide": "right",
+      "id": "7fdcbf2f7354cd25",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "79d73d910ad7d01e",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "95aeeaa15a00c396",
+      "fromSide": "right",
+      "id": "4f2b0000714fa2d4",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "b4abff0d99bfde67",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "95aeeaa15a00c396",
+      "fromSide": "right",
+      "id": "1ae22e25832f265f",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "9d559ffecf45f1fc",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "75dadc8277257a13",
+      "fromSide": "left",
+      "id": "bca23b5944df294e",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "fa9646bfb6d2ad61",
+      "toSide": "right"
+    }
   ],
   "nodes": [
     {
-      "file": "Data Science/Natural Language Processing (NLP).md",
-      "height": 400,
-      "id": "cabc53668a4596c3",
+      "height": 820,
+      "id": "b7d4e9139ea674bc",
+      "label": "Natural Language Processing",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1800,
+      "x": 600,
+      "y": -120
+    },
+    {
+      "height": 150,
+      "id": "fa9646bfb6d2ad61",
+      "styleAttributes": {
+      },
+      "text": "## NLP vs Text Mining\n\n- TM that is driven by NLP 由NLP驅動的TM\n",
+      "type": "text",
+      "width": 320,
+      "x": -40,
+      "y": -200
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/OpenNLP.md",
+      "height": 60,
+      "id": "f6bc5fd718fd654a",
+      "styleAttributes": {
+        "border": null
+      },
+      "type": "file",
+      "width": 140,
+      "x": 1840,
+      "y": -110
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/Sentence Segmentation 句子細分.md",
+      "height": 60,
+      "id": "674611a409a66df3",
+      "styleAttributes": {
+        "border": null
+      },
       "type": "file",
       "width": 400,
-      "x": -320,
-      "y": -100
+      "x": 1240,
+      "y": -50
+    },
+    {
+      "file": "Data Science/Text Mining/Text Mining.md",
+      "height": 270,
+      "id": "75dadc8277257a13",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 260,
+      "x": 620,
+      "y": -550
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/spaCy.md",
+      "height": 60,
+      "id": "b8d5113c1ed2aac9",
+      "styleAttributes": {
+        "border": null
+      },
+      "type": "file",
+      "width": 150,
+      "x": 1840,
+      "y": 50
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/Natural Language Processing NLP.md",
+      "height": 360,
+      "id": "95aeeaa15a00c396",
+      "styleAttributes": {
+        "border": null
+      },
+      "type": "file",
+      "width": 380,
+      "x": 620,
+      "y": 110
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/Tokenisation 象征化.md",
+      "height": 60,
+      "id": "79d73d910ad7d01e",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 260,
+      "x": 1240,
+      "y": 190
+    },
+    {
+      "height": 60,
+      "id": "b4abff0d99bfde67",
+      "styleAttributes": {
+        "textAlign": null
+      },
+      "text": "# Parsing ",
+      "type": "text",
+      "width": 100,
+      "x": 1240,
+      "y": 320
+    },
+    {
+      "height": 60,
+      "id": "9d559ffecf45f1fc",
+      "styleAttributes": {
+      },
+      "text": "# information",
+      "type": "text",
+      "width": 160,
+      "x": 1240,
+      "y": 440
     }
   ]
 }
