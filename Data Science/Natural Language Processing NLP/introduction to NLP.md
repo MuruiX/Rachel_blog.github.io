@@ -76,11 +76,21 @@ A ‘complete’ NLP system is usually a pipeline of components
 
 
 
+Why is NLP challenging:
+- Natural Language evolve:
+	- new words appear constantly 
+	- Syntactic rules are flexible 句法規則靈活
+	- ambiguity (模糊性)  is inherent  固有的
 
 
 
-
-
+Why Machine Learning for NLP 
+- Traditional rule-based artificial intelligence (symbolic AI):  
+	- requires expert knowledge to engineer the rules  需要專家知識來設計
+	- not flexible to adapt in multiple languages, domains, applications 不能靈活低使用與多種語言
+- Learning from data (machine learning) adapts:
+	- to evolution: just learn from new data 從新數據中學習
+	- to different applications: just learn with the appropriate target representation
 
 
 

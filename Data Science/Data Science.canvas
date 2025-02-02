@@ -23,17 +23,6 @@
       "toSide": "right"
     },
     {
-      "fromNode": "674611a409a66df3",
-      "fromSide": "left",
-      "id": "7c852210832be59b",
-      "styleAttributes": {
-        "pathfindingMethod": "square"
-      },
-      "toEnd": "none",
-      "toNode": "95aeeaa15a00c396",
-      "toSide": "right"
-    },
-    {
       "fromNode": "b7d4e9139ea674bc",
       "fromSide": "left",
       "id": "3744b9835e1c70bc",
@@ -45,39 +34,6 @@
       "toSide": "right"
     },
     {
-      "fromNode": "95aeeaa15a00c396",
-      "fromSide": "right",
-      "id": "7fdcbf2f7354cd25",
-      "styleAttributes": {
-        "pathfindingMethod": "square"
-      },
-      "toEnd": "none",
-      "toNode": "79d73d910ad7d01e",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "95aeeaa15a00c396",
-      "fromSide": "right",
-      "id": "4f2b0000714fa2d4",
-      "styleAttributes": {
-        "pathfindingMethod": "square"
-      },
-      "toEnd": "none",
-      "toNode": "b4abff0d99bfde67",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "95aeeaa15a00c396",
-      "fromSide": "right",
-      "id": "1ae22e25832f265f",
-      "styleAttributes": {
-        "pathfindingMethod": "square"
-      },
-      "toEnd": "none",
-      "toNode": "9d559ffecf45f1fc",
-      "toSide": "left"
-    },
-    {
       "fromNode": "75dadc8277257a13",
       "fromSide": "left",
       "id": "bca23b5944df294e",
@@ -87,11 +43,66 @@
       "toEnd": "none",
       "toNode": "fa9646bfb6d2ad61",
       "toSide": "right"
+    },
+    {
+      "fromNode": "674611a409a66df3",
+      "fromSide": "left",
+      "id": "2b4d3c43e57c5a95",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "da67106ff65771cb",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "79d73d910ad7d01e",
+      "fromSide": "left",
+      "id": "7e3743781da17813",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "da67106ff65771cb",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "b4abff0d99bfde67",
+      "fromSide": "left",
+      "id": "c3b68f6112524eb6",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "da67106ff65771cb",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "da67106ff65771cb",
+      "fromSide": "left",
+      "id": "03df8b1d31ce7165",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "95aeeaa15a00c396",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "9d559ffecf45f1fc",
+      "fromSide": "left",
+      "id": "3226b6fe8bc79170",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toEnd": "none",
+      "toNode": "da67106ff65771cb",
+      "toSide": "right"
     }
   ],
   "nodes": [
     {
-      "height": 820,
+      "height": 1280,
       "id": "b7d4e9139ea674bc",
       "label": "Natural Language Processing",
       "styleAttributes": {
@@ -99,7 +110,7 @@
       "type": "group",
       "width": 1800,
       "x": 600,
-      "y": -120
+      "y": -200
     },
     {
       "height": 150,
@@ -111,53 +122,6 @@
       "width": 320,
       "x": -40,
       "y": -200
-    },
-    {
-      "file": "Data Science/Natural Language Processing NLP/OpenNLP.md",
-      "height": 60,
-      "id": "f6bc5fd718fd654a",
-      "styleAttributes": {
-        "border": null
-      },
-      "type": "file",
-      "width": 140,
-      "x": 1840,
-      "y": -110
-    },
-    {
-      "file": "Data Science/Natural Language Processing NLP/Sentence Segmentation 句子細分.md",
-      "height": 60,
-      "id": "674611a409a66df3",
-      "styleAttributes": {
-        "border": null
-      },
-      "type": "file",
-      "width": 400,
-      "x": 1240,
-      "y": -50
-    },
-    {
-      "file": "Data Science/Text Mining/Text Mining.md",
-      "height": 270,
-      "id": "75dadc8277257a13",
-      "styleAttributes": {
-      },
-      "type": "file",
-      "width": 260,
-      "x": 620,
-      "y": -550
-    },
-    {
-      "file": "Data Science/Natural Language Processing NLP/spaCy.md",
-      "height": 60,
-      "id": "b8d5113c1ed2aac9",
-      "styleAttributes": {
-        "border": null
-      },
-      "type": "file",
-      "width": 150,
-      "x": 1840,
-      "y": 50
     },
     {
       "file": "Data Science/Natural Language Processing NLP/Natural Language Processing NLP.md",
@@ -172,6 +136,28 @@
       "y": 110
     },
     {
+      "file": "Data Science/Text Mining/Text Mining.md",
+      "height": 270,
+      "id": "75dadc8277257a13",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 260,
+      "x": 620,
+      "y": -800
+    },
+    {
+      "height": 60,
+      "id": "da67106ff65771cb",
+      "styleAttributes": {
+      },
+      "text": "NLP Pipeline",
+      "type": "text",
+      "width": 130,
+      "x": 1160,
+      "y": 145
+    },
+    {
       "file": "Data Science/Natural Language Processing NLP/Tokenisation 象征化.md",
       "height": 60,
       "id": "79d73d910ad7d01e",
@@ -179,8 +165,8 @@
       },
       "type": "file",
       "width": 260,
-      "x": 1240,
-      "y": 190
+      "x": 1440,
+      "y": 145
     },
     {
       "height": 60,
@@ -191,8 +177,8 @@
       "text": "# Parsing ",
       "type": "text",
       "width": 100,
-      "x": 1240,
-      "y": 320
+      "x": 1440,
+      "y": 275
     },
     {
       "height": 60,
@@ -202,8 +188,88 @@
       "text": "# information",
       "type": "text",
       "width": 160,
-      "x": 1240,
-      "y": 440
+      "x": 1440,
+      "y": 395
+    },
+    {
+      "height": 60,
+      "id": "880080f51056eb8e",
+      "styleAttributes": {
+      },
+      "text": "Lexical semantic 詞匯語義",
+      "type": "text",
+      "width": 260,
+      "x": 1200,
+      "y": 580
+    },
+    {
+      "height": 60,
+      "id": "6ad94aa76eafe50a",
+      "styleAttributes": {
+      },
+      "text": "概念",
+      "type": "text",
+      "width": 80,
+      "x": 960,
+      "y": 720
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/OpenNLP.md",
+      "height": 60,
+      "id": "f6bc5fd718fd654a",
+      "styleAttributes": {
+        "border": null
+      },
+      "type": "file",
+      "width": 140,
+      "x": 2040,
+      "y": -155
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/Sentence Segmentation 句子細分.md",
+      "height": 60,
+      "id": "674611a409a66df3",
+      "styleAttributes": {
+        "border": null
+      },
+      "type": "file",
+      "width": 400,
+      "x": 1440,
+      "y": -95
+    },
+    {
+      "file": "Data Science/Natural Language Processing NLP/spaCy.md",
+      "height": 60,
+      "id": "b8d5113c1ed2aac9",
+      "styleAttributes": {
+        "border": null
+      },
+      "type": "file",
+      "width": 150,
+      "x": 2040,
+      "y": 5
+    },
+    {
+      "height": 60,
+      "id": "d9f8206eaf1cccba",
+      "styleAttributes": {
+      },
+      "text": "Distributional Semantics 分佈語義",
+      "type": "text",
+      "width": 260,
+      "x": 1200,
+      "y": 720
+    },
+    {
+      "height": 60,
+      "id": "17ea2c46990c4896",
+      "styleAttributes": {
+      },
+      "text": "word sense disambiguation 單詞的概念",
+      "type": "text",
+      "width": 320,
+      "x": 1200,
+      "y": 840
     }
   ]
 }
