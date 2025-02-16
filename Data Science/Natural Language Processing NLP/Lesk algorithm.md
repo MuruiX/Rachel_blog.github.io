@@ -26,8 +26,8 @@ $$
 > Input sentence: Waves were hitting the steep bank.
 Senses for bank:
 >   1. sloping land (especially the slope beside a body of water)
->  2. a financial institution that accepts deposits and moves the money into lending activities
-> 3. a building in which the business of banking transacted
+>  1. a financial institution that accepts deposits and moves the money into lending activities
+> 1. a building in which the business of banking transacted
 > 
 > #### Context definitions:
 > -  wave – one of a series of ridges that moves across the surface of a liquid (especially
