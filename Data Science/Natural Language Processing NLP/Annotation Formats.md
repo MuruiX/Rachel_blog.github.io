@@ -28,12 +28,12 @@ Documents are meant to be <font color="#ffc000">human-readable</font>
 
 
 ## Enabling machine-readablility
-![](PICTURE/Annotation%20Formats/7d1b5a0b7c4e5839be878e737addcad1_MD5.jpeg)
-![](PICTURE/Annotation%20Formats/238e557e0f22df25014bc279d43f59ee_MD5.jpeg)
+![image.png](PICTURE/Annotation%20Formats/7d1b5a0b7c4e5839be878e737addcad1_MD5.jpeg)
+![image.png](PICTURE/Annotation%20Formats/238e557e0f22df25014bc279d43f59ee_MD5.jpeg)
 
 
-![](PICTURE/Annotation%20Formats/40f8d04fe843998f78dd0efdf6bb66c0_MD5.jpeg)
-![](PICTURE/Annotation%20Formats/875ad453c826788203008d9d15282031_MD5.jpeg)
+![image.png](PICTURE/Annotation%20Formats/40f8d04fe843998f78dd0efdf6bb66c0_MD5.jpeg)
+![image.png](PICTURE/Annotation%20Formats/875ad453c826788203008d9d15282031_MD5.jpeg)
 
 如圖展示的 他從單純的文字變成機器可讀的樣式
 
