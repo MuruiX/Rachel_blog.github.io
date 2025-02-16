@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Word Sense Disambiguation (WSD)",
+      "path": "Data Science/Natural Language Processing NLP/Word Sense Disambiguation (WSD).md"
+    },
+    {
+      "basename": "Lesk algorithm",
+      "path": "Data Science/Natural Language Processing NLP/Lesk algorithm.md"
+    },
+    {
+      "basename": "Introduction to ANNs",
+      "path": "Data Science/Artificial Neural Networks 神經網絡/Introduction to ANNs.md"
+    },
+    {
+      "basename": "spaCy",
+      "path": "Data Science/Natural Language Processing NLP/spaCy.md"
+    },
+    {
       "basename": "Sentence Segmentation 句子細分",
       "path": "Data Science/Natural Language Processing NLP/Sentence Segmentation 句子細分.md"
     },

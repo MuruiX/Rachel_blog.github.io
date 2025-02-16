@@ -1,7 +1,7 @@
 ---
 LINK:
-  - " "
   - "[[Text Mining]]"
+  - "[[Natural Language Processing NLP]]"
 ---
 
 
@@ -65,6 +65,9 @@ A ‘complete’ NLP system is usually a pipeline of components
 - [Tokenisation 象征化](Data%20Science/Natural%20Language%20Processing%20NLP/Tokenisation%20象征化.md)
 - Parsing
 - Information
+
+
+![](PICTURE/introduction%20to%20NLP/be96a21abd21e8c93a2bd2a563c27e53_MD5.jpg)
 
 
 ---

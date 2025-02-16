@@ -16,6 +16,7 @@ Task 順序：
 	- Or an end of abbreviation marker 縮寫標記的結尾
 	- Or both
 
+通常是Text Mining的第一步，因為它將非結構化文本拆分成基本處理單位
 
 
 Variation in delimiters 
