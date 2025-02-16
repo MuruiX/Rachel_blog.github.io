@@ -11,7 +11,7 @@ LINK:
 - Classification: y is one of N classes
 
 
-![](PICTURE/Introduction%20to%20ANNs/017746f009b6703c107a493d83adc95c_MD5.jpeg)
+![img.png](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/017746f009b6703c107a493d83adc95c_MD5.jpeg)
 
 像Supervised Machine Learning
 
