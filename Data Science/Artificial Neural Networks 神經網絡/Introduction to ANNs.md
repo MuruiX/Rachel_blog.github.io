@@ -11,13 +11,13 @@ LINK:
 - Classification: y is one of N classes
 
 
-![](PICTURE/Introduction%20to%20ANNs/017746f009b6703c107a493d83adc95c_MD5.jpeg)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/017746f009b6703c107a493d83adc95c_MD5.jpeg)
 
 像Supervised Machine Learning
 
 ### Neurons 神經元
 
-![](PICTURE/Introduction%20to%20ANNs/9a97a633dc51057232c4895e85dd5372_MD5.jpeg)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/9a97a633dc51057232c4895e85dd5372_MD5.jpeg)
 生物神經元啟發的計算單元
 
 x1 x2 x3 轉換成vector
@@ -25,7 +25,7 @@ x1 x2 x3 轉換成vector
 
 在神經網絡中有好幾個函數 $f（x）$  （激活函數）
 
-![](PICTURE/Introduction%20to%20ANNs/f01a4d4c3798aaa14114e36573be3353_MD5.jpeg)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/f01a4d4c3798aaa14114e36573be3353_MD5.jpeg)
 對於神經元網絡 可能取決於下游任務
 
 
@@ -34,7 +34,7 @@ x1 x2 x3 轉換成vector
 ### Multi-layer Neural Networks
 
 
-![](PICTURE/Introduction%20to%20ANNs/3da3846fce2dded04125d066526a24f3_MD5.jpeg)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/3da3846fce2dded04125d066526a24f3_MD5.jpeg)
 
 $y_1$ 是隱藏層 hidden Layer
 
@@ -44,18 +44,18 @@ How many hidden layers do we need?
 需要至少一層hidden layer
 
 
-![](PICTURE/Introduction%20to%20ANNs/a4122808dbc994b693a7afdc1e4e6001_MD5.jpeg)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/a4122808dbc994b693a7afdc1e4e6001_MD5.jpeg)
 In theory, one hidden layer is enough: two-layer neural networks are universal approximators (they are capable of approximating any continuous function to any desired degree of accuracy). 理論上，一個隱藏層就夠了，兩層神經網路是通用近似器（它們能夠近似任何連續函數到任何想要的精確度）。
 
 
-![](PICTURE/Introduction%20to%20ANNs/fafc045ef2ace1e7bf766cdcd0843742_MD5.jpeg)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/fafc045ef2ace1e7bf766cdcd0843742_MD5.jpeg)
 
 
 
 ### Classification Task
 
 
-![](PICTURE/Introduction%20to%20ANNs/ef56823d84e5c3f66357ee6a1cba22a4_MD5.jpeg)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/ef56823d84e5c3f66357ee6a1cba22a4_MD5.jpeg)
 
 
 Training a neural net (for classification)
@@ -71,7 +71,7 @@ $$
 ### (Minibatch) Stochastic gradient descent
 
 
-![](PICTURE/Introduction%20to%20ANNs/Pasted%20image%2020250202175250.png)
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/Pasted%20image%2020250202175250.png)
 
 1. sample a minibatch $D′$ of m examples from the training set $D$,  從小批量訓練 $D'$
 2. compute $J(θ)$ on D′, 
@@ -80,8 +80,8 @@ $$
 ### Computing gradients: error back-propagation 誤差反向傳播
 - Key: the chain rule: $\frac{\partial y}{\partial x} = \frac{\partial z}{\partial x} \frac{\partial y}{\partial z}$
 
-[Open: Pasted image 20250202175507.png](PICTURE/Introduction%20to%20ANNs/82061d08773717ee1da59983f3db33a3_MD5.jpeg)
-![](PICTURE/Introduction%20to%20ANNs/82061d08773717ee1da59983f3db33a3_MD5.jpeg)
+
+![](Rachel_blog.github.io/PICTURE/Introduction%20to%20ANNs/82061d08773717ee1da59983f3db33a3_MD5.jpeg)
 
 $$
 \frac{\partial J}{\partial y^{(2)}} = \frac{\partial J}{\partial y}

@@ -59,7 +59,7 @@ Psychology: psychologically plausible modelling of language use
 ## NLP Pipelines
 A ‘complete’ NLP system is usually a pipeline of components
 
-![](PICTURE/introduction%20to%20NLP/f588106faba6d912b5e155643af0dd79_MD5.jpeg)
+[](PICTURE/introduction%20to%20NLP/f588106faba6d912b5e155643af0dd79_MD5.jpeg)
 
 - [Sentence Segmentation 句子細分](Data%20Science/Natural%20Language%20Processing%20NLP/Sentence%20Segmentation%20句子細分.md)
 - [Tokenisation 象征化](Data%20Science/Natural%20Language%20Processing%20NLP/Tokenisation%20象征化.md)
@@ -67,7 +67,7 @@ A ‘complete’ NLP system is usually a pipeline of components
 - Information
 
 
-![](PICTURE/introduction%20to%20NLP/be96a21abd21e8c93a2bd2a563c27e53_MD5.jpg)
+[](PICTURE/introduction%20to%20NLP/be96a21abd21e8c93a2bd2a563c27e53_MD5.jpg)
 
 
 ---
