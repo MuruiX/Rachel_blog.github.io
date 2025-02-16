@@ -11,10 +11,14 @@
             "id": "32e04ffa0782bfdd",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "Data Science/Natural Language Processing NLP/Sentence Segmentation 句子細分.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sentence Segmentation 句子細分"
             }
           }
         ]
@@ -75,12 +79,12 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           },
           {
-            "id": "6a3f0314909268da",
+            "id": "48e5e9c90b38df53",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -94,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "829512c7b983742f",
@@ -220,6 +223,8 @@
   },
   "active": "32e04ffa0782bfdd",
   "lastOpenFiles": [
+    "Data Science/Natural Language Processing NLP/introduction to NLP.md",
+    "Data Science/Natural Language Processing NLP/OpenNLP.md",
     "未命名.canvas",
     "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
     "Computer Science/Database/NoSQL/MongoDB.md",
@@ -251,7 +256,6 @@
     "Computer Science/Database/NoSQL/Introduction to NoSQL Systems.md",
     "PICTURE/NoSQL.md",
     "Computer Science/Database/NoSQL/NoSQL.md",
-    "Computer Science/Database/DBMS - Database Management System 1.md",
     "Computer Science/Database/image/StructuredQueryLanguage(SQL)/1724086072031.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image.png",
     "Computer Science/Database/Relational Database f25d35d817a4424aad0bd0b92af5f808/image 5.png",
