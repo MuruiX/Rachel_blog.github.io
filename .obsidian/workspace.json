@@ -85,7 +85,7 @@
             }
           },
           {
-            "id": "e3c7042802960e77",
+            "id": "c549cccb6541225f",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -224,8 +224,9 @@
   },
   "active": "32e04ffa0782bfdd",
   "lastOpenFiles": [
-    "Data Science/Natural Language Processing NLP/introduction to NLP.md",
     "Data Science/Natural Language Processing NLP/OpenNLP.md",
+    "Data Science/Natural Language Processing NLP/Sentence Segmentation 句子細分.md",
+    "Data Science/Natural Language Processing NLP/introduction to NLP.md",
     "Data Science/Natural Language Processing NLP/Tokenisation 象征化.md",
     "Data Science/Natural Language Processing NLP/Word Sense Disambiguation (WSD).md",
     "Data Science/Natural Language Processing NLP/Lesk algorithm.md",
@@ -248,7 +249,6 @@
     "Data Science/Artificial Neural Networks 神經網絡/Artificial Neural Networks 神經網絡.md",
     "Data Science/Artificial Neural Networks 神經網絡",
     "Data Science/Natural Language Processing NLP/spaCy.md",
-    "Data Science/Natural Language Processing NLP/Sentence Segmentation 句子細分.md",
     "Data Science/Natural Language Processing NLP/Annotation Formats.md",
     "未命名.canvas",
     "Computer Science/Database/NoSQL/Node.js connect MongoDB.md",
