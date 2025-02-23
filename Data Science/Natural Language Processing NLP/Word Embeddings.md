@@ -90,7 +90,7 @@ $$
 
 ## Prediction-based Approach
 
-[Introduction to ANNs](Data%20Science/Artificial%20Neural%20Networks%20神經網絡/Introduction%20to%20ANNs.md) used to learn word embeddings
+[Introduction to ANNs](Data%20Science/Artificial%20Neural%20Networks%20人工神經網絡/Introduction%20to%20ANNs.md) used to learn word embeddings
 
 - two major count-based approach methods: 
 	- term-document matrix 術語文檔矩陣
@@ -135,9 +135,9 @@ $L(\theta) = -\sum_{(w, u_1, \ldots, u_l) \in D_{\text{train}}} \log \Pr(w \mid 
     - 計算該平均向量 $y$ 與詞彙矩陣 $W$ 的線性變換，並使用 softmax 來預測中心詞 wtw_twt​： $P(w_t | w_{t-1}, ..., w_{t-m}, w_{t+1}, ..., w_{t+m}) = \text{softmax}(Wy)P(wt​∣wt−1​,...,wt−m​,wt+1​,...,wt+m​)=softmax(Wy)$
     - Softmax 的輸出是一個機率分佈，表示詞彙表 (vocabulary) 中每個詞作為中心詞的可能性。
 #### **CBOW 的特點**
-4. **上下文到目標詞**：它是**從上下文詞預測中心詞**（這與 Skip-gram 相反，Skip-gram 是用中心詞預測周圍的上下文詞）。
-5. **計算高效**：由於使用**平均詞向量**，CBOW 計算速度通常比 Skip-gram 更快，尤其是在大語料庫上訓練時。
-6. **適合大規模語料庫**：CBOW 在大語料庫下通常表現更穩定，適合訓練大詞彙的詞向量。
+1. **上下文到目標詞**：它是**從上下文詞預測中心詞**（這與 Skip-gram 相反，Skip-gram 是用中心詞預測周圍的上下文詞）。
+2. **計算高效**：由於使用**平均詞向量**，CBOW 計算速度通常比 Skip-gram 更快，尤其是在大語料庫上訓練時。
+3. **適合大規模語料庫**：CBOW 在大語料庫下通常表現更穩定，適合訓練大詞彙的詞向量。
 
 #### **CBOW 在 NLP 任務中的影響**
 
@@ -162,10 +162,6 @@ $L(\theta) = -\sum_{(w, u_1, \ldots, u_l) \in D_{\text{train}}} \log \Pr(w \mid 
 ![](PICTURE/Word%20Embeddings/6fea3503ab0846f82e56faf1621b3729_MD5.jpeg)
 
 
-
-以下是转换为Markdown格式的表格：
-
-markdown复制
 
 
 |      | CBOW        | Skip-gram            |
@@ -233,6 +229,40 @@ intuitive as count-based ones
 - Low dimensional vectors (about 200-400 dimensions)
 	- Dimensions are not easy to interpret
 - Robust performance for NLP tasks
+
+
+
+## **延伸：Word Embeddings 進化**
+
+1. **靜態詞嵌入（Static Embeddings）**：
+    
+    - Word2Vec、GloVe、FastText
+    - 缺點：一個詞的向量固定，不能根據不同上下文改變語義（如「bank」的不同意思）。
+2. **上下文敏感的詞嵌入（Contextualized Embeddings）**：
+    
+    - ELMo、BERT、GPT
+    - 解決了詞義多義性（Polysemy）問題，能夠根據上下文動態調整詞向量。
+
+
+
+
+
+# Contextualised Word Embedding
+
+## Static map 靜態地圖
+
+f trained on large corpus Based on co-occurrence of words
+![](PICTURE/Word%20Embeddings/0cab6a55dfa9943f52f309672de81a0c_MD5.jpeg)
+
+
+
+
+
+
+
+
+
+
 
 
 

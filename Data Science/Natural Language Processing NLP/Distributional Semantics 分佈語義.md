@@ -76,7 +76,7 @@ The ultimate goal: find f!
 - 例如 WordNet，使用詞義的層次結構來判斷。
 2. **基於機器學習（Supervised Learning）基於機器學習（（監督學習）**
 - 需要帶標註的語料庫（如 SemCor）來訓練分類模型
-1.  **基於上下文的詞嵌入（Contextualized Word Embeddings）基於上下文的詞嵌入（（上下文化的單詞嵌入））**
+3.  **基於上下文的詞嵌入（Contextualized Word Embeddings）基於上下文的詞嵌入（（上下文化的單詞嵌入））**
 - 使用 **BERT、GPT、ELMo** 這類模型，能夠根據句子語境動態決定詞義。
 
 
@@ -95,13 +95,13 @@ The ultimate goal: find f!
 ## Co-occurrence vectors: word-word matrixes
 
 
-2. Collect a lot of documents / sentences (from, e.g. Wikipedia)
+4. Collect a lot of documents / sentences (from, e.g. Wikipedia)
 	- a. .... the first digital computers were developed.
 	- b. … the system stores enough digital data ...
-3. Apply basic <font color="#ffc000">pre-processing steps</font>: lowercase小寫, tokenisation像征化, lemmatisation誘餌
-4. Count how many times a word u appearing with a word v count (digital, computer) = 1670
-5. The meaning of word u is vector [count (u, v1), count (u, v2),...]   [Term-document matrix](Data%20Science/Natural%20La
-6. nguage%20Processing%20NLP/Word%20Embeddings.md #Count-based %20Approach)
+5. Apply basic <font color="#ffc000">pre-processing steps</font>: lowercase小寫, tokenisation像征化, lemmatisation誘餌
+6. Count how many times a word u appearing with a word v count (digital, computer) = 1670
+7. The meaning of word u is vector [count (u, v1), count (u, v2),...]   [Term-document matrix](Data%20Science/Natural%20La
+8. nguage%20Processing%20NLP/Word%20Embeddings.md #Count-based %20Approach)
 
 ![](PICTURE/Distributional%20Semantics/Pasted%20image%2020250202041159.png)
 
@@ -122,4 +122,36 @@ Summary
 	○ detect the similarity among words
 	○ visualise word meanings
 	○ input to machine learning models
+
+
+
+
+| Aspect | Distributional Semantics | Word Embeddings             |
+|--------|--------------------------|-----------------------------|
+| 概念     | 一種語義理論：詞的意義來自其上下文。       | 一種基於分布式語義的實現方法，學習詞的向量表示。    |
+| 主要方法   | 計數共現矩陣（PPMI, SVD）        | 預測模型（Word2Vec, GloVe, BERT） |
+| 向量類型   | 稀疏向量（Sparse, 高維）         | 稠密向量（Dense, 低維）             |
+| 語義關係   | 透過共現頻率來捕捉詞的語義            | 透過上下文來學習語義信息                |
+| 應用     | 信息檢索、文本分類                | 機器翻譯、情感分析、問答系統              |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
